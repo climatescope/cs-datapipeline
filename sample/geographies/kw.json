@@ -1,0 +1,27 @@
+{
+  "name": "Kuwait",
+  "region": {
+    "id": "mena",
+    "name": "Middle East and North Africa"
+  },
+  "score": {
+    "overall": {
+      "rank": 71,
+      "value": 1.2705289504
+    },
+    "fundamentals": {
+      "rank": 72,
+      "value": 1.6865501804
+    },
+    "opportunities": {
+      "rank": 13,
+      "value": 1.4061882843
+    },
+    "experience": {
+      "rank": 93,
+      "value": 0.3028271567
+    }
+  },
+  "grid": "on",
+  "iso": "kw"
+}

@@ -1,0 +1,27 @@
+{
+  "name": "Armenia",
+  "region": {
+    "id": "asia",
+    "name": "Asia"
+  },
+  "score": {
+    "overall": {
+      "rank": 26,
+      "value": 1.8272320622
+    },
+    "fundamentals": {
+      "rank": 25,
+      "value": 2.5105642677
+    },
+    "opportunities": {
+      "rank": 76,
+      "value": 0.7137393934
+    },
+    "experience": {
+      "rank": 28,
+      "value": 1.5740603201
+    }
+  },
+  "grid": "on",
+  "iso": "am"
+}

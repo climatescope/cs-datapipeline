@@ -1,0 +1,137 @@
+[
+  {
+    "name": "Armenia",
+    "region": {
+      "id": "asia",
+      "name": "Asia"
+    },
+    "score": {
+      "overall": {
+        "rank": 26,
+        "value": 1.8272320622
+      },
+      "fundamentals": {
+        "rank": 25,
+        "value": 2.5105642677
+      },
+      "opportunities": {
+        "rank": 76,
+        "value": 0.7137393934
+      },
+      "experience": {
+        "rank": 28,
+        "value": 1.5740603201
+      }
+    },
+    "grid": "on",
+    "iso": "am"
+  },
+  {
+    "name": "Brazil",
+    "region": {
+      "id": "lac",
+      "name": "Latin America and the Caribbean"
+    },
+    "score": {
+      "overall": {
+        "rank": 3,
+        "value": 2.5249016914
+      },
+      "fundamentals": {
+        "rank": 1,
+        "value": 3.4778359325
+      },
+      "opportunities": {
+        "rank": 19,
+        "value": 1.2383158146
+      },
+      "experience": {
+        "rank": 15,
+        "value": 1.9056190861
+      }
+    },
+    "grid": "on",
+    "iso": "br"
+  },
+  {
+    "name": "Central African Republic",
+    "region": {
+      "id": "africa",
+      "name": "Africa"
+    },
+    "score": {
+      "overall": {
+        "rank": 77,
+        "value": 1.2090002428
+      },
+      "fundamentals": {
+        "rank": 95,
+        "value": 1.0578823954
+      },
+      "opportunities": {
+        "rank": 82,
+        "value": 0.6417986804
+      },
+      "experience": {
+        "rank": 12,
+        "value": 2.0784375
+      }
+    },
+    "grid": "off",
+    "iso": "cf"
+  },
+  {
+    "name": "Kuwait",
+    "region": {
+      "id": "mena",
+      "name": "Middle East and North Africa"
+    },
+    "score": {
+      "overall": {
+        "rank": 71,
+        "value": 1.2705289504
+      },
+      "fundamentals": {
+        "rank": 72,
+        "value": 1.6865501804
+      },
+      "opportunities": {
+        "rank": 13,
+        "value": 1.4061882843
+      },
+      "experience": {
+        "rank": 93,
+        "value": 0.3028271567
+      }
+    },
+    "grid": "on",
+    "iso": "kw"
+  },
+  {
+    "name": "Ukraine",
+    "region": {
+      "id": "eu",
+      "name": "Europe"
+    },
+    "score": {
+      "overall": {
+        "rank": 56,
+        "value": 1.5662462996
+      },
+      "fundamentals": {
+        "rank": 55,
+        "value": 1.9878023674
+      },
+      "opportunities": {
+        "rank": 32,
+        "value": 1.1093728049
+      },
+      "experience": {
+        "rank": 48,
+        "value": 1.1800076588
+      }
+    },
+    "grid": "on",
+    "iso": "ua"
+  }
+]

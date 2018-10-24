@@ -1,0 +1,27 @@
+{
+  "name": "Ukraine",
+  "region": {
+    "id": "eu",
+    "name": "Europe"
+  },
+  "score": {
+    "overall": {
+      "rank": 56,
+      "value": 1.5662462996
+    },
+    "fundamentals": {
+      "rank": 55,
+      "value": 1.9878023674
+    },
+    "opportunities": {
+      "rank": 32,
+      "value": 1.1093728049
+    },
+    "experience": {
+      "rank": 48,
+      "value": 1.1800076588
+    }
+  },
+  "grid": "on",
+  "iso": "ua"
+}

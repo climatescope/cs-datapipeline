@@ -1,0 +1,27 @@
+{
+  "name": "Brazil",
+  "region": {
+    "id": "lac",
+    "name": "Latin America and the Caribbean"
+  },
+  "score": {
+    "overall": {
+      "rank": 3,
+      "value": 2.5249016914
+    },
+    "fundamentals": {
+      "rank": 1,
+      "value": 3.4778359325
+    },
+    "opportunities": {
+      "rank": 19,
+      "value": 1.2383158146
+    },
+    "experience": {
+      "rank": 15,
+      "value": 1.9056190861
+    }
+  },
+  "grid": "on",
+  "iso": "br"
+}

@@ -1,0 +1,27 @@
+{
+  "name": "Central African Republic",
+  "region": {
+    "id": "africa",
+    "name": "Africa"
+  },
+  "score": {
+    "overall": {
+      "rank": 77,
+      "value": 1.2090002428
+    },
+    "fundamentals": {
+      "rank": 95,
+      "value": 1.0578823954
+    },
+    "opportunities": {
+      "rank": 82,
+      "value": 0.6417986804
+    },
+    "experience": {
+      "rank": 12,
+      "value": 2.0784375
+    }
+  },
+  "grid": "off",
+  "iso": "cf"
+}

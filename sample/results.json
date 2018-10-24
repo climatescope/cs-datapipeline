@@ -5,23 +5,52 @@
       "id": "asia",
       "name": "Asia"
     },
-    "score": {
-      "overall": {
-        "rank": 26,
-        "value": 1.8272320622
+    "topics": [
+      {
+        "id": 1,
+        "weight": 0.4,
+        "name": "fundamentals",
+        "data": [
+          {
+            "rank": 25,
+            "value": 2.5105642677,
+            "year": 2018
+          }
+        ]
       },
-      "fundamentals": {
-        "rank": 25,
-        "value": 2.5105642677
+      {
+        "id": 2,
+        "weight": 0.4,
+        "name": "opportunities",
+        "data": [
+          {
+            "rank": 76,
+            "value": 0.7137393934,
+            "year": 2018
+          }
+        ]
       },
-      "opportunities": {
-        "rank": 76,
-        "value": 0.7137393934
-      },
-      "experience": {
-        "rank": 28,
-        "value": 1.5740603201
+      {
+        "id": 3,
+        "weight": 0.2,
+        "name": "experience",
+        "data": [
+          {
+            "rank": 28,
+            "value": 1.5740603201,
+            "year": 2018
+          }
+        ]
       }
+    ],
+    "score": {
+      "data": [
+        {
+          "rank": 26,
+          "value": 1.8272320622,
+          "year": 2018
+        }
+      ]
     },
     "grid": "on",
     "iso": "am"
@@ -32,23 +61,52 @@
       "id": "lac",
       "name": "Latin America and the Caribbean"
     },
-    "score": {
-      "overall": {
-        "rank": 3,
-        "value": 2.5249016914
+    "topics": [
+      {
+        "id": 1,
+        "weight": 0.4,
+        "name": "fundamentals",
+        "data": [
+          {
+            "rank": 1,
+            "value": 3.4778359325,
+            "year": 2018
+          }
+        ]
       },
-      "fundamentals": {
-        "rank": 1,
-        "value": 3.4778359325
+      {
+        "id": 2,
+        "weight": 0.4,
+        "name": "opportunities",
+        "data": [
+          {
+            "rank": 19,
+            "value": 1.2383158146,
+            "year": 2018
+          }
+        ]
       },
-      "opportunities": {
-        "rank": 19,
-        "value": 1.2383158146
-      },
-      "experience": {
-        "rank": 15,
-        "value": 1.9056190861
+      {
+        "id": 3,
+        "weight": 0.2,
+        "name": "experience",
+        "data": [
+          {
+            "rank": 15,
+            "value": 1.9056190861,
+            "year": 2018
+          }
+        ]
       }
+    ],
+    "score": {
+      "data": [
+        {
+          "rank": 3,
+          "value": 2.5249016914,
+          "year": 2018
+        }
+      ]
     },
     "grid": "on",
     "iso": "br"
@@ -59,23 +117,52 @@
       "id": "africa",
       "name": "Africa"
     },
-    "score": {
-      "overall": {
-        "rank": 77,
-        "value": 1.2090002428
+    "topics": [
+      {
+        "id": 1,
+        "weight": 0.4,
+        "name": "fundamentals",
+        "data": [
+          {
+            "rank": 95,
+            "value": 1.0578823954,
+            "year": 2018
+          }
+        ]
       },
-      "fundamentals": {
-        "rank": 95,
-        "value": 1.0578823954
+      {
+        "id": 2,
+        "weight": 0.4,
+        "name": "opportunities",
+        "data": [
+          {
+            "rank": 82,
+            "value": 0.6417986804,
+            "year": 2018
+          }
+        ]
       },
-      "opportunities": {
-        "rank": 82,
-        "value": 0.6417986804
-      },
-      "experience": {
-        "rank": 12,
-        "value": 2.0784375
+      {
+        "id": 3,
+        "weight": 0.2,
+        "name": "experience",
+        "data": [
+          {
+            "rank": 12,
+            "value": 2.0784375,
+            "year": 2018
+          }
+        ]
       }
+    ],
+    "score": {
+      "data": [
+        {
+          "rank": 77,
+          "value": 1.2090002428,
+          "year": 2018
+        }
+      ]
     },
     "grid": "off",
     "iso": "cf"
@@ -86,23 +173,52 @@
       "id": "mena",
       "name": "Middle East and North Africa"
     },
-    "score": {
-      "overall": {
-        "rank": 71,
-        "value": 1.2705289504
+    "topics": [
+      {
+        "id": 1,
+        "weight": 0.4,
+        "name": "fundamentals",
+        "data": [
+          {
+            "rank": 72,
+            "value": 1.6865501804,
+            "year": 2018
+          }
+        ]
       },
-      "fundamentals": {
-        "rank": 72,
-        "value": 1.6865501804
+      {
+        "id": 2,
+        "weight": 0.4,
+        "name": "opportunities",
+        "data": [
+          {
+            "rank": 13,
+            "value": 1.4061882843,
+            "year": 2018
+          }
+        ]
       },
-      "opportunities": {
-        "rank": 13,
-        "value": 1.4061882843
-      },
-      "experience": {
-        "rank": 93,
-        "value": 0.3028271567
+      {
+        "id": 3,
+        "weight": 0.2,
+        "name": "experience",
+        "data": [
+          {
+            "rank": 93,
+            "value": 0.3028271567,
+            "year": 2018
+          }
+        ]
       }
+    ],
+    "score": {
+      "data": [
+        {
+          "rank": 71,
+          "value": 1.2705289504,
+          "year": 2018
+        }
+      ]
     },
     "grid": "on",
     "iso": "kw"
@@ -113,23 +229,52 @@
       "id": "eu",
       "name": "Europe"
     },
-    "score": {
-      "overall": {
-        "rank": 56,
-        "value": 1.5662462996
+    "topics": [
+      {
+        "id": 1,
+        "weight": 0.4,
+        "name": "fundamentals",
+        "data": [
+          {
+            "rank": 55,
+            "value": 1.9878023674,
+            "year": 2018
+          }
+        ]
       },
-      "fundamentals": {
-        "rank": 55,
-        "value": 1.9878023674
+      {
+        "id": 2,
+        "weight": 0.4,
+        "name": "opportunities",
+        "data": [
+          {
+            "rank": 32,
+            "value": 1.1093728049,
+            "year": 2018
+          }
+        ]
       },
-      "opportunities": {
-        "rank": 32,
-        "value": 1.1093728049
-      },
-      "experience": {
-        "rank": 48,
-        "value": 1.1800076588
+      {
+        "id": 3,
+        "weight": 0.2,
+        "name": "experience",
+        "data": [
+          {
+            "rank": 48,
+            "value": 1.1800076588,
+            "year": 2018
+          }
+        ]
       }
+    ],
+    "score": {
+      "data": [
+        {
+          "rank": 56,
+          "value": 1.5662462996,
+          "year": 2018
+        }
+      ]
     },
     "grid": "on",
     "iso": "ua"

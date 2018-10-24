@@ -4,23 +4,52 @@
     "id": "eu",
     "name": "Europe"
   },
-  "score": {
-    "overall": {
-      "rank": 56,
-      "value": 1.5662462996
+  "topics": [
+    {
+      "id": 1,
+      "weight": 0.4,
+      "name": "fundamentals",
+      "data": [
+        {
+          "rank": 55,
+          "value": 1.9878023674,
+          "year": 2018
+        }
+      ]
     },
-    "fundamentals": {
-      "rank": 55,
-      "value": 1.9878023674
+    {
+      "id": 2,
+      "weight": 0.4,
+      "name": "opportunities",
+      "data": [
+        {
+          "rank": 32,
+          "value": 1.1093728049,
+          "year": 2018
+        }
+      ]
     },
-    "opportunities": {
-      "rank": 32,
-      "value": 1.1093728049
-    },
-    "experience": {
-      "rank": 48,
-      "value": 1.1800076588
+    {
+      "id": 3,
+      "weight": 0.2,
+      "name": "experience",
+      "data": [
+        {
+          "rank": 48,
+          "value": 1.1800076588,
+          "year": 2018
+        }
+      ]
     }
+  ],
+  "score": {
+    "data": [
+      {
+        "rank": 56,
+        "value": 1.5662462996,
+        "year": 2018
+      }
+    ]
   },
   "grid": "on",
   "iso": "ua"

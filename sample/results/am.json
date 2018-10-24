@@ -1,42 +1,42 @@
 {
-  "name": "Central African Republic",
+  "name": "Armenia",
   "region": {
-    "id": "africa",
-    "name": "Africa"
+    "id": "asia",
+    "name": "Asia"
   },
   "topics": [
     {
       "id": 1,
-      "weight": 0.4,
+      "weight": 0.5,
       "name": "fundamentals",
       "data": [
         {
-          "rank": 95,
-          "value": 1.0578823954,
+          "rank": 25,
+          "value": 2.5105642677,
           "year": 2018
         }
       ]
     },
     {
       "id": 2,
-      "weight": 0.4,
+      "weight": 0.25,
       "name": "opportunities",
       "data": [
         {
-          "rank": 82,
-          "value": 0.6417986804,
+          "rank": 76,
+          "value": 0.7137393934,
           "year": 2018
         }
       ]
     },
     {
       "id": 3,
-      "weight": 0.2,
+      "weight": 0.25,
       "name": "experience",
       "data": [
         {
-          "rank": 12,
-          "value": 2.0784375,
+          "rank": 28,
+          "value": 1.5740603201,
           "year": 2018
         }
       ]
@@ -45,12 +45,12 @@
   "score": {
     "data": [
       {
-        "rank": 77,
-        "value": 1.2090002428,
+        "rank": 26,
+        "value": 1.8272320622,
         "year": 2018
       }
     ]
   },
-  "grid": "off",
-  "iso": "cf"
+  "grid": "on",
+  "iso": "am"
 }

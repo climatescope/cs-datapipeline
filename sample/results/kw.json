@@ -1,42 +1,42 @@
 {
-  "name": "Armenia",
+  "name": "Kuwait",
   "region": {
-    "id": "asia",
-    "name": "Asia"
+    "id": "mena",
+    "name": "Middle East and North Africa"
   },
   "topics": [
     {
       "id": 1,
-      "weight": 0.4,
+      "weight": 0.5,
       "name": "fundamentals",
       "data": [
         {
-          "rank": 25,
-          "value": 2.5105642677,
+          "rank": 72,
+          "value": 1.6865501804,
           "year": 2018
         }
       ]
     },
     {
       "id": 2,
-      "weight": 0.4,
+      "weight": 0.25,
       "name": "opportunities",
       "data": [
         {
-          "rank": 76,
-          "value": 0.7137393934,
+          "rank": 13,
+          "value": 1.4061882843,
           "year": 2018
         }
       ]
     },
     {
       "id": 3,
-      "weight": 0.2,
+      "weight": 0.25,
       "name": "experience",
       "data": [
         {
-          "rank": 28,
-          "value": 1.5740603201,
+          "rank": 93,
+          "value": 0.3028271567,
           "year": 2018
         }
       ]
@@ -45,12 +45,12 @@
   "score": {
     "data": [
       {
-        "rank": 26,
-        "value": 1.8272320622,
+        "rank": 71,
+        "value": 1.2705289504,
         "year": 2018
       }
     ]
   },
   "grid": "on",
-  "iso": "am"
+  "iso": "kw"
 }

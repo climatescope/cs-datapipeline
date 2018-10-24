@@ -8,7 +8,7 @@
     "topics": [
       {
         "id": 1,
-        "weight": 0.4,
+        "weight": 0.5,
         "name": "fundamentals",
         "data": [
           {
@@ -20,7 +20,7 @@
       },
       {
         "id": 2,
-        "weight": 0.4,
+        "weight": 0.25,
         "name": "opportunities",
         "data": [
           {
@@ -32,7 +32,7 @@
       },
       {
         "id": 3,
-        "weight": 0.2,
+        "weight": 0.25,
         "name": "experience",
         "data": [
           {
@@ -64,7 +64,7 @@
     "topics": [
       {
         "id": 1,
-        "weight": 0.4,
+        "weight": 0.5,
         "name": "fundamentals",
         "data": [
           {
@@ -76,7 +76,7 @@
       },
       {
         "id": 2,
-        "weight": 0.4,
+        "weight": 0.25,
         "name": "opportunities",
         "data": [
           {
@@ -88,7 +88,7 @@
       },
       {
         "id": 3,
-        "weight": 0.2,
+        "weight": 0.25,
         "name": "experience",
         "data": [
           {
@@ -120,7 +120,7 @@
     "topics": [
       {
         "id": 1,
-        "weight": 0.4,
+        "weight": 0.5,
         "name": "fundamentals",
         "data": [
           {
@@ -132,7 +132,7 @@
       },
       {
         "id": 2,
-        "weight": 0.4,
+        "weight": 0.25,
         "name": "opportunities",
         "data": [
           {
@@ -144,7 +144,7 @@
       },
       {
         "id": 3,
-        "weight": 0.2,
+        "weight": 0.25,
         "name": "experience",
         "data": [
           {
@@ -176,7 +176,7 @@
     "topics": [
       {
         "id": 1,
-        "weight": 0.4,
+        "weight": 0.5,
         "name": "fundamentals",
         "data": [
           {
@@ -188,7 +188,7 @@
       },
       {
         "id": 2,
-        "weight": 0.4,
+        "weight": 0.25,
         "name": "opportunities",
         "data": [
           {
@@ -200,7 +200,7 @@
       },
       {
         "id": 3,
-        "weight": 0.2,
+        "weight": 0.25,
         "name": "experience",
         "data": [
           {
@@ -232,7 +232,7 @@
     "topics": [
       {
         "id": 1,
-        "weight": 0.4,
+        "weight": 0.5,
         "name": "fundamentals",
         "data": [
           {
@@ -244,7 +244,7 @@
       },
       {
         "id": 2,
-        "weight": 0.4,
+        "weight": 0.25,
         "name": "opportunities",
         "data": [
           {
@@ -256,7 +256,7 @@
       },
       {
         "id": 3,
-        "weight": 0.2,
+        "weight": 0.25,
         "name": "experience",
         "data": [
           {

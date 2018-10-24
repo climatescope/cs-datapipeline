@@ -1,42 +1,42 @@
 {
-  "name": "Kuwait",
+  "name": "Brazil",
   "region": {
-    "id": "mena",
-    "name": "Middle East and North Africa"
+    "id": "lac",
+    "name": "Latin America and the Caribbean"
   },
   "topics": [
     {
       "id": 1,
-      "weight": 0.4,
+      "weight": 0.5,
       "name": "fundamentals",
       "data": [
         {
-          "rank": 72,
-          "value": 1.6865501804,
+          "rank": 1,
+          "value": 3.4778359325,
           "year": 2018
         }
       ]
     },
     {
       "id": 2,
-      "weight": 0.4,
+      "weight": 0.25,
       "name": "opportunities",
       "data": [
         {
-          "rank": 13,
-          "value": 1.4061882843,
+          "rank": 19,
+          "value": 1.2383158146,
           "year": 2018
         }
       ]
     },
     {
       "id": 3,
-      "weight": 0.2,
+      "weight": 0.25,
       "name": "experience",
       "data": [
         {
-          "rank": 93,
-          "value": 0.3028271567,
+          "rank": 15,
+          "value": 1.9056190861,
           "year": 2018
         }
       ]
@@ -45,12 +45,12 @@
   "score": {
     "data": [
       {
-        "rank": 71,
-        "value": 1.2705289504,
+        "rank": 3,
+        "value": 2.5249016914,
         "year": 2018
       }
     ]
   },
   "grid": "on",
-  "iso": "kw"
+  "iso": "br"
 }

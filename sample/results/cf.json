@@ -1,42 +1,42 @@
 {
-  "name": "Ukraine",
+  "name": "Central African Republic",
   "region": {
-    "id": "eu",
-    "name": "Europe"
+    "id": "africa",
+    "name": "Africa"
   },
   "topics": [
     {
       "id": 1,
-      "weight": 0.4,
+      "weight": 0.5,
       "name": "fundamentals",
       "data": [
         {
-          "rank": 55,
-          "value": 1.9878023674,
+          "rank": 95,
+          "value": 1.0578823954,
           "year": 2018
         }
       ]
     },
     {
       "id": 2,
-      "weight": 0.4,
+      "weight": 0.25,
       "name": "opportunities",
       "data": [
         {
-          "rank": 32,
-          "value": 1.1093728049,
+          "rank": 82,
+          "value": 0.6417986804,
           "year": 2018
         }
       ]
     },
     {
       "id": 3,
-      "weight": 0.2,
+      "weight": 0.25,
       "name": "experience",
       "data": [
         {
-          "rank": 48,
-          "value": 1.1800076588,
+          "rank": 12,
+          "value": 2.0784375,
           "year": 2018
         }
       ]
@@ -45,12 +45,12 @@
   "score": {
     "data": [
       {
-        "rank": 56,
-        "value": 1.5662462996,
+        "rank": 77,
+        "value": 1.2090002428,
         "year": 2018
       }
     ]
   },
-  "grid": "on",
-  "iso": "ua"
+  "grid": "off",
+  "iso": "cf"
 }

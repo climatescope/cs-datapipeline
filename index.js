@@ -66,6 +66,9 @@ function generateResultData (geographies, scores, topics) {
 
 (async function main () {
   try {
+    // Generate the output folders
+    ['./output', './output/results'].forEach(f => fs.mkdirSync(f))
+
     const geographies = await loadGeographies()
     const topics = await loadCSV('./input/topics.csv')
 

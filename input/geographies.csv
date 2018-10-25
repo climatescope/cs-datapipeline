@@ -1,0 +1,107 @@
+id,name,grid,region
+AE,United Arab Emirates,,me
+AF,Afghanistan,,asia
+AL,Albania,,eu
+AM,Armenia,on,asia
+AO,Angola,,africa
+AR,Argentina,on,lac
+AZ,Azerbaijan,on,asia
+BA,Bosnia and Herzegovina,,eu
+BD,Bangladesh,off,asia
+BF,Burkina Faso,,africa
+BI,Burundi,,africa
+BJ,Benin,on,africa
+BO,Bolivia,on,lac
+BR,Brazil,on,lac
+BW,Botswana,off,africa
+BY,Belarus,on,eu
+CD,Congo (Dem. Rep.),off,africa
+CF,Central African Republic,,africa
+CG,Congo,,africa
+CI,Côte d'Ivoire,off,africa
+CL,Chile,on,lac
+CM,Cameroon,off,africa
+CN,China,on,asia
+CO,Colombia,on,lac
+CR,Costa Rica,on,lac
+DO,Dominican Republic,on,lac
+DZ,Algeria,,africa
+EC,Ecuador,on,lac
+EG,Egypt,on,me
+ER,Eritrea,,africa
+ET,Ethiopia,off,africa
+GE,Georgia,on,eu
+GH,Ghana,off,africa
+GN,Guinea,on,africa
+GT,Guatemala,on,lac
+HN,Honduras,on,lac
+HT,Haiti,off,lac
+ID,Indonesia,on,asia
+IN,India,on,asia
+IQ,Iraq,,me
+JM,Jamaica,on,lac
+JO,Jordan,on,me
+KE,Kenya,off,africa
+KG,Kyrgyzstan,on,asia
+KH,Cambodia,,asia
+KW,Kuwait,,me
+KZ,Kazakhstan,on,asia
+LA,Laos,,asia
+LB,Lebanon,on,me
+LK,Sri Lanka,on,asia
+LR,Liberia,off,africa
+LS,Lesotho,,africa
+LY,Libya,,africa
+MA,Morocco,,africa
+MD,Moldova,on,eu
+MG,Madagascar,,africa
+MK,Macedonia,,eu
+ML,Mali,,africa
+MM,Myanmar,off,asia
+MN,Mongolia,on,asia
+MR,Mauritania,,africa
+MW,Malawi,off,africa
+MX,Mexico,on,lac
+MY,Malaysia,,asia
+MZ,Mozambique,off,africa
+NA,Namibia,,africa
+NE,Niger,,africa
+NG,Nigeria,off,africa
+NI,Nicaragua,on,lac
+NP,Nepal,off,asia
+OM,Oman,,me
+PA,Panama,on,lac
+PE,Peru,on,lac
+PG,Papua New Guinea,,asia
+PH,Philippines,,asia
+PK,Pakistan,off,asia
+PS,West Bank and Gaza,,me
+PY,Paraguay,on,lac
+RS,Serbia,,eu
+RU,Russia,on,eu
+RW,Rwanda,off,africa
+SA,Saudi Arabia,,me
+SD,Sudan,,africa
+SG,Singapore,,asia
+SL,Sierra Leone,off,africa
+SN,Senegal,off,africa
+SO,Somalia,,africa
+SS,South Sudan,,africa
+SV,El Salvador,on,lac
+TD,Chad,,africa
+TG,Togo,,africa
+TH,Thailand,,asia
+TJ,Tajikistan,on,asia
+TM,Turkmenistan,on,asia
+TN,Tunisia,,africa
+TR,Turkey,on,eu
+TW,Taiwan,,asia
+TZ,Tanzania,off,africa
+UA,Ukraine,on,eu
+UG,Uganda,off,africa
+UY,Uruguay,on,lac
+UZ,Uzbekistan,on,asia
+VN,Vietnam,on,asia
+ZA,South Africa,on,africa
+ZM,Zambia,off,africa
+ZW,Zimbabwe,off,africa

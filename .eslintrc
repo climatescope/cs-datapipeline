@@ -1,0 +1,12 @@
+{
+  "extends": ["standard"],
+  "env": {
+    "es6": true
+  },
+  "parserOptions": {
+    "ecmaVersion": 2018
+  },
+  "rules": {
+    "prefer-promise-reject-errors": 0
+  }
+}

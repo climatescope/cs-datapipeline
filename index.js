@@ -25,10 +25,16 @@ async function loadGeographies () {
   })
 }
 
-// Load CSV data and add an indication of the year to each object in the array
-async function loadAnnualData (type, yr) {
-  let data = await loadCSV(`./input/${yr}/${type}.csv`)
-  return data.map(d => ({ ...d, year: yr }))
+// Load CSV data with annual scores. Add an indication of the year to each
+// object in the array, and cast rank score to number
+async function loadScoreData (yr) {
+  let data = await loadCSV(`./input/${yr}/scores.csv`)
+  return data.map(d => ({
+    ...d,
+    rank: Number(d.rank),
+    score: Number(d.score),
+    year: yr
+  }))
 }
 
 // Filter result objects and omit redundant props
@@ -64,7 +70,7 @@ function generateResultData (geographies, scores, topics) {
     const topics = await loadCSV('./input/topics.csv')
 
     // TODO Handle multiple years
-    const scores = await loadAnnualData('scores', 2018)
+    const scores = await loadScoreData(2018)
     // const indicators = await loadAnnualData('indicators', 2018)
 
     const results = generateResultData(geographies, scores, topics)

@@ -57,19 +57,17 @@ function cleanResults (data, category) {
 // Returns an array with objects per geography, each with overall and topic
 // scores
 function generateResultData (geographies, scores, topics) {
-  // Poor-person's clone
-  let g = JSON.parse(JSON.stringify(geographies))
-
-  return g.map(geo => {
+  return geographies.map(geo => {
     let geoScores = scores.filter(s => s.geography === geo.name)
 
     if (geoScores.length) {
-      geo['score'] = { data: cleanResults(geoScores, 'overall') }
-      geo['topics'] = topics.map(t => ({ ...t, data: cleanResults(geoScores, t.id) }))
+      let scoreData = { data: cleanResults(geoScores, 'overall') }
+      let topicData = topics.map(t => ({ ...t, data: cleanResults(geoScores, t.id) }))
+      return { ...geo, score: scoreData, topics: topicData }
     } else {
       console.log(`Couldn't find scores for ${geo.name}`)
+      return { ...geo }
     }
-    return geo
   })
 }
 
@@ -100,14 +98,10 @@ async function generateGeographyData (geographies) {
     const resultData = generateResultData(geographies, scores, topics)
     const geographyData = await generateGeographyData(geographies)
 
-    // tStart(`Total run time`)()
-    // console.log(scores[0])
-
+    // await Promise.map()
     await fs.writeJson('./output/geographies.json', geographyData)
     await fs.writeJson('./output/results.json', resultData)
-    resultData.forEach(geo => fs.writeJson(`./output/results/${geo.iso}.json`, geo))
-
-    // tEnd(`Total run time`)()
+    await Promise.all(resultData.map(geo => fs.writeJson(`./output/results/${geo.iso}.json`, geo)))
   } catch (e) {
     console.log(e)
     process.exit(1)

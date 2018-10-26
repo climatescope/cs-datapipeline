@@ -30,12 +30,17 @@ async function loadGeographies () {
 // object in the array, and cast rank score to number
 async function loadScoreData (yr) {
   let data = await loadCSV(`./input/${yr}/scores.csv`)
-  return data.map(d => ({
-    ...d,
-    rank: Number(d.rank),
-    score: Number(d.score),
-    year: yr
-  }))
+  return data.map(d => {
+    // No need to keep score around
+    const { score, ...newD } = d
+
+    return {
+      ...newD,
+      rank: Number(d.rank),
+      value: Number(d.score),
+      year: yr
+    }
+  })
 }
 
 // Filter result objects and omit redundant props

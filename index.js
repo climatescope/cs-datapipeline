@@ -1,5 +1,6 @@
 'use strict'
-const fs = require('fs')
+const bbox = require('@turf/bbox').default
+const fs = require('fs-extra')
 const parse = require('neat-csv')
 
 function loadCSV (path) {
@@ -51,7 +52,10 @@ function cleanResults (data, category) {
 // Returns an array with objects per geography, each with overall and topic
 // scores
 function generateResultData (geographies, scores, topics) {
-  return geographies.map(geo => {
+  // Poor-person's clone
+  let g = JSON.parse(JSON.stringify(geographies))
+
+  return g.map(geo => {
     let geoScores = scores.filter(s => s.geography === geo.name)
 
     if (geoScores.length) {
@@ -61,6 +65,18 @@ function generateResultData (geographies, scores, topics) {
       console.log(`Couldn't find scores for ${geo.name}`)
     }
     return geo
+  })
+}
+
+// Generate overview of geographies. Add a bbox
+async function generateGeographyData (geographies) {
+  const admin = await fs.readJson('./input/lib/ne-110m_bbox.geojson')
+
+  return geographies.map(geo => {
+    const ft = admin.features.find(c => c.properties.ISO_A2.toLowerCase() === geo.iso)
+    const b = ft ? bbox(ft) : null
+
+    return { ...geo, bbox: b }
   })
 }
 
@@ -76,13 +92,15 @@ function generateResultData (geographies, scores, topics) {
     const scores = await loadScoreData(2018)
     // const indicators = await loadAnnualData('indicators', 2018)
 
-    const results = generateResultData(geographies, scores, topics)
+    const resultData = generateResultData(geographies, scores, topics)
+    const geographyData = await generateGeographyData(geographies)
 
     // tStart(`Total run time`)()
     // console.log(scores[0])
 
-    fs.writeFileSync('./output/results.json', JSON.stringify(results))
-    results.forEach(geo => fs.writeFileSync(`./output/results/${geo.iso}.json`, JSON.stringify(geo)))
+    await fs.writeJson('./output/geographies.json', geographyData)
+    await fs.writeJson('./output/results.json', resultData)
+    resultData.forEach(geo => fs.writeJson(`./output/results/${geo.iso}.json`, geo))
 
     // tEnd(`Total run time`)()
   } catch (e) {

@@ -82,8 +82,8 @@ async function generateGeographyData (geographies) {
 
 (async function main () {
   try {
-    // Generate the output folders
-    ['./output', './output/results'].forEach(f => fs.mkdirSync(f))
+    // Empty the output folder. Create them if they don't exist.
+    await ['./output', './output/results'].forEach(f => fs.emptyDirSync(f))
 
     const geographies = await loadGeographies()
     const topics = await loadCSV('./input/topics.csv')

@@ -1,5 +1,6 @@
 'use strict'
-const fs = require('fs')
+const bbox = require('@turf/bbox').default
+const fs = require('fs-extra')
 const parse = require('neat-csv')
 
 function loadCSV (path) {
@@ -29,12 +30,17 @@ async function loadGeographies () {
 // object in the array, and cast rank score to number
 async function loadScoreData (yr) {
   let data = await loadCSV(`./input/${yr}/scores.csv`)
-  return data.map(d => ({
-    ...d,
-    rank: Number(d.rank),
-    score: Number(d.score),
-    year: yr
-  }))
+  return data.map(d => {
+    // No need to keep score around
+    const { score, ...newD } = d
+
+    return {
+      ...newD,
+      rank: Number(d.rank),
+      value: Number(d.score),
+      year: yr
+    }
+  })
 }
 
 // Filter result objects and omit redundant props
@@ -55,19 +61,32 @@ function generateResultData (geographies, scores, topics) {
     let geoScores = scores.filter(s => s.geography === geo.name)
 
     if (geoScores.length) {
-      geo['score'] = { data: cleanResults(geoScores, 'overall') }
-      geo['topics'] = topics.map(t => ({ ...t, data: cleanResults(geoScores, t.id) }))
+      let scoreData = { data: cleanResults(geoScores, 'overall') }
+      let topicData = topics.map(t => ({ ...t, data: cleanResults(geoScores, t.id) }))
+      return { ...geo, score: scoreData, topics: topicData }
     } else {
       console.log(`Couldn't find scores for ${geo.name}`)
+      return { ...geo }
     }
-    return geo
+  })
+}
+
+// Generate overview of geographies. Add a bbox
+async function generateGeographyData (geographies) {
+  const admin = await fs.readJson('./input/lib/ne-110m_bbox.geojson')
+
+  return geographies.map(geo => {
+    const ft = admin.features.find(c => c.properties.ISO_A2.toLowerCase() === geo.iso)
+    const b = ft ? bbox(ft) : null
+
+    return { ...geo, bbox: b }
   })
 }
 
 (async function main () {
   try {
-    // Generate the output folders
-    ['./output', './output/results'].forEach(f => fs.mkdirSync(f))
+    // Empty the output folder. Create them if they don't exist.
+    await ['./output', './output/results'].forEach(f => fs.emptyDirSync(f))
 
     const geographies = await loadGeographies()
     const topics = await loadCSV('./input/topics.csv')
@@ -76,15 +95,13 @@ function generateResultData (geographies, scores, topics) {
     const scores = await loadScoreData(2018)
     // const indicators = await loadAnnualData('indicators', 2018)
 
-    const results = generateResultData(geographies, scores, topics)
+    const resultData = generateResultData(geographies, scores, topics)
+    const geographyData = await generateGeographyData(geographies)
 
-    // tStart(`Total run time`)()
-    // console.log(scores[0])
-
-    fs.writeFileSync('./output/results.json', JSON.stringify(results))
-    results.forEach(geo => fs.writeFileSync(`./output/results/${geo.iso}.json`, JSON.stringify(geo)))
-
-    // tEnd(`Total run time`)()
+    // await Promise.map()
+    await fs.writeJson('./output/geographies.json', geographyData)
+    await fs.writeJson('./output/results.json', resultData)
+    await Promise.all(resultData.map(geo => fs.writeJson(`./output/results/${geo.iso}.json`, geo)))
   } catch (e) {
     console.log(e)
     process.exit(1)

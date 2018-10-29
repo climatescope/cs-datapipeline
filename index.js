@@ -47,7 +47,7 @@ async function loadScoreData (yr) {
 // Returns array of years, in ascending order
 function getYears (o) {
   return Object.keys(o).reduce((a, b) => {
-    if (Number(b) > 2000 && Number(b) < 2100) a.push(b)
+    if (Number(b) > 2000 && Number(b) < 2100) return a.concat(b)
     return a
   }, [])
     .sort()

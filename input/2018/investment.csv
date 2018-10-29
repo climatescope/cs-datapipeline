@@ -1,4 +1,4 @@
-Year,Month,Quarter,Period,Country,Sector,Deal Type, Value 
+year,month,quarter,period,geography,sector,Deal Type,value
 2017,11,Q4,2017Q4,Afghanistan,Solar,Asset finance investments, 35.55 
 2014,6,Q2,2014Q2,Afghanistan,Small Hydro,Asset finance investments, 331.47 
 2013,10,Q4,2013Q4,Afghanistan,Solar,Asset finance investments, 13.47 

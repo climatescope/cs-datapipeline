@@ -1,9 +1,9 @@
 {
-  "name": "climatescope-datapipeline",
+  "name": "cs-datapipeline",
   "version": "1.0.0",
   "description": "Pipeline to process data for use on global-climatescope.org",
   "main": "index.js",
-  "repository": "git@github.com:developmentseed/climatescope-datapipeline.git",
+  "repository": "git@github.com:climatescope/cs-datapipeline.git",
   "author": "Development Seed",
   "license": "MIT",
   "engines": {
@@ -11,6 +11,7 @@
   },
   "scripts": {
     "lint": "eslint ./ --ext .js",
+    "build": "node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {

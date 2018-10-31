@@ -49,10 +49,10 @@ jobs:
           name: Push the data to climatescope/climatescope.org
           command: |
             if [ "${CIRCLE_BRANCH}" == "${PRODUCTION_BRANCH}" ]; then
-              git config user.name "Devseed-CI"
-              git config user.email "dev@developmentseed.org"
               git clone -b "${API_BRANCH}" --single-branch git@github.com:climatescope/climatescope.org.git
               cd ./climatescope.org/app
+              git config user.name "Devseed-CI"
+              git config user.email "dev@developmentseed.org"
               git rm -r ./api
               mkdir ./api
               cp -r ../../output/* ./api

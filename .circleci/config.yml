@@ -7,7 +7,10 @@ jobs:
     working_directory: ~/repo
 
     environment:
+      # Branch on data pipeline that will trigger the build
       - PRODUCTION_BRANCH: master
+      # Branch on climatescope/climatescope.org to push final data to
+      - API_BRANCH: v2018
 
     steps:
       - checkout
@@ -26,5 +29,39 @@ jobs:
             - node_modules
           key: v1-dependencies-{{ checksum "package.json" }}
 
+      - add_ssh_keys:
+          fingerprints:
+            - "16:23:2b:6e:1a:74:d6:ac:46:29:4c:72:5b:64:f7:1a"
+
       - run: yarn lint
       # - run: yarn test
+
+      - run:
+          name: Process the data
+          command: |
+            if [ "${CIRCLE_BRANCH}" == "${PRODUCTION_BRANCH}" ]; then
+              yarn build
+            else
+              echo "Skip processing the data"
+            fi
+
+      - run:
+          name: Push the data to climatescope/climatescope.org
+          command: |
+            if [ "${CIRCLE_BRANCH}" == "${PRODUCTION_BRANCH}" ]; then
+              git config user.name "Devseed-CI"
+              git config user.email "dev@developmentseed.org"
+              git clone -b "${API_BRANCH}" --single-branch git@github.com:climatescope/climatescope.org.git
+              cd ./climatescope.org/app
+              git rm -r ./api
+              mkdir ./api
+              cp -r ../../output/* ./api
+              git add ./api
+              git commit -m "Update Climatescope data
+              Automatically generated based on commits in the repository climatescope/cs-datapipeline"
+              git push
+              cd ../../
+              rm -rf ./climatescope.org
+            else
+              echo "Not the branch you're looking for, skipping deploy"
+            fi

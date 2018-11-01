@@ -152,6 +152,7 @@ async function generateGeographyData (geographies) {
 // Generate data for the chart Installed Capacity for a single country
 function generateInstalledCapacity (geo, subIndicators) {
   return {
+    'id': 'installedCapacity',
     'meta': {
       'label-y': 'MW',
       'label-x': 'year',
@@ -169,6 +170,7 @@ function generateInstalledCapacity (geo, subIndicators) {
 // Generate data for the chart Power Generation for a single country
 function generatePowerGeneration (geo, subIndicators) {
   return {
+    'id': 'powerGeneration',
     'meta': {
       'label-y': 'GWh',
       'label-x': 'year',
@@ -186,6 +188,7 @@ function generatePowerGeneration (geo, subIndicators) {
 // Generate data for the Clean Energy Investment Chart for a single country
 function generateEnergyInvestment (geo, investments) {
   return {
+    'id': 'cleanEnergyInvestment',
     'meta': {
       'label-y': 'usd/m',
       'label-x': 'year',

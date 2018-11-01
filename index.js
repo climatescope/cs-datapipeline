@@ -7,6 +7,12 @@ function loadCSV (path) {
   return parse(fs.readFileSync(path))
 }
 
+// // Load topics
+async function loadTopics () {
+  const topics = await loadCSV('./input/topics.csv')
+  return topics.map(t => ({ ...t, weight: Number(t.weight) }))
+}
+
 // Load geographies and add region meta-data to each of them
 async function loadGeographies () {
   const geographies = await loadCSV('./input/geographies.csv')
@@ -163,8 +169,9 @@ function generatePowerGeneration (geo, subIndicators) {
     // Empty the output folder. Create them if they don't exist.
     await ['./output', './output/results'].forEach(f => fs.emptyDirSync(f))
 
+    const topics = await loadTopics()
+
     const geographies = await loadGeographies()
-    const topics = await loadCSV('./input/topics.csv')
 
     // TODO Handle multiple years
     const scores = await loadScoreData(2018)

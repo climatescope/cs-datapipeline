@@ -18,7 +18,7 @@ Loose notes to be organized:
 `/[year]/subindicators.csv` - Data with subindicator data. This expects the following columns: 
 
 ``` csv
-id,topic,category,indicator,subindicator,units,geography,2010,2011,2012,...
+id,topic,category,indicator,subindicator,units,geography,2010,2011,2012,...,notes
 3.05,Experience,System,Biomass & Waste,MW,Burkina Faso,9,12,13,...
 ```
 

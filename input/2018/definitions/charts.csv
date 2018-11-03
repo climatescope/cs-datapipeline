@@ -1,0 +1,3 @@
+id,indicator_id,name,type,description,labelX,labelY
+installedCapacity,3.05,Installed Capacity,timeSeries,,year,MW
+powerGeneration,3.06,Power Generation,timeSeries,,year,GWh

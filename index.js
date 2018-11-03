@@ -7,7 +7,7 @@ function loadCSV (path) {
   return parse(fs.readFileSync(path))
 }
 
-// // Load topics
+// Load topics
 async function loadTopics () {
   const topics = await loadCSV('./input/topics.csv')
   return topics.map(t => ({ ...t, weight: Number(t.weight) }))
@@ -70,6 +70,7 @@ async function loadSubIndicatorData (yr) {
     subindicator: d.subindicator,
     geography: d.geography,
     units: d.units,
+    note: d.note,
     values: years.map(y => ({
       value: Number(d[y]),
       year: Number(y)

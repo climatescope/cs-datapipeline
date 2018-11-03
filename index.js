@@ -134,7 +134,7 @@ function generateResultData (geographies, scores, topics) {
       let topicData = topics.map(t => ({ ...t, data: cleanResults(geoScores, t.id) }))
       return { ...geo, score: scoreData, topics: topicData }
     } else {
-      console.log(`Couldn't find scores for ${geo.name}`)
+      noDataWarning('Overall Scores', geo.name)
       return { ...geo }
     }
   })
@@ -158,6 +158,15 @@ function generateDetailedResultData (resultData, indicators, charts) {
 
 // Generate data for a time-series chart for a single country
 function generateTimeSeries (geo, data, chart) {
+  let chartData = data
+    .filter(i => i.id === chart.indicatorId && i.geography === geo.name)
+    .map(i => ({
+      name: i.subindicator,
+      values: i.values
+    }))
+
+  if (!chartData.length) noDataWarning(chart.name, geo.name)
+
   return {
     'id': chart.id,
     'meta': {
@@ -165,12 +174,7 @@ function generateTimeSeries (geo, data, chart) {
       'label-y': chart.labelY,
       'title': chart.name
     },
-    'data': data
-      .filter(i => i.id === chart.indicatorId && i.geography === geo.name)
-      .map(i => ({
-        name: i.subindicator,
-        values: i.values
-      }))
+    'data': chartData
   }
 }
 
@@ -184,6 +188,10 @@ async function generateGeographyData (geographies) {
 
     return { ...geo, bbox: b }
   })
+}
+
+function noDataWarning (type, geo) {
+  console.log(`${type} - No data for ${geo}`)
 }
 
 (async function main () {

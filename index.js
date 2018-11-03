@@ -46,9 +46,9 @@ async function loadScoreData (yr) {
 // Parse an object and extract years from its keys
 // Returns array of years, in ascending order
 function getYears (o) {
-  return Object.keys(o).reduce((a, b) => {
-    if (Number(b) > 2000 && Number(b) < 2100) return a.concat(b)
-    return a
+  return Object.keys(o).reduce((acc, b) => {
+    if (Number(b) > 2000 && Number(b) < 2100) return acc.concat(b)
+    return acc
   }, [])
     .sort()
 }
@@ -77,12 +77,12 @@ async function loadInvestmentData (yr) {
   let data = await loadCSV(`./input/${yr}/investment.csv`)
   return data
     .filter(d => Number(d.year) > 2000 && Number(d.year) < 2100)
-    .reduce((a, b) => {
+    .reduce((acc, b) => {
       // Check if accumulator already has an object for year, sector, geography
-      let match = a.find(o => o.geography === b.geography && o.sector === b.sector && o.year === Number(b.year))
+      let match = acc.find(o => o.geography === b.geography && o.sector === b.sector && o.year === Number(b.year))
 
       if (!match) {
-        return a.concat({
+        return acc.concat({
           year: Number(b.year),
           geography: b.geography,
           sector: b.sector,
@@ -90,7 +90,7 @@ async function loadInvestmentData (yr) {
         })
       } else {
         match.value = Math.round((match.value + Number(b.value)) * 100) / 100
-        return a
+        return acc
       }
     }, [])
 }
@@ -196,23 +196,23 @@ function generateEnergyInvestment (geo, investments) {
     },
     'data': investments
       .filter(i => i.geography === geo.name)
-      .reduce((a, b) => {
+      .reduce((acc, b) => {
         let v = {
           value: b.value,
           year: b.year
         }
 
-        let match = a.find(o => o.name === b.sector)
+        let match = acc.find(o => o.name === b.sector)
 
         if (!match) {
-          a.push({
+          return acc.concat({
             name: b.sector,
             values: [v]
           })
         } else {
-          match['values'].push(v)
+          match['values'] = match['values'].concat(v)
+          return acc
         }
-        return a
       }, [])
   }
 }

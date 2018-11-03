@@ -1,4 +1,6 @@
 id,indicatorId,name,type,description,labelX,labelY
+utilityPrivatisation,Utility privatisation,Utility privatisation,singleAnswer,Sector of the power market open to private participation.,,
+concentrationGeneration,Concentration of generation market,Concentration of generation market,singleAnswer,Is the generation market concentrated?,,
 installedCapacity,3.05,Installed Capacity,timeSeries,,year,MW
 powerGeneration,3.06,Power Generation,timeSeries,,year,GWh
 cleanEnergyInvestment,investment,Clean Energy Investment,timeSeries,,year,usd/m

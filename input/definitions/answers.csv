@@ -1,0 +1,51 @@
+indicator,id,label
+Utility privatisation,0,No
+Utility privatisation,0.5,Somewhat
+Utility privatisation,1,Yes
+Concentration of generation market,0,Yes
+Concentration of generation market,1,Somewhat
+Concentration of generation market,2,No
+Power plant fleet modernisation program,0,No
+Power plant fleet modernisation program,0.5,"Need of investment, no plan"
+Power plant fleet modernisation program,1,Plan announced
+Gap to target,0,None
+Gap to target,0.25,Small
+Gap to target,0.5,Medium
+Gap to target,1,Large
+Upcoming auctions,0,0%
+Upcoming auctions,0.25,0 – 1%
+Upcoming auctions,0.5,1 – 5%
+Upcoming auctions,1.5,5 – 10%
+Upcoming auctions,1.75,10 – 15%
+Upcoming auctions,2,> 15%
+Wholesale price distortions,1,No
+Wholesale price distortions,0.5,Somewhat
+Wholesale price distortions,0,Yes
+Wholesale power market,2,Yes
+Wholesale power market,1.5,Somewhat
+Wholesale power market,0,No
+Currency variation,?,?
+Offtaker risk,2,5
+Offtaker risk,1.5,4
+Offtaker risk,1,3
+Offtaker risk,0.5,2
+Offtaker risk,0.25,1
+Offtaker risk,0,0
+Standardised PPAs,2,Yes
+Standardised PPAs,1,Somewhat
+Standardised PPAs,0,No
+PPAs of sufficient duration,2,Yes
+PPAs of sufficient duration,1,Somewhat
+PPAs of sufficient duration,0,No
+Purchase obligation,1,Yes
+Purchase obligation,0.5,Somewhat
+Purchase obligation,0,No
+Mini-grids: licensing,1,Yes
+Mini-grids: licensing,0.5,Somewhat
+Mini-grids: licensing,0,No
+Kerosene and diesel subsidies,1,No
+Kerosene and diesel subsidies,0.5,Somewhat
+Kerosene and diesel subsidies,0,Yes
+Curtailment risk,2,Yes
+Curtailment risk,1,Somewhat
+Curtailment risk,0,No

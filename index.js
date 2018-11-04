@@ -211,6 +211,21 @@ async function generateGeographyData (geographies) {
   })
 }
 
+// Generate an overview of the charts
+function generateChartMeta (charts, answers) {
+  return charts.map(c => {
+    if (c.type === 'singleAnswer') {
+      c['options'] = answers
+        .filter(a => a.indicator === c.indicatorId)
+        .map(a => ({
+          'id': a.id,
+          'label': a.label
+        }))
+    }
+    return c
+  })
+}
+
 function noDataWarning (type, geo) {
   console.log(`${type} - No data for ${geo}`)
 }
@@ -222,6 +237,7 @@ function noDataWarning (type, geo) {
 
     const topics = await loadTopics()
     const charts = await loadCSV('./input/definitions/charts.csv')
+    const answers = await loadCSV('./input/definitions/answers.csv')
 
     const geographies = await loadGeographies()
 
@@ -237,10 +253,12 @@ function noDataWarning (type, geo) {
     // Contains scores, and the auxiliary data to build the charts
     const detailedResultData = generateDetailedResultData(resultData, indicators, charts)
 
+    const chartMeta = generateChartMeta(charts, answers)
     const geographyData = await generateGeographyData(geographies)
 
     // await Promise.map()
     await fs.writeJson('./output/geographies.json', geographyData)
+    await fs.writeJson('./output/chartMeta.json', chartMeta)
     await fs.writeJson('./output/results.json', resultData)
     await Promise.all(detailedResultData.map(geo => fs.writeJson(`./output/results/${geo.iso}.json`, geo)))
   } catch (e) {

@@ -29,4 +29,19 @@ describe('Input Data', function () {
       return assert.isTrue(data.map(c => c.type).every(r => validChartTypes.includes(r)), `The chart definition contains invalid chart types. Should be one of ${validChartTypes}`)
     })
   })
+
+  describe('Answers', async () => {
+    const fp = './input/definitions/answers.csv'
+
+    it('the definition file exists', async () =>
+      assert.isTrue(await fs.pathExists(fp), `${fp} does not exist`)
+    )
+
+    it('has all the required headers', async () => {
+      const requiredHeaders = [ 'id', 'indicator', 'label' ]
+      const data = await loadCSV(fp)
+
+      return assert.containsAllKeys(data[0], requiredHeaders, `The answer definition doesn't require one of the required headers`)
+    })
+  })
 })

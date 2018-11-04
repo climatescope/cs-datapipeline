@@ -73,6 +73,7 @@ async function loadSubIndicatorData (yr) {
 
   return data.map(d => ({
     id: d.id,
+    category: d.category,
     indicator: d.indicator,
     subindicator: d.subindicator,
     geography: d.geography,
@@ -153,6 +154,7 @@ function generateResultData (geographies, scores, topics) {
 function generateDetailedResultData (resultData, indicators, charts) {
   return resultData.map(geo => ({
     ...geo,
+    profile: generateProfileData(geo, indicators),
     charts: charts.map(c => config.chartFunction[c.type](geo, indicators, c))
   }))
 }
@@ -179,6 +181,17 @@ function generateTimeSeries (geo, data, chart) {
   }
 }
 
+// Get latest value from an array of objects
+// Expects: [{ 'year': 2015, 'value': 25 }, { 'year': 2019, 'value': 36 }]
+// Returns: { 'year': 2019, 'value': 36 }
+function getLatestValue (values) {
+  return values
+    .filter(i => i.value !== null) // ignore null values
+    .reduce((a, b) => {
+      if (b.year > a.year) return { year: b.year, value: b.value }
+    }, { 'year': null, 'value': null })
+}
+
 // Generate data for a single answer chart
 function generateSingleAnswer (geo, data, chart) {
   let indicatorData = data
@@ -191,12 +204,31 @@ function generateSingleAnswer (geo, data, chart) {
     return answer
   }
 
-  // May contain values for multiple years. Return the latest value
-  return indicatorData.values
-    .filter(i => i.value !== null)
-    .reduce((a, b) => {
-      if (b.year > a.year) return { ...a, year: b.year, value: b.value }
-    }, { ...answer, note: indicatorData.note })
+  // May contain values for multiple years. Get the latest value
+  let latestValue = getLatestValue(indicatorData.values)
+
+  return {
+    ...answer,
+    'value': latestValue.value,
+    'year': latestValue.year,
+    'note': indicatorData.note === '' ? null : indicatorData.note
+  }
+}
+
+// Generate profile data for a country
+function generateProfileData (geo, indicators) {
+  let profileData = indicators.filter(i => i.category === 'Country Data' && i.geography === geo.name)
+
+  return profileData.map(ind => {
+    // May contain values for multiple years. Get the latest value
+    let latestValue = getLatestValue(ind.values)
+    return {
+      ...latestValue,
+      'id': ind.indicator,
+      'name': ind.subindicator,
+      'unit': ind.units
+    }
+  })
 }
 
 // Generate overview of geographies. Add a bbox
@@ -256,7 +288,6 @@ function noDataWarning (type, geo) {
     const chartMeta = generateChartMeta(charts, answers)
     const geographyData = await generateGeographyData(geographies)
 
-    // await Promise.map()
     await fs.writeJson('./output/geographies.json', geographyData)
     await fs.writeJson('./output/chartMeta.json', chartMeta)
     await fs.writeJson('./output/results.json', resultData)

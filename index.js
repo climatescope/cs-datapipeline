@@ -221,7 +221,7 @@ function noDataWarning (type, geo) {
     await ['./output', './output/results'].forEach(f => fs.emptyDirSync(f))
 
     const topics = await loadTopics()
-    const charts = await loadCSV('./input/2018/definitions/charts.csv')
+    const charts = await loadCSV('./input/definitions/charts.csv')
 
     const geographies = await loadGeographies()
 

@@ -43,8 +43,8 @@ Additional columns in the dataset are ignored.
 - `id` - a unique ID for the chart. This can only contain letters. Eg. `concentrationGeneration`
 - `type` - type of chart. One of: `singleAnswer`, `timeSeries `
 - `indicatorId` - the ID of the corresponding indicator in the CSV file with subindicator and investment data. This should match the ID completely, otherwise it won't be able to fetch the data. Eg. `3.05` or `Curtailment risk`
-- `labelX` - optional, use when the chart type is `timeSeries`. Eg .`year`
-- `labelY` - optional, use when the chart type is `timeSeries`. Eg. `Gwh`
+- `labelX` - mandatory for chart type `timeSeries`. Eg .`year`
+- `labelY` - mandatory for chart type `timeSeries`. Eg. `Gwh`
 - `name` - the title of the chart, used in the interface. Eg. `Concentration of generation market`
 - `description` - the description of the chart, used in the interface. Eg. `Is the generation market concentrated?`
 
@@ -66,6 +66,10 @@ Utility privatisation,0.5,Somewhat
 ```
 
 ### Charts
+#### absolute
+`absolute` charts refer to values that are not encoded, and thus don't rely on the answer definition. An example is Foreign Investment, which is stored in `subindicators.csv` as `Foreign Investment: 0.92`
+These chart types have a unit.
+
 #### answer
 `answer` charts are indicators with a single answer that is encoded in the subindicator file. An example is Utility Privatisation, which can be answered with yes / no / somewhat, but is stored in `subindicators.csv` as `Utility Privatisation: 1`.
 

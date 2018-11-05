@@ -5,8 +5,9 @@ const parse = require('neat-csv')
 
 const config = {
   'chartFunction': {
-    'timeSeries': generateTimeSeries,
-    'answer': generateAnswer
+    'absolute': generateSingleValueChart,
+    'answer': generateSingleValueChart,
+    'timeSeries': generateTimeSeriesChart
   }
 }
 
@@ -163,7 +164,7 @@ function generateDetailedResultData (resultData, indicators, charts) {
 }
 
 // Generate data for a time-series chart for a single country
-function generateTimeSeries (geo, data, chart) {
+function generateTimeSeriesChart (geo, data, chart) {
   let chartData = data
     .filter(i => i.id === chart.indicatorId && i.geography === geo.name)
     .map(i => ({
@@ -196,7 +197,7 @@ function getLatestValue (values) {
 }
 
 // Generate data for a single answer chart
-function generateAnswer (geo, data, chart) {
+function generateSingleValueChart (geo, data, chart) {
   let indicatorData = data
     .find(i => i.subindicator === chart.indicatorId && i.geography === geo.name)
 

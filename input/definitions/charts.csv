@@ -13,6 +13,8 @@ purchaseObligation,Purchase obligation,Purchase obligation,answer,,,
 minigridLicensing,Mini-grids: licensing,Mini-grids: licensing,answer,,,
 keroseneDieselSubsidies,Kerosene and diesel subsidies,Kerosene and diesel subsidies,answer,,,
 curtailmentRisk,Curtailment risk,Curtailment risk,answer,,,
+foreignInvestment,Foreign investment,Foreign investment,absolute,Disclosed share of foreign investment in the clean energy sector,,
+electricityPrice,Average residential electricity prices,Electricity Price Data,absolute,Average residential electricity in the country,,
 installedCapacity,3.05,Installed Capacity,timeSeries,,year,MW
 powerGeneration,3.06,Power Generation,timeSeries,,year,GWh
 cleanEnergyInvestment,investment,Clean Energy Investment,timeSeries,,year,usd/m

@@ -254,7 +254,8 @@ function generateChartMeta (charts, answers) {
           'label': a.label
         }))
     }
-    return c
+    const { indicatorId, ...d } = c
+    return d
   })
 }
 
@@ -289,7 +290,7 @@ function noDataWarning (type, geo) {
     const geographyData = await generateGeographyData(geographies)
 
     await fs.writeJson('./output/geographies.json', geographyData)
-    await fs.writeJson('./output/chartMeta.json', chartMeta)
+    await fs.writeJson('./output/chart-meta.json', chartMeta)
     await fs.writeJson('./output/results.json', resultData)
     await Promise.all(detailedResultData.map(geo => fs.writeJson(`./output/results/${geo.iso}.json`, geo)))
   } catch (e) {

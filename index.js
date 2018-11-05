@@ -112,8 +112,11 @@ async function loadInvestmentData (yr) {
         // sector, geography. Aggregate these.
         let yrMatch = match.values.find(v => v.year === Number(b.year))
 
-        if (yrMatch) yrMatch.value += Number(b.value)
-        else match.values = match.values.concat(v)
+        if (yrMatch) {
+          yrMatch.value += Number(b.value)
+        } else {
+          match.values = match.values.concat(v)
+        }
 
         return acc
       }

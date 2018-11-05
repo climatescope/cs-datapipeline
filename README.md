@@ -37,8 +37,8 @@ If the dataset contains multiple entries for the same year, sector and geography
 
 Additional columns in the dataset are ignored.
 
-### Charts
-`/[year]/definitions/charts.csv` - An overview of the charts that will be generated for this edition
+### Chart definition
+`/input/definitions/charts.csv` - An overview of the charts that will be generated for this edition
 
 - `id` - a unique ID for the chart. This can only contain letters. Eg. `concentrationGeneration`
 - `type` - type of chart. One of: `singleAnswer`, `timeSeries `
@@ -48,8 +48,30 @@ Additional columns in the dataset are ignored.
 - `name` - the title of the chart, used in the interface. Eg. `Concentration of generation market`
 - `description` - the description of the chart, used in the interface. Eg. `Is the generation market concentrated?`
 
-#### singleAnswer
-Single answer charts are indicators with a single answer (yes / no, high / low). When there are multiple data points for a country, the script will store the value for the latest year.
+### Answer definition
+`/input/definitions/answers.csv` - An overview of the answers of the possible subindicators. This file will be used to translate the answer ID, into a human readable label on the frontend.
+
+Requires the following columns:
+
+- `indicator` - the ID of the indicator. Should be the same as the ID in the file with subindicator data.
+- `id` - the ID of the answer. Should be the same as the ID in the file with subindicators.
+- `label` - the label of the answer, to be presented to the user in the interface.
+
+Example:
+
+```
+indicator,id,label
+Utility privatisation,0,No
+Utility privatisation,0.5,Somewhat
+```
+
+### Charts
+#### answer
+`answer` charts are indicators with a single answer that is encoded in the subindicator file. An example is Utility Privatisation, which can be answered with yes / no / somewhat, but is stored in `subindicators.csv` as `Utility Privatisation: 1`.
+
+When there are multiple data points for a country, the script will store the value for the latest year.
 
 #### timeSeries
-These are used to generate charts that show the evolution over time. The script will parse data for all the years between 2000 and 2100.
+These are used to generate charts that show the evolution over time, for example Installed Capacity.
+
+The script will parse data for all the years between 2000 and 2100, and has support for multiple trendlines.

@@ -23,7 +23,7 @@ describe('Input Data', function () {
     })
 
     it('valid chart types', async () => {
-      const validChartTypes = ['singleAnswer', 'timeSeries']
+      const validChartTypes = ['answer', 'timeSeries']
       const data = await loadCSV(fp)
 
       return assert.isTrue(data.map(c => c.type).every(r => validChartTypes.includes(r)), `The chart definition contains invalid chart types. Should be one of ${validChartTypes}`)

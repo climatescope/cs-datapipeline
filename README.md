@@ -79,3 +79,18 @@ When there are multiple data points for a country, the script will store the val
 These are used to generate charts that show the evolution over time, for example Installed Capacity.
 
 The script will parse data for all the years between 2000 and 2100, and has support for multiple trendlines.
+
+#### Group
+The `group` chart type allows other indicators to be grouped together. The indicators share a title and description, and can be used to generate something along these lines:
+
+![](https://user-images.githubusercontent.com/751330/48009523-e6dc5000-e0e9-11e8-8122-1aaf55defa57.png)
+
+The above chart can be configured with the following structure:
+
+| id | indicatorId | name | type | description |
+| --- | --- | --- | --- | --- |
+| averageVAT | largeVAT\|smallVAT | Average VAT paid by renewables | group | What is the average level of VAT for components needed to build a wind project?|
+| largeVAT | VAT - Large scale renewables | Large scale renewables | absolute | |
+| smallVAT | VAT - Small scale renewables | Small scale renewables | absolute | |
+
+The field `indicatorId` has to reference other charts in the CSV, separated by a `|`.

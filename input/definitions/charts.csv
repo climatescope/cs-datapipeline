@@ -15,6 +15,12 @@ keroseneDieselSubsidies,Kerosene and diesel subsidies,Kerosene and diesel subsid
 curtailmentRisk,Curtailment risk,Curtailment risk,answer,Are renewables projects at risk of seeing their production curtailed?,,
 foreignInvestment,Foreign investment,Foreign investment,absolute,Disclosed share of foreign investment in the clean energy sector.,,
 electricityPrice,Average residential electricity prices,Electricity Price Data,absolute,Average residential electricity in the country,,
+averageVAT,largeVAT|smallVAT,Average VAT paid by renewables,group,What is the average level of VAT for components needed to build a wind project?,,
+largeVAT,VAT - Large scale renewables,Large scale renewables,absolute,,,
+smallVAT,VAT - Small scale renewables,Small scale renewables,absolute,,,
+importDuties,largeDuties|smallDuties,Import Duties,group,What is the average level of import duties for components needed for a solar project (panels and inverts)?,,
+largeDuties,Import duties - Large scale renewables,Large scale renewables,absolute,,,
+smallDuties,Import duties - Small scale renewables,Small scale renewables,absolute,,,
 installedCapacity,3.05,Installed Capacity,timeSeries,,year,MW
 powerGeneration,3.06,Power Generation,timeSeries,,year,GWh
 cleanEnergyInvestment,investment,Clean Energy Investment,timeSeries,What's the volume of clean energy investment in the country over the last five years?,year,usd/m

@@ -90,6 +90,9 @@ function generateChartMeta (charts, answers) {
           'label': a.label
         }))
     }
+    if (c.type === 'group') {
+      c['children'] = c.indicatorId.split('|')
+    }
     const { indicatorId, ...d } = c
     return d
   })

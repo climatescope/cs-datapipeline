@@ -94,3 +94,4 @@ The above chart can be configured with the following structure:
 | smallVAT | VAT - Small scale renewables | Small scale renewables | absolute | |
 
 The field `indicatorId` has to reference other charts in the CSV, separated by a `|`.
+The field `type` must be the same for all referenced indicators within the same group. (eg. `absolute`)

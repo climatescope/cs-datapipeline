@@ -1,7 +1,9 @@
 indicator,id,label
-Utility privatisation,0,No
-Utility privatisation,0.5,Somewhat
-Utility privatisation,1,Yes
+Utility privatisation,All segments,1
+Utility privatisation,Generation and distribution,0.8
+Utility privatisation,Generation and transmission,0.7
+Utility privatisation,Generation,0.5
+Utility privatisation,No,0
 Concentration of generation market,0,Yes
 Concentration of generation market,1,Somewhat
 Concentration of generation market,2,No
@@ -21,10 +23,13 @@ Upcoming auctions,2,> 15%
 Wholesale price distortions,1,No
 Wholesale price distortions,0.5,Somewhat
 Wholesale price distortions,0,Yes
-Wholesale power market,2,Yes
-Wholesale power market,1.5,Somewhat
+Wholesale power market,1,Yes
+Wholesale power market,0.5,Somewhat
 Wholesale power market,0,No
-Currency variation,?,?
+Currency variation,1,Very low
+Currency variation,0.75,Low
+Currency variation,0.5,High
+Currency variation,0,Very high
 Offtaker risk,2,5
 Offtaker risk,1.5,4
 Offtaker risk,1,3

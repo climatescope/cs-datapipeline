@@ -5,6 +5,7 @@ powerPlantFleet,Power plant fleet modernisation program,Power plant fleet modern
 gapToTarget,Gap to target,Gap to target,answer,How large is the gap between the current level of renewables in the power sector and the country's closest target?,,
 upcomingAuctions,Upcoming auctions,Upcoming auctions,answer,What is the volume of auctions announced in the country over the period 2018-2022 as a share of installed capacity?,,
 wholesaleDistortions,Wholesale price distortions,Wholesale price distortions,answer,Are fossil fuels generators benefiting from subsidies that affect the price at which they can sell electricity onto the wholesale market?,,
+sectorWholesale,Wholesale power market,Power sector wholesale,answer,,,
 currencyVariation,Currency variation,Currency variation,answer,How high is the ten year variation of the local currency against the US dollar?,,
 offtakerRisk,Offtaker risk,Offtaker risk,answer,How high is the offtake risk for independent generators?,,
 standardisedPpa,Standardised PPAs,Standardised PPAs,answer,Are power purchase agreements standardised in the market?,,

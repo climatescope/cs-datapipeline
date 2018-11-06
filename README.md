@@ -38,7 +38,7 @@ If the dataset contains multiple entries for the same year, sector and geography
 Additional columns in the dataset are ignored.
 
 ### Chart definition
-`/input/definitions/charts.csv` - An overview of the charts that will be generated for this edition
+`/input/charts.csv` - An overview of the charts that will be generated for this edition
 
 - `id` - a unique ID for the chart. This can only contain letters. Eg. `concentrationGeneration`
 - `type` - type of chart. One of: `singleAnswer`, `timeSeries `
@@ -49,7 +49,7 @@ Additional columns in the dataset are ignored.
 - `description` - the description of the chart, used in the interface. Eg. `Is the generation market concentrated?`
 
 ### Answer definition
-`/input/definitions/answers.csv` - An overview of the answers of the possible subindicators. This file will be used to translate the answer ID, into a human readable label on the frontend.
+`/input/answers.csv` - An overview of the answers of the possible subindicators. This file will be used to translate the answer ID, into a human readable label on the frontend.
 
 Requires the following columns:
 

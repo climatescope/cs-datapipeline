@@ -6,6 +6,16 @@ function loadCSV (path) {
   return parse(fs.readFileSync(path))
 }
 
+// Parses a value. Any number should be a number, an empty string is null,
+// a hyphen is 0. Anything returns null
+function parseValue (value) {
+  let valNum = Number(value)
+  if (value === '') return null
+  if (typeof valNum === 'number' && !isNaN(valNum)) return valNum
+  if (value.trim() === '-') return 0
+  return null
+}
+
 // Get latest value from an array of objects
 // Expects: [{ 'year': 2015, 'value': 25 }, { 'year': 2019, 'value': 36 }]
 // Returns: { 'year': 2019, 'value': 36 }
@@ -46,5 +56,6 @@ module.exports = {
   getLatestValue: getLatestValue,
   getYears: getYears,
   loadCSV: loadCSV,
-  noDataWarning: noDataWarning
+  noDataWarning: noDataWarning,
+  parseValue: parseValue
 }

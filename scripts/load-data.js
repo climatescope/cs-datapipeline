@@ -57,7 +57,7 @@ async function loadSubIndicatorData (yr) {
     units: d.units,
     note: d.note,
     values: years.map(y => ({
-      value: d[y] === '' || isNaN(d[y]) ? null : Number(d[y]),
+      value: utils.parseValue(d[y]),
       year: Number(y)
     }))
   }))

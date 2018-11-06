@@ -32,7 +32,7 @@ const utils = require('./scripts/utils');
     const geographyData = await generate.geographies(geographies)
 
     await Promise.all([
-      detailedResultData.map(geo => fs.writeJson(`./output/results/${geo.iso}.json`, geo)),
+      ...detailedResultData.map(geo => fs.writeJson(`./output/results/${geo.iso}.json`, geo)),
       fs.writeJson('./output/geographies.json', geographyData),
       fs.writeJson('./output/chart-meta.json', chartMeta),
       fs.writeJson('./output/results.json', resultData)

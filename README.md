@@ -41,7 +41,7 @@ Additional columns in the dataset are ignored.
 `/input/charts.csv` - An overview of the charts that will be generated for this edition
 
 - `id` - a unique ID for the chart. This can only contain letters. Eg. `concentrationGeneration`
-- `type` - type of chart. One of: `singleAnswer`, `timeSeries `
+- `type` - type of chart. One of: `absolute`, `answer`, `timeSeries`, and `group`
 - `indicatorId` - the ID of the corresponding indicator in the CSV file with subindicator and investment data. This should match the ID completely, otherwise it won't be able to fetch the data. Eg. `3.05` or `Curtailment risk`
 - `labelX` - mandatory for chart type `timeSeries`. Eg .`year`
 - `labelY` - mandatory for chart type `timeSeries`. Eg. `Gwh`
@@ -80,7 +80,7 @@ These are used to generate charts that show the evolution over time, for example
 
 The script will parse data for all the years between 2000 and 2100, and has support for multiple trendlines.
 
-#### Group
+#### group
 The `group` chart type allows other indicators to be grouped together. The indicators share a title and description, and can be used to generate something along these lines:
 
 ![](https://user-images.githubusercontent.com/751330/48009523-e6dc5000-e0e9-11e8-8122-1aaf55defa57.png)

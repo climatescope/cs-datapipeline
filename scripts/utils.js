@@ -6,6 +6,16 @@ function loadCSV (path) {
   return parse(fs.readFileSync(path))
 }
 
+// Average an array of values
+// Expects: [{ 'year': 2019, 'value': 25 }, { 'year': 2019, 'value': 36 }]
+// Returns: 30.5
+function averageValues (values) {
+  // Filter out nulls
+  let filteredValues = values.filter(v => v.value)
+
+  return filteredValues.reduce((a, b) => a + b.value, 0) / filteredValues.length
+}
+
 // Parses a value. Any number should be a number, an empty string is null,
 // a hyphen is 0. Anything returns null
 function parseValue (value) {
@@ -59,6 +69,7 @@ function noDataWarning (type, geo) {
 }
 
 module.exports = {
+  averageValues: averageValues,
   cleanResults: cleanResults,
   getLatestValue: getLatestValue,
   getYears: getYears,

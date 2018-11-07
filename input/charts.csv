@@ -15,7 +15,7 @@ minigridLicensing,Mini-grids: licensing,Mini-grids: licensing,answer,Is it legal
 keroseneDieselSubsidies,Kerosene and diesel subsidies,Kerosene and diesel subsidies,answer,Are retail diesel and kerosene prices subsidised?,,
 curtailmentRisk,Curtailment risk,Curtailment risk,answer,Are renewables projects at risk of seeing their production curtailed?,,
 foreignInvestment,Foreign investment,Foreign investment,absolute,Disclosed share of foreign investment in the clean energy sector.,,
-electricityPrice,Average residential electricity prices,Electricity Price Data,absolute,Average residential electricity in the country,,
+electricityPrice,Average residential electricity prices|Average commercial electricity prices|Average industrial electricity prices,Electricity Price Data,average,Average residential electricity in the country,,
 averageVAT,largeVAT|smallVAT,Average VAT paid by renewables,group,What is the average level of VAT for components needed to build a wind project?,,
 largeVAT,VAT - Large scale renewables,Large scale renewables,absolute,,,
 smallVAT,VAT - Small scale renewables,Small scale renewables,absolute,,,

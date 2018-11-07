@@ -16,6 +16,13 @@ function parseValue (value) {
   return null
 }
 
+// Order a array with objects by year
+// Expects: [{ 'year': 2020, 'value': 25 }, { 'year': 2019, 'value': 36 }]
+// Returns: [{ 'year': 2019, 'value': 36 }, { 'year': 2020, 'value': 25 }]
+function orderByYear (data) {
+  return data.sort((a, b) => a.year > b.year)
+}
+
 // Get latest value from an array of objects
 // Expects: [{ 'year': 2015, 'value': 25 }, { 'year': 2019, 'value': 36 }]
 // Returns: { 'year': 2019, 'value': 36 }
@@ -57,5 +64,6 @@ module.exports = {
   getYears: getYears,
   loadCSV: loadCSV,
   noDataWarning: noDataWarning,
+  orderByYear: orderByYear,
   parseValue: parseValue
 }

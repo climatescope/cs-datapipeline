@@ -7,7 +7,7 @@ function generateTimeSeriesChart (geo, data, chart) {
     .filter(i => i.id === chart.indicatorId && i.geography === geo.name)
     .map(i => ({
       name: i.subindicator,
-      values: i.values
+      values: utils.orderByYear(i.values)
     }))
 
   if (!chartData.length) utils.noDataWarning(chart.name, geo.name)

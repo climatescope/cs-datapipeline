@@ -48,19 +48,24 @@ async function loadSubIndicatorData (yr) {
   let data = await utils.loadCSV(`./input/${yr}/subindicators.csv`)
   const years = utils.getYears(data[0])
 
-  return data.map(d => ({
-    id: d.id,
-    category: d.category,
-    indicator: d.indicator,
-    subindicator: d.subindicator,
-    geography: d.geography,
-    units: d.units,
-    note: d.note,
-    values: years.map(y => ({
-      value: utils.parseValue(d[y]),
-      year: Number(y)
-    }))
-  }))
+  return data.map(d => {
+    let values = years
+      .map(y => ({
+        value: utils.parseValue(d[y]),
+        year: Number(y)
+      }))
+
+    return {
+      id: d.id,
+      category: d.category,
+      indicator: d.indicator,
+      subindicator: d.subindicator,
+      geography: d.geography,
+      units: d.units,
+      note: d.note,
+      values: utils.orderByYear(values)
+    }
+  })
 }
 
 // Load CSV with investment data

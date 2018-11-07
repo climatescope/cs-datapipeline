@@ -30,7 +30,7 @@ function parseValue (value) {
 // Expects: [{ 'year': 2020, 'value': 25 }, { 'year': 2019, 'value': 36 }]
 // Returns: [{ 'year': 2019, 'value': 36 }, { 'year': 2020, 'value': 25 }]
 function orderByYear (data) {
-  return data.sort((a, b) => a.year > b.year)
+  return [...data].sort((a, b) => a.year > b.year ? 1 : -1)
 }
 
 // Get latest value from an array of objects
@@ -40,7 +40,7 @@ function getLatestValue (values) {
   return values
     .filter(i => i.value !== null) // ignore null values
     .reduce((a, b) => {
-      if (b.year > a.year) return { year: b.year, value: b.value }
+      return b.year > a.year ? { year: b.year, value: b.value } : a
     }, { 'year': null, 'value': null })
 }
 

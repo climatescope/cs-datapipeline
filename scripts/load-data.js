@@ -68,46 +68,8 @@ async function loadSubIndicatorData (yr) {
   })
 }
 
-// Load CSV with investment data
-// Aggregate values by year, sector and geography
-async function loadInvestmentData (yr) {
-  let data = await utils.loadCSV(`./input/${yr}/investment.csv`)
-  return data
-    .filter(d => Number(d.year) > 2000 && Number(d.year) < 2100)
-    .reduce((acc, b) => {
-      let v = {
-        year: Number(b.year),
-        value: Number(b.value)
-      }
-
-      let match = acc.find(o => o.geography === b.geography && o.sector === b.sector)
-
-      if (!match) {
-        return acc.concat({
-          id: 'investment',
-          geography: b.geography,
-          sector: b.sector,
-          values: [v]
-        })
-      } else {
-        // The input data can contains multiple investments for the same year,
-        // sector, geography. Aggregate these.
-        let yrMatch = match.values.find(v => v.year === Number(b.year))
-
-        if (yrMatch) {
-          yrMatch.value += Number(b.value)
-        } else {
-          match.values = match.values.concat(v)
-        }
-
-        return acc
-      }
-    }, [])
-}
-
 module.exports = {
   geographies: loadGeographies,
-  investmentData: loadInvestmentData,
   scoreData: loadScoreData,
   subIndicatorData: loadSubIndicatorData,
   topics: loadTopics

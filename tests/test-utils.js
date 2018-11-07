@@ -37,4 +37,12 @@ describe('Utils', function () {
       assert.equal(utils.parseValue('-'), 0, `Doesn't parse a hyphen properly`)
     )
   })
+
+  describe('getLatestValue', async () => {
+    it('gets the latest value from array', async () => {
+      let input = [{ 'year': 2020, 'value': 25 }, { 'year': 2019, 'value': 36 }]
+      let expected = { 'year': 2020, 'value': 25 }
+      assert.deepEqual(utils.getLatestValue(input), expected, `Doesn't get the latest value from array`)
+    })
+  })
 })

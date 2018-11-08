@@ -2,6 +2,7 @@
 const fs = require('fs-extra')
 
 const load = require('./scripts/load-data')
+const process = require('./scripts/process-data')
 const generate = require('./scripts/generate-data')
 const utils = require('./scripts/utils');
 
@@ -15,12 +16,13 @@ const utils = require('./scripts/utils');
     const answers = await utils.loadCSV('./input/answers.csv')
 
     const geographies = await load.geographies()
+    const investments = await utils.loadCSV(`./input/2018/investment.csv`)
 
     // TODO Handle multiple years
     const scores = await load.scoreData(2018)
 
     // No need to load multiple years, only the most recent
-    const indicators = [].concat(await load.subIndicatorData(2018), await load.investmentData(2018))
+    const indicators = [].concat(await load.subIndicatorData(2018), await process.investmentData(investments))
 
     // Contains overall and topic scores
     const resultData = generate.results(geographies, scores, topics)

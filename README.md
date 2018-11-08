@@ -75,13 +75,17 @@ These chart types have a unit.
 
 When there are multiple data points for a country, the script will store the value for the latest year.
 
+#### average
+`average` takes multiple sub-indicators and returns their average. These sub-indicators have to be specified in the `indicatorId` column, separated by a `|`.
+For example: `Average residential electricity prices|Average commercial electricity prices`.
+
 #### timeSeries
 These are used to generate charts that show the evolution over time, for example Installed Capacity.
 
 The script will parse data for all the years between 2000 and 2100, and has support for multiple trendlines.
 
 #### group
-The `group` chart type allows other indicators to be grouped together. The indicators share a title and description, and can be used to generate something along these lines:
+The `group` chart is a special type that groups together other charts. The group has a single title and description, and can be used to generate something along these lines:
 
 ![](https://user-images.githubusercontent.com/751330/48009523-e6dc5000-e0e9-11e8-8122-1aaf55defa57.png)
 

@@ -9,6 +9,7 @@ const config = {
   'chartFunction': {
     'absolute': chart.singleValue,
     'answer': chart.singleValue,
+    'average': chart.averageValue,
     'timeSeries': chart.timeSeries
   }
 }

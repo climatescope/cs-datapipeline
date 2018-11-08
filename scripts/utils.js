@@ -6,6 +6,16 @@ function loadCSV (path) {
   return parse(fs.readFileSync(path))
 }
 
+// Average an array of values
+// Expects: [{ 'year': 2019, 'value': 25 }, { 'year': 2019, 'value': 36 }]
+// Returns: 30.5
+function averageValues (values) {
+  // Filter out nulls
+  let filteredValues = values.filter(v => v.value)
+
+  return filteredValues.reduce((a, b) => a + b.value, 0) / filteredValues.length
+}
+
 // Parses a value. Any number should be a number, an empty string is null,
 // a hyphen is 0. Anything returns null
 function parseValue (value) {
@@ -16,6 +26,13 @@ function parseValue (value) {
   return null
 }
 
+// Order a array with objects by year
+// Expects: [{ 'year': 2020, 'value': 25 }, { 'year': 2019, 'value': 36 }]
+// Returns: [{ 'year': 2019, 'value': 36 }, { 'year': 2020, 'value': 25 }]
+function orderByYear (data) {
+  return [...data].sort((a, b) => a.year > b.year ? 1 : -1)
+}
+
 // Get latest value from an array of objects
 // Expects: [{ 'year': 2015, 'value': 25 }, { 'year': 2019, 'value': 36 }]
 // Returns: { 'year': 2019, 'value': 36 }
@@ -23,7 +40,7 @@ function getLatestValue (values) {
   return values
     .filter(i => i.value !== null) // ignore null values
     .reduce((a, b) => {
-      if (b.year > a.year) return { year: b.year, value: b.value }
+      return b.year > a.year ? { year: b.year, value: b.value } : a
     }, { 'year': null, 'value': null })
 }
 
@@ -52,10 +69,12 @@ function noDataWarning (type, geo) {
 }
 
 module.exports = {
+  averageValues: averageValues,
   cleanResults: cleanResults,
   getLatestValue: getLatestValue,
   getYears: getYears,
   loadCSV: loadCSV,
   noDataWarning: noDataWarning,
+  orderByYear: orderByYear,
   parseValue: parseValue
 }

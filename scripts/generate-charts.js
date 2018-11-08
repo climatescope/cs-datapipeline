@@ -7,7 +7,7 @@ function generateTimeSeriesChart (geo, data, chart) {
     .filter(i => i.id === chart.indicatorId && i.geography === geo.name)
     .map(i => ({
       name: i.subindicator,
-      values: i.values
+      values: utils.orderByYear(i.values)
     }))
 
   if (!chartData.length) utils.noDataWarning(chart.name, geo.name)
@@ -46,6 +46,37 @@ function generateSingleValueChart (geo, data, chart) {
   }
 }
 
+// Generate an average for multiple indicators
+function generateAverageValue (geo, data, chart) {
+  let indicatorsToAvg = chart['indicatorId'].split('|')
+  let indicatorData = data
+    .filter(d => d.geography === geo.name && indicatorsToAvg.includes(d.subindicator))
+
+  let value = { 'id': chart.id, 'value': null, 'year': null, 'note': null }
+
+  if (!indicatorData) {
+    utils.noDataWarning(chart.name, geo.name)
+    return value
+  }
+
+  // Get the latest years we have a value for, for each indicator, and filter
+  // out the nulls.
+  let latestValues = indicatorData
+    .map(ind => utils.getLatestValue(ind.values))
+    .filter(ind => ind.value)
+
+  if (!latestValues.length) {
+    utils.noDataWarning(chart.name, geo.name)
+    return value
+  }
+
+  return {
+    ...value,
+    value: utils.averageValues(latestValues),
+    year: latestValues[0].year
+  }
+}
+
 // Group particular objects within an array of chart data
 function groupCharts (chartData, groups) {
   let groupData = groups.map(g => {
@@ -75,6 +106,7 @@ function groupCharts (chartData, groups) {
 
 module.exports = {
   groupCharts: groupCharts,
+  averageValue: generateAverageValue,
   singleValue: generateSingleValueChart,
   timeSeries: generateTimeSeriesChart
 }

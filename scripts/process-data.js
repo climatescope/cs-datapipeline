@@ -25,8 +25,18 @@ function processRawGeographies (geographies, regions) {
 // Process raw investment data
 // Aggregate values by year, sector and geography
 function processRawInvestments (data) {
-  return data
+  // The data contains data for funky years. Filter those out.
+  const cleanedData = data
     .filter(d => Number(d.year) > 2000 && Number(d.year) < 2100)
+
+  // Get the years with investment data across the dataset.
+  // Not all countries have investments in all years.
+  const years = [...cleanedData]
+    .map(d => Number(d.year))
+    .reduce((acc, b) => !acc.includes(b) ? acc.concat(b) : acc, [])
+    .sort()
+
+  return [...cleanedData]
     .reduce((acc, b) => {
       let v = {
         year: Number(b.year),
@@ -34,7 +44,6 @@ function processRawInvestments (data) {
       }
 
       let match = acc.find(o => o.geography === b.geography)
-
       if (!match) {
         return acc.concat({
           id: 'investment',
@@ -52,10 +61,10 @@ function processRawInvestments (data) {
         } else {
           match.values = match.values.concat(v)
         }
-
         return acc
       }
     }, [])
+    .map(geo => ({ ...geo, values: utils.fillMissingValues(geo.values, years) }))
 }
 
 // Process the annual scores. Add an indication of the year to each

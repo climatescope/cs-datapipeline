@@ -24,6 +24,15 @@ describe('Utils', function () {
     })
   })
 
+  describe('fillMissingValues', async () => {
+    it('fills an array with 0 values for missing years', async () => {
+      let input = [{ 'year': 2020, 'value': 25 }, { 'year': 2018, 'value': 36 }]
+      let years = [2020, 2019, 2018]
+      let expected = [{ 'year': 2020, 'value': 25 }, { 'year': 2019, 'value': 0 }, { 'year': 2018, 'value': 36 }]
+      assert.deepEqual(utils.fillMissingValues(input, years), expected, `Doesn't fill array with 0 values`)
+    })
+  })
+
   describe('orderByYear', async () => {
     it('orders an array of values by year', async () => {
       let input = [{ 'year': 2020, 'value': 25 }, { 'year': 2019, 'value': 36 }]

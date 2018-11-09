@@ -62,7 +62,7 @@ describe('Process Data', function () {
     ]
 
     it('aggregate investment data', async () =>
-      assert.deepEqual(process.investments(input), expected, 'Data not aggregated properly')
+      assert.deepEqual(process.investments(input, [2006, 2009]), expected, 'Data not aggregated properly')
     )
   })
 })

@@ -1,7 +1,6 @@
 'use strict'
 const fs = require('fs-extra')
 
-const load = require('./scripts/load-data')
 const process = require('./scripts/process-data')
 const generate = require('./scripts/generate-data')
 const utils = require('./scripts/utils');
@@ -11,27 +10,53 @@ const utils = require('./scripts/utils');
     // Empty the output folder. Create them if they don't exist.
     await ['./output', './output/results'].forEach(f => fs.emptyDirSync(f))
 
-    const topics = await load.topics()
-    const charts = await utils.loadCSV('./input/charts.csv')
-    const answers = await utils.loadCSV('./input/answers.csv')
+    // Load the raw data from CSV files
+    const [
+      rawAnswers,
+      rawCharts,
+      rawGeographies,
+      rawInvestments,
+      rawRegions,
+      rawScores,
+      rawSubindicators,
+      rawTopics
+    ] = await Promise.all([
+      utils.loadCSV('./input/answers.csv'),
+      utils.loadCSV('./input/charts.csv'),
+      utils.loadCSV('./input/geographies.csv'),
+      utils.loadCSV(`./input/2018/investment.csv`),
+      utils.loadCSV('./input/regions.csv'),
+      utils.loadCSV(`./input/2018/scores.csv`),
+      utils.loadCSV(`./input/2018/subindicators.csv`),
+      utils.loadCSV('./input/topics.csv')
+    ])
 
-    const geographies = await load.geographies()
-    const investments = await utils.loadCSV(`./input/2018/investment.csv`)
-
-    // TODO Handle multiple years
-    const scores = await load.scoreData(2018)
-
-    // No need to load multiple years, only the most recent
-    const indicators = [].concat(await load.subIndicatorData(2018), await process.investmentData(investments))
+    // Process the raw data into something more useful
+    const [
+      geographies,
+      indicators,
+      scores,
+      topics
+    ] = await Promise.all([
+      process.geographies(rawGeographies, rawRegions),
+      [].concat(await process.subindicators(rawSubindicators), await process.investments(rawInvestments)),
+      process.scores(rawScores, 2018),
+      process.topics(rawTopics)
+    ])
 
     // Contains overall and topic scores
-    const resultData = generate.results(geographies, scores, topics)
+    const [
+      chartMeta,
+      geographyData,
+      resultData
+    ] = await Promise.all([
+      generate.chartMeta(rawCharts, rawAnswers),
+      generate.geographies(geographies),
+      generate.results(geographies, scores, topics)
+    ])
 
     // Contains scores, and the auxiliary data to build the charts
-    const detailedResultData = generate.detailedResults(resultData, indicators, charts)
-
-    const chartMeta = generate.chartMeta(charts, answers)
-    const geographyData = await generate.geographies(geographies)
+    const detailedResultData = generate.detailedResults(resultData, indicators, rawCharts)
 
     await Promise.all([
       ...detailedResultData.map(geo => fs.writeJson(`./output/results/${geo.iso}.json`, geo)),

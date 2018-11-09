@@ -16,6 +16,14 @@ describe('Utils', function () {
     })
   })
 
+  describe('emptyStringsNull', async () => {
+    it('turn values with empty string in object to null', async () => {
+      let input = { 'name': 'I feel', 'unit': '' }
+      let expected = { 'name': 'I feel', 'unit': null }
+      assert.deepEqual(utils.emptyStringsNull(input), expected, `Doesn't cast empty strings to null`)
+    })
+  })
+
   describe('orderByYear', async () => {
     it('orders an array of values by year', async () => {
       let input = [{ 'year': 2020, 'value': 25 }, { 'year': 2019, 'value': 36 }]

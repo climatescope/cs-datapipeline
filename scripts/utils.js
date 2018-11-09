@@ -33,6 +33,20 @@ function orderByYear (data) {
   return [...data].sort((a, b) => a.year > b.year ? 1 : -1)
 }
 
+// Turn values with empty strings in an object to null
+// Expects: { 'name': 'I feel', 'unit': "" }
+// Returns: { 'name': 'I feel', 'unit': null }
+function emptyStringsNull (object) {
+  return Object.keys(object)
+    .reduce((a, b) => {
+      if (object[b] === '') {
+        return { ...a, [b]: null }
+      } else {
+        return { ...a, [b]: object[b] }
+      }
+    }, {})
+}
+
 // Get latest value from an array of objects
 // Expects: [{ 'year': 2015, 'value': 25 }, { 'year': 2019, 'value': 36 }]
 // Returns: { 'year': 2019, 'value': 36 }
@@ -71,6 +85,7 @@ function noDataWarning (type, geo) {
 module.exports = {
   averageValues: averageValues,
   cleanResults: cleanResults,
+  emptyStringsNull: emptyStringsNull,
   getLatestValue: getLatestValue,
   getYears: getYears,
   loadCSV: loadCSV,

@@ -16,7 +16,7 @@ describe('Input Data', function () {
     )
 
     step('has all the required headers', async () => {
-      const requiredHeaders = [ 'id', 'indicatorId', 'name', 'type', 'description', 'labelX', 'labelY' ]
+      const requiredHeaders = [ 'id', 'indicatorId', 'name', 'type', 'description', 'labelX', 'labelY', 'unit' ]
       const data = await utils.loadCSV(fp)
 
       return assert.containsAllKeys(data[0], requiredHeaders, `The chart definition doesn't require one of the required headers`)

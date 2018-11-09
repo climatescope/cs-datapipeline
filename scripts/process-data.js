@@ -1,6 +1,11 @@
 'use strict'
 const utils = require('./utils')
 
+// Process chart data and turn empty string in null
+function processRawCharts (charts) {
+  return charts.map(c => utils.emptyStringsNull(c))
+}
+
 // Process raw geographies and add region meta-data to each of them
 function processRawGeographies (geographies, regions) {
   return geographies.map(geo => {
@@ -99,6 +104,7 @@ function processRawTopics (topics) {
 }
 
 module.exports = {
+  charts: processRawCharts,
   geographies: processRawGeographies,
   investments: processRawInvestments,
   scores: processRawScores,

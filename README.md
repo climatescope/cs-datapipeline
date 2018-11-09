@@ -41,12 +41,13 @@ Additional columns in the dataset are ignored.
 `/input/charts.csv` - An overview of the charts that will be generated for this edition
 
 - `id` - a unique ID for the chart. This can only contain letters. Eg. `concentrationGeneration`
+- `indicatorId` - the ID of the corresponding indicator in the CSV file with subindicator and investment data. This should match the ID completely, otherwise it won't be able to fetch the data. Some chart types allow multiple indicators to be specified. In these cases, they are split by a `|`. Eg. `Large VAT|SmallVAT` or `Curtailment risk`
+- `name` - the title of the chart, used in the interface. Eg. `Concentration of generation market`
 - `type` - type of chart. One of: `absolute`, `answer`, `timeSeries`, and `group`
-- `indicatorId` - the ID of the corresponding indicator in the CSV file with subindicator and investment data. This should match the ID completely, otherwise it won't be able to fetch the data. Eg. `3.05` or `Curtailment risk`
+- `description` - the description of the chart, used in the interface. Eg. `Is the generation market concentrated?`
 - `labelX` - mandatory for chart type `timeSeries`. Eg .`year`
 - `labelY` - mandatory for chart type `timeSeries`. Eg. `Gwh`
-- `name` - the title of the chart, used in the interface. Eg. `Concentration of generation market`
-- `description` - the description of the chart, used in the interface. Eg. `Is the generation market concentrated?`
+- `unit` - mandatory for chart type `absolute`. Eg. `%`
 
 ### Answer definition
 `/input/answers.csv` - An overview of the answers of the possible subindicators. This file will be used to translate the answer ID, into a human readable label on the frontend.
@@ -68,7 +69,7 @@ Utility privatisation,0.5,Somewhat
 ### Charts
 #### absolute
 `absolute` charts refer to values that are not encoded, and thus don't rely on the answer definition. An example is Foreign Investment, which is stored in `subindicators.csv` as `Foreign Investment: 0.92`
-These chart types have a unit.
+These chart types need to have a unit.
 
 #### answer
 `answer` charts are indicators with a single answer that is encoded in the subindicator file. An example is Utility Privatisation, which can be answered with yes / no / somewhat, but is stored in `subindicators.csv` as `Utility Privatisation: 1`.
@@ -78,6 +79,8 @@ When there are multiple data points for a country, the script will store the val
 #### average
 `average` takes multiple sub-indicators and returns their average. These sub-indicators have to be specified in the `indicatorId` column, separated by a `|`.
 For example: `Average residential electricity prices|Average commercial electricity prices`.
+
+`null` values are not taken into account to calculate the average.
 
 #### timeSeries
 These are used to generate charts that show the evolution over time, for example Installed Capacity.

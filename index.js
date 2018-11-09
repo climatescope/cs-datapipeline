@@ -33,11 +33,13 @@ const utils = require('./scripts/utils');
 
     // Process the raw data into something more useful
     const [
+      charts,
       geographies,
       indicators,
       scores,
       topics
     ] = await Promise.all([
+      process.charts(rawCharts),
       process.geographies(rawGeographies, rawRegions),
       [].concat(await process.subindicators(rawSubindicators), await process.investments(rawInvestments)),
       process.scores(rawScores, 2018),
@@ -50,13 +52,13 @@ const utils = require('./scripts/utils');
       geographyData,
       resultData
     ] = await Promise.all([
-      generate.chartMeta(rawCharts, rawAnswers),
+      generate.chartMeta(charts, rawAnswers),
       generate.geographies(geographies),
       generate.results(geographies, scores, topics)
     ])
 
     // Contains scores, and the auxiliary data to build the charts
-    const detailedResultData = generate.detailedResults(resultData, indicators, rawCharts)
+    const detailedResultData = generate.detailedResults(resultData, indicators, charts)
 
     await Promise.all([
       ...detailedResultData.map(geo => fs.writeJson(`./output/results/${geo.iso}.json`, geo)),

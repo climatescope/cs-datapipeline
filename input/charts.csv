@@ -1,27 +1,27 @@
-id,indicatorId,name,type,description,labelX,labelY
-utilityPrivatisation,Utility privatisation,Utility privatisation,answer,Sector of the power market open to private participation.,,
-concentrationGeneration,Concentration of generation market,Concentration of generation market,answer,Is the generation market concentrated?,,
-powerPlantFleet,Power plant fleet modernisation program,Power plant fleet modernisation program,answer,Does the power generation fleet of the country need investment?,,
-gapToTarget,Gap to target,Gap to target,answer,How large is the gap between the current level of renewables in the power sector and the country's closest target?,,
-upcomingAuctions,Upcoming auctions,Upcoming auctions,answer,What is the volume of auctions announced in the country over the period 2018-2022 as a share of installed capacity?,,
-wholesaleDistortions,Wholesale price distortions,Wholesale price distortions,answer,Are fossil fuels generators benefiting from subsidies that affect the price at which they can sell electricity onto the wholesale market?,,
-sectorWholesale,Wholesale power market,Power sector wholesale,answer,,,
-currencyVariation,Currency variation,Currency variation,answer,How high is the ten year variation of the local currency against the US dollar?,,
-offtakerRisk,Offtaker risk,Offtaker risk,answer,How high is the offtake risk for independent generators?,,
-standardisedPpa,Standardised PPAs,Standardised PPAs,answer,Are power purchase agreements standardised in the market?,,
-ppaSufficientDuration,PPAs of sufficient duration,PPAs of sufficient duration,answer,Are PPAs of sufficient duration to be bankable for renewables developers?,,
-purchaseObligation,Purchase obligation,Purchase obligation,answer,Is the offtaker obliged to pay for all the renewables output of generators?,,
-minigridLicensing,Mini-grids: licensing,Mini-grids: licensing,answer,Is it legally possible to set up a mini-grid or small power project incl. for self use?,,
-keroseneDieselSubsidies,Kerosene and diesel subsidies,Kerosene and diesel subsidies,answer,Are retail diesel and kerosene prices subsidised?,,
-curtailmentRisk,Curtailment risk,Curtailment risk,answer,Are renewables projects at risk of seeing their production curtailed?,,
-foreignInvestment,Foreign investment,Foreign investment,absolute,Disclosed share of foreign investment in the clean energy sector.,,
-electricityPrice,Average residential electricity prices|Average commercial electricity prices|Average industrial electricity prices,Electricity Price Data,average,Average residential electricity in the country,,
-averageVAT,largeVAT|smallVAT,Average VAT paid by renewables,group,What is the average level of VAT for components needed to build a wind project?,,
-largeVAT,VAT - Large scale renewables,Large scale renewables,absolute,,,
-smallVAT,VAT - Small scale renewables,Small scale renewables,absolute,,,
-importDuties,largeDuties|smallDuties,Import Duties,group,What is the average level of import duties for components needed for a solar project (panels and inverts)?,,
-largeDuties,Import duties - Large scale renewables,Large scale renewables,absolute,,,
-smallDuties,Import duties - Small scale renewables,Small scale renewables,absolute,,,
-installedCapacity,3.05,Installed Capacity,timeSeries,,year,MW
-powerGeneration,3.06,Power Generation,timeSeries,,year,GWh
-cleanEnergyInvestment,investment,Clean Energy Investment,timeSeries,What's the volume of clean energy investment in the country over the last five years?,year,usd/m
+id,indicatorId,name,type,description,labelX,labelY,unit
+utilityPrivatisation,Utility privatisation,Utility privatisation,answer,Sector of the power market open to private participation.,,,
+concentrationGeneration,Concentration of generation market,Concentration of generation market,answer,Is the generation market concentrated?,,,
+powerPlantFleet,Power plant fleet modernisation program,Power plant fleet modernisation program,answer,Does the power generation fleet of the country need investment?,,,
+gapToTarget,Gap to target,Gap to target,answer,How large is the gap between the current level of renewables in the power sector and the country's closest target?,,,
+upcomingAuctions,Upcoming auctions,Upcoming auctions,answer,What is the volume of auctions announced in the country over the period 2018-2022 as a share of installed capacity?,,,
+wholesaleDistortions,Wholesale price distortions,Wholesale price distortions,answer,Are fossil fuels generators benefiting from subsidies that affect the price at which they can sell electricity onto the wholesale market?,,,
+sectorWholesale,Wholesale power market,Power sector wholesale,answer,,,,
+currencyVariation,Currency variation,Currency variation,answer,How high is the ten year variation of the local currency against the US dollar?,,,
+offtakerRisk,Offtaker risk,Offtaker risk,answer,How high is the offtake risk for independent generators?,,,
+standardisedPpa,Standardised PPAs,Standardised PPAs,answer,Are power purchase agreements standardised in the market?,,,
+ppaSufficientDuration,PPAs of sufficient duration,PPAs of sufficient duration,answer,Are PPAs of sufficient duration to be bankable for renewables developers?,,,
+purchaseObligation,Purchase obligation,Purchase obligation,answer,Is the offtaker obliged to pay for all the renewables output of generators?,,,
+minigridLicensing,Mini-grids: licensing,Mini-grids: licensing,answer,Is it legally possible to set up a mini-grid or small power project incl. for self use?,,,
+keroseneDieselSubsidies,Kerosene and diesel subsidies,Kerosene and diesel subsidies,answer,Are retail diesel and kerosene prices subsidised?,,,
+curtailmentRisk,Curtailment risk,Curtailment risk,answer,Are renewables projects at risk of seeing their production curtailed?,,,
+foreignInvestment,Foreign investment,Foreign investment,absolute,Disclosed share of foreign investment in the clean energy sector.,,,%
+electricityPrice,Average residential electricity prices|Average commercial electricity prices|Average industrial electricity prices,Electricity Price Data,average,Average residential electricity in the country,,,
+averageVAT,largeVAT|smallVAT,Average VAT paid by renewables,group,What is the average level of VAT for components needed to build a wind project?,,,%
+largeVAT,VAT - Large scale renewables,Large scale renewables,absolute,,,,%
+smallVAT,VAT - Small scale renewables,Small scale renewables,absolute,,,,%
+importDuties,largeDuties|smallDuties,Import Duties,group,What is the average level of import duties for components needed for a solar project (panels and inverts)?,,,
+largeDuties,Import duties - Large scale renewables,Large scale renewables,absolute,,,,%
+smallDuties,Import duties - Small scale renewables,Small scale renewables,absolute,,,,%
+installedCapacity,3.05,Installed Capacity,timeSeries,,year,MW,
+powerGeneration,3.06,Power Generation,timeSeries,,year,GWh,
+cleanEnergyInvestment,investment,Clean Energy Investment,timeSeries,What's the volume of clean energy investment in the country over the last five years?,year,usd/m,

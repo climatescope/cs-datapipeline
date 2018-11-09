@@ -41,10 +41,11 @@ Additional columns in the dataset are ignored.
 `/input/charts.csv` - An overview of the charts that will be generated for this edition
 
 - `id` - a unique ID for the chart. This can only contain letters. Eg. `concentrationGeneration`
-- `indicatorId` - the ID of the corresponding indicator in the CSV file with subindicator and investment data. This should match the ID completely, otherwise it won't be able to fetch the data. Some chart types allow multiple indicators to be specified. In these cases, they are split by a `|`. Eg. `Large VAT|SmallVAT` or `Curtailment risk`
-- `name` - the title of the chart, used in the interface. Eg. `Concentration of generation market`
 - `type` - type of chart. One of: `absolute`, `answer`, `timeSeries`, and `group`
+- `name` - the title of the chart, used in the interface. Eg. `Concentration of generation market`
 - `description` - the description of the chart, used in the interface. Eg. `Is the generation market concentrated?`
+- `topic` - the ID of the topic the chart belongs to. This topic should be in `topics.csv`. Eg. `fundamentals`.
+- `indicatorId` - the ID of the corresponding indicator in the CSV file with subindicator and investment data. This should match the ID completely, otherwise it won't be able to fetch the data. Some chart types allow multiple indicators to be specified. In these cases, they are split by a `|`. Eg. `Large VAT|SmallVAT` or `Curtailment risk`
 - `labelX` - mandatory for chart type `timeSeries`. Eg .`year`
 - `labelY` - mandatory for chart type `timeSeries`. Eg. `Gwh`
 - `unit` - mandatory for chart type `absolute`. Eg. `%`

@@ -12,8 +12,8 @@ const utils = require('./scripts/utils');
 
     // Load the raw data from CSV files
     const [
-      rawAnswers,
       rawCharts,
+      rawChartValues,
       rawGeographies,
       rawInvestments,
       rawRegions,
@@ -21,8 +21,8 @@ const utils = require('./scripts/utils');
       rawSubindicators,
       rawTopics
     ] = await Promise.all([
-      utils.loadCSV('./input/answers.csv'),
       utils.loadCSV('./input/charts.csv'),
+      utils.loadCSV('./input/chart-values.csv'),
       utils.loadCSV('./input/geographies.csv'),
       utils.loadCSV(`./input/2018/investment.csv`),
       utils.loadCSV('./input/regions.csv'),
@@ -52,7 +52,7 @@ const utils = require('./scripts/utils');
       geographyData,
       resultData
     ] = await Promise.all([
-      generate.chartMeta(charts, rawAnswers),
+      generate.chartMeta(charts, rawChartValues),
       generate.geographies(geographies),
       generate.results(geographies, scores, topics)
     ])

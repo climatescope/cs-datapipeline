@@ -55,8 +55,8 @@ describe('Input Data', function () {
     })
   })
 
-  describe('Answers', async () => {
-    const fp = './input/answers.csv'
+  describe('Chart values', async () => {
+    const fp = './input/chart-values.csv'
 
     step('the definition file exists', async () =>
       assert.isTrue(await fs.pathExists(fp), `${fp} does not exist`)
@@ -66,32 +66,32 @@ describe('Input Data', function () {
       const requiredHeaders = [ 'id', 'indicator', 'label' ]
       const data = await utils.loadCSV(fp)
 
-      return assert.containsAllKeys(data[0], requiredHeaders, `The answer definition doesn't require one of the required headers`)
+      return assert.containsAllKeys(data[0], requiredHeaders, `The chart values definition doesn't contain one of the required headers`)
     })
 
-    step(`all charts of type 'answer', have at least one option in the answer definition`, async () => {
-      const answers = await utils.loadCSV(fp)
+    step(`all charts of type 'answer', have at least one option in the chart values definition`, async () => {
       const charts = await utils.loadCSV('./input/charts.csv')
+      const chartValues = await utils.loadCSV(fp)
 
-      // Construct a list of indicator IDs referenced by charts
+      // Construct a list of indicator IDs referenced by charts.csv
       let chartIndicators = charts
         .filter(c => c.type === 'answer')
         .map(c => c.indicatorId)
 
-      // Construct a list of indicator IDs referenced by answers
-      let answerIndicators = answers
+      // Construct a list of indicator IDs referenced in the chart-values.csv
+      let chartValuesIndicators = chartValues
         .reduce((acc, b) => {
           if (acc.includes(b.indicator)) return acc
           return acc.concat(b.indicator)
         }, [])
 
-      let missingAnswers = chartIndicators
+      let missingIndicators = chartIndicators
         .reduce((acc, b) => {
-          if (answerIndicators.includes(b)) return acc
+          if (chartValuesIndicators.includes(b)) return acc
           return acc.concat(b)
         }, [])
 
-      return assert.isEmpty(missingAnswers, `The indicators ${missingAnswers} are used in a chart of type 'answer', but contain no answer in the definition file.`)
+      return assert.isEmpty(missingIndicators, `The indicators ${missingIndicators} are used in a chart of type 'answer', but contain no values in the definition file.`)
     })
   })
 })

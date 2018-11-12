@@ -1,5 +1,6 @@
 'use strict'
 const bbox = require('@turf/bbox').default
+const camelcase = require('camelcase')
 const fs = require('fs-extra')
 
 const chart = require('./generate-charts')
@@ -48,7 +49,8 @@ function generateDetailedResultData (resultData, indicators, charts) {
     return {
       ...geo,
       profile: generateProfileData(geo, indicators),
-      charts: groups.length ? chart.groupCharts(chartData, groups) : chartData
+      charts: groups.length ? chart.groupCharts(chartData, groups) : chartData,
+      sectionCopy: generateSectionCopy(geo, indicators)
     }
   })
 }
@@ -67,6 +69,35 @@ function generateProfileData (geo, indicators) {
       'unit': ind.units
     }
   })
+}
+
+// Generate section copy. The copy of each section on a country profile page is
+// stored in the subindicators.csv, under the id 'BNEF Take: [section title]'
+// Extract the section copy for all sections from the 'note' property.
+function generateSectionCopy (geo, indicators) {
+  let countryCopy = indicators
+    .filter(i =>
+      i.geography === geo.name &&
+      i.category === 'BNEF Take' &&
+      i.note !== ''
+    )
+
+  if (countryCopy.length) {
+    return countryCopy.map(section => {
+      let title = section
+        .subindicator.split(':')[1]
+        .trim()
+
+      return {
+        'id': camelcase(title),
+        'name': title,
+        'value': section.note
+      }
+    })
+  } else {
+    utils.noDataWarning('Section texts', geo.name)
+    return null
+  }
 }
 
 // Generate overview of geographies. Add a bbox

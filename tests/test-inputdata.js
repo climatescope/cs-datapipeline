@@ -80,16 +80,10 @@ describe('Input Data', function () {
 
       // Construct a list of indicator IDs referenced in the chart-values.csv
       let chartValuesIndicators = chartValues
-        .reduce((acc, b) => {
-          if (acc.includes(b.indicator)) return acc
-          return acc.concat(b.indicator)
-        }, [])
+        .reduce((acc, b) => acc.includes(b.indicator) ? acc : acc.concat(b.indicator), [])
 
       let missingIndicators = chartIndicators
-        .reduce((acc, b) => {
-          if (chartValuesIndicators.includes(b)) return acc
-          return acc.concat(b)
-        }, [])
+        .reduce((acc, b) => chartValuesIndicators.includes(b) ? acc : acc.concat(b), [])
 
       return assert.isEmpty(missingIndicators, `The indicators ${missingIndicators} are used in a chart of type 'answer', but contain no values in the definition file.`)
     })

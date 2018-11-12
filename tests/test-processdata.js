@@ -4,6 +4,23 @@ const assert = require('chai').assert
 const process = require('../scripts/process-data')
 
 describe('Process Data', function () {
+  describe('Geographies', async () => {
+    let inputGeographies = [{ id: 'UY', name: 'Uruguay', grid: 'off', region: 'lac' }]
+    let inputRegions = [{ id: 'lac', name: 'Latin America and the Caribbean' }]
+    let expected = [{
+      iso: 'uy',
+      name: 'Uruguay',
+      grid: 'off',
+      region: {
+        id: 'lac',
+        name: 'Latin America and the Caribbean'
+      }
+    }]
+
+    it('format geographies and add region information', async () =>
+      assert.deepEqual(process.geographies(inputGeographies, inputRegions), expected, 'Not processed properly')
+    )
+  })
   describe('Investments', async () => {
     let input = [
       {
@@ -45,7 +62,7 @@ describe('Process Data', function () {
     ]
 
     it('aggregate investment data', async () =>
-      assert.deepEqual(process.investmentData(input), expected, 'Data not aggregated properly')
+      assert.deepEqual(process.investments(input, [2006, 2009]), expected, 'Data not aggregated properly')
     )
   })
 })

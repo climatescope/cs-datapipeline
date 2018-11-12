@@ -26,11 +26,36 @@ function parseValue (value) {
   return null
 }
 
-// Order a array with objects by year
+// Order an array with objects by year
 // Expects: [{ 'year': 2020, 'value': 25 }, { 'year': 2019, 'value': 36 }]
 // Returns: [{ 'year': 2019, 'value': 36 }, { 'year': 2020, 'value': 25 }]
 function orderByYear (data) {
   return [...data].sort((a, b) => a.year > b.year ? 1 : -1)
+}
+
+// Turn values with empty strings in an object to null
+// Expects: { 'name': 'I feel', 'unit': "" }
+// Returns: { 'name': 'I feel', 'unit': null }
+function emptyStringsNull (object) {
+  return Object.keys(object)
+    .reduce((a, b) => {
+      if (object[b] === '') {
+        return { ...a, [b]: null }
+      } else {
+        return { ...a, [b]: object[b] }
+      }
+    }, {})
+}
+
+// Fill an array with 0 values for missing years
+// Expects: [{ 'year': 2020, 'value': 25 }, { 'year': 2018, 'value': 36 }], [2020, 2019, 2018]
+// Returns : [{ 'year': 2020, 'value': 25 }, { 'year': 2019, 'value': 0 }, { 'year': 2018, 'value': 36 }]
+function fillMissingValues (values, years) {
+  return years
+    .reduce((acc, b) => {
+      let match = values.find(v => v.year === b)
+      return match ? acc.concat(match) : acc.concat({ 'year': b, 'value': 0 })
+    }, [])
 }
 
 // Get latest value from an array of objects
@@ -71,6 +96,8 @@ function noDataWarning (type, geo) {
 module.exports = {
   averageValues: averageValues,
   cleanResults: cleanResults,
+  emptyStringsNull: emptyStringsNull,
+  fillMissingValues: fillMissingValues,
   getLatestValue: getLatestValue,
   getYears: getYears,
   loadCSV: loadCSV,

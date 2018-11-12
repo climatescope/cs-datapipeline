@@ -16,6 +16,23 @@ describe('Utils', function () {
     })
   })
 
+  describe('emptyStringsNull', async () => {
+    it('turn values with empty string in object to null', async () => {
+      let input = { 'name': 'I feel', 'unit': '' }
+      let expected = { 'name': 'I feel', 'unit': null }
+      assert.deepEqual(utils.emptyStringsNull(input), expected, `Doesn't cast empty strings to null`)
+    })
+  })
+
+  describe('fillMissingValues', async () => {
+    it('fills an array with 0 values for missing years', async () => {
+      let input = [{ 'year': 2020, 'value': 25 }, { 'year': 2018, 'value': 36 }]
+      let years = [2020, 2019, 2018]
+      let expected = [{ 'year': 2020, 'value': 25 }, { 'year': 2019, 'value': 0 }, { 'year': 2018, 'value': 36 }]
+      assert.deepEqual(utils.fillMissingValues(input, years), expected, `Doesn't fill array with 0 values`)
+    })
+  })
+
   describe('orderByYear', async () => {
     it('orders an array of values by year', async () => {
       let input = [{ 'year': 2020, 'value': 25 }, { 'year': 2019, 'value': 36 }]

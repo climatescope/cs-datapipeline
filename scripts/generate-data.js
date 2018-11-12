@@ -10,6 +10,7 @@ const config = {
     'absolute': chart.singleValue,
     'answer': chart.singleValue,
     'average': chart.averageValue,
+    'range': chart.singleValue,
     'timeSeries': chart.timeSeries
   }
 }
@@ -83,7 +84,7 @@ async function generateGeographyData (geographies) {
 // Generate an overview of the charts
 function generateChartMeta (charts, answers) {
   return charts.map(c => {
-    if (c.type === 'answer') {
+    if (c.type === 'answer' || c.type === 'range') {
       c['options'] = answers
         .filter(a => a.indicator === c.indicatorId)
         .map(a => ({

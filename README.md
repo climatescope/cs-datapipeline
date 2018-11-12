@@ -69,6 +69,24 @@ For example: `Average residential electricity prices|Average commercial electric
 
 `null` values are not taken into account to calculate the average.
 
+#### range
+`range` allows a value to be specified on a scale. An example is 'Availability of Finance', which can have values between `0` and `2.5`. In the [Chart Values](#chart-values) file, these range steps will need to be specified. The minimum is the lower and upper bound, but intermediate steps can be specified as well (like: low, medium, high):
+
+``` json
+"options": [
+  {
+    "id": 0,
+    "label": "Low"
+  },
+  {
+    "id": 2.5,
+    "label": "High"
+  }
+]
+```
+
+This differs from the `answer` type, which expects every value to match a single answer.
+
 #### timeSeries
 These are used to generate charts that show the evolution over time, for example Installed Capacity.
 

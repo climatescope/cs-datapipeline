@@ -2,7 +2,7 @@ indicator,id,label
 Utility privatisation,1,All segments
 Utility privatisation,0.8,Generation and distribution
 Utility privatisation,0.7,Generation and transmission
-Utility privatisation,0.5,Generation,
+Utility privatisation,0.5,Generation
 Utility privatisation,0,No
 Concentration of generation market,0,Yes
 Concentration of generation market,1,Somewhat
@@ -54,3 +54,5 @@ Kerosene and diesel subsidies,0,Yes
 Curtailment risk,2,Yes
 Curtailment risk,1,Somewhat
 Curtailment risk,0,No
+Availability of finance,0,Low
+Availability of finance,2.5,High

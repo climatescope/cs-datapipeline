@@ -3,6 +3,7 @@
 const assert = require('chai').assert
 const fs = require('fs-extra')
 
+const process = require('../scripts/process-data')
 const utils = require('../scripts/utils')
 
 // This test file performs tests on the input data, to make sure it's in the
@@ -86,6 +87,53 @@ describe('Input Data', function () {
         .reduce((acc, b) => chartValuesIndicators.includes(b) ? acc : acc.concat(b), [])
 
       return assert.isEmpty(missingIndicators, `The indicators ${missingIndicators} are used in a chart of type 'answer', but contain no values in the definition file.`)
+    })
+
+    step(`all the values of an 'answer' chart are defined in the chart definition`, async () => {
+      const charts = await utils.loadCSV('./input/charts.csv')
+      const chartValues = await utils.loadCSV(fp)
+      const rawIndicators = await utils.loadCSV('./input/2018/subindicators.csv')
+      const subindicators = process.subindicators(rawIndicators)
+
+      // Construct a list of answer charts
+      const answerCharts = charts
+        .filter(c => c.type === 'answer')
+        .map(c => c.indicatorId)
+
+      let missingDefinitions = answerCharts
+        .reduce((acc, c) => {
+          // Construct array with unique values found in subindicators.csv.
+          // It gets the value for the latest year.
+          const uniqueValues = subindicators
+            .filter(i => i.subindicator === c)
+            .map(i => utils.getLatestValue(i.values).value)
+            .reduce((acc, b) => {
+              let cleanValue = utils.parseValue(b)
+              return acc.includes(cleanValue) || cleanValue === null ? acc : acc.concat(cleanValue)
+            }, [])
+
+          // List with unique values in the chart definition
+          const cValues = chartValues
+            .filter(v => v.indicator === c)
+            .map(v => utils.parseValue(v.id))
+
+          // Compare both lists and check if there are missing values
+          const missingValues = uniqueValues
+            .reduce((acc, b) => cValues.includes(b) ? acc : acc.concat(b), [])
+
+          return !missingValues.length
+            ? acc
+            : acc.concat({
+              'subindicator': c,
+              'values': missingValues
+            })
+        }, [])
+
+      const missingDefString = missingDefinitions
+        .map(def => `${def.subindicator}: ${JSON.stringify(def.values)}`)
+        .join(', ')
+
+      return assert.isEmpty(missingDefinitions, `Subindicator values for the following charts are not defined in chart-values.csv. ${missingDefString}.`)
     })
   })
 })

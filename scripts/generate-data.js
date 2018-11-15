@@ -1,5 +1,6 @@
 'use strict'
 const bbox = require('@turf/bbox').default
+const dashify = require('dashify')
 const fs = require('fs-extra')
 
 const chart = require('./generate-charts')
@@ -10,6 +11,7 @@ const config = {
     'absolute': chart.singleValue,
     'answer': chart.singleValue,
     'average': chart.averageValue,
+    'range': chart.singleValue,
     'timeSeries': chart.timeSeries
   }
 }
@@ -47,7 +49,8 @@ function generateDetailedResultData (resultData, indicators, charts) {
     return {
       ...geo,
       profile: generateProfileData(geo, indicators),
-      charts: groups.length ? chart.groupCharts(chartData, groups) : chartData
+      charts: groups.length ? chart.groupCharts(chartData, groups) : chartData,
+      sectionCopy: generateSectionCopy(geo, indicators)
     }
   })
 }
@@ -68,6 +71,35 @@ function generateProfileData (geo, indicators) {
   })
 }
 
+// Generate section copy. The copy of each section on a country profile page is
+// stored in the subindicators.csv, under the id 'BNEF Take: [section title]'
+// Extract the section copy for all sections from the 'note' property.
+function generateSectionCopy (geo, indicators) {
+  let countryCopy = indicators
+    .filter(i =>
+      i.geography === geo.name &&
+      i.category === 'BNEF Take' &&
+      i.note !== ''
+    )
+
+  if (countryCopy.length) {
+    return countryCopy.map(section => {
+      let title = section
+        .subindicator.split(':')[1]
+        .trim()
+
+      return {
+        'id': dashify(title),
+        'name': title,
+        'value': section.note
+      }
+    })
+  } else {
+    utils.noDataWarning('Section texts', geo.name)
+    return null
+  }
+}
+
 // Generate overview of geographies. Add a bbox
 async function generateGeographyData (geographies) {
   const admin = await fs.readJson('./input/lib/ne-110m_bbox.geojson')
@@ -83,7 +115,7 @@ async function generateGeographyData (geographies) {
 // Generate an overview of the charts
 function generateChartMeta (charts, answers) {
   return charts.map(c => {
-    if (c.type === 'answer') {
+    if (c.type === 'answer' || c.type === 'range') {
       c['options'] = answers
         .filter(a => a.indicator === c.indicatorId)
         .map(a => ({

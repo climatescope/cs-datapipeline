@@ -1,6 +1,6 @@
 'use strict'
 const bbox = require('@turf/bbox').default
-const camelcase = require('camelcase')
+const dashify = require('dashify')
 const fs = require('fs-extra')
 
 const chart = require('./generate-charts')
@@ -89,7 +89,7 @@ function generateSectionCopy (geo, indicators) {
         .trim()
 
       return {
-        'id': camelcase(title),
+        'id': dashify(title),
         'name': title,
         'value': section.note
       }

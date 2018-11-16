@@ -53,6 +53,10 @@ describe('Utils', function () {
     it(`parses a '-' as 0`, async () =>
       assert.equal(utils.parseValue('-'), 0, `Doesn't parse a hyphen properly`)
     )
+
+    it(`parses a string that's not a hyphen ' This is a string' as a string`, async () =>
+      assert.equal(utils.parseValue(' This is a string'), 'This is a string', `Doesn't parse a string properly`)
+    )
   })
 
   describe('getLatestValue', async () => {

@@ -3,6 +3,7 @@
 const assert = require('chai').assert
 const fs = require('fs-extra')
 
+const process = require('../scripts/process-data')
 const utils = require('../scripts/utils')
 
 // This test file performs tests on the input data, to make sure it's in the
@@ -19,7 +20,7 @@ describe('Input Data', function () {
       const requiredHeaders = [ 'id', 'indicatorId', 'name', 'type', 'description', 'topic', 'labelX', 'labelY', 'unit' ]
       const data = await utils.loadCSV(fp)
 
-      return assert.containsAllKeys(data[0], requiredHeaders, `The chart definition doesn't require one of the required headers`)
+      return assert.containsAllKeys(data[0], requiredHeaders, `The chart definition doesn't have one of the required headers`)
     })
 
     step('valid chart types', async () => {
@@ -66,7 +67,7 @@ describe('Input Data', function () {
       const requiredHeaders = [ 'id', 'indicator', 'label' ]
       const data = await utils.loadCSV(fp)
 
-      return assert.containsAllKeys(data[0], requiredHeaders, `The chart values definition doesn't contain one of the required headers`)
+      return assert.containsAllKeys(data[0], requiredHeaders, `The chart values definition doesn't have one of the required headers`)
     })
 
     step(`all charts of type 'answer', have at least one option in the chart values definition`, async () => {
@@ -86,6 +87,68 @@ describe('Input Data', function () {
         .reduce((acc, b) => chartValuesIndicators.includes(b) ? acc : acc.concat(b), [])
 
       return assert.isEmpty(missingIndicators, `The indicators ${missingIndicators} are used in a chart of type 'answer', but contain no values in the definition file.`)
+    })
+
+    step(`all the values of an 'answer' chart are defined in the chart definition`, async () => {
+      const charts = await utils.loadCSV('./input/charts.csv')
+      const chartValues = await utils.loadCSV(fp)
+      const rawIndicators = await utils.loadCSV('./input/subindicators.csv')
+      const subindicators = process.subindicators(rawIndicators)
+
+      // Construct a list of answer charts
+      const answerCharts = charts
+        .filter(c => c.type === 'answer')
+        .map(c => c.indicatorId)
+
+      let missingDefinitions = answerCharts
+        .reduce((acc, c) => {
+          // Construct array with unique values found in subindicators.csv.
+          // It gets the value for the latest year.
+          const uniqueValues = subindicators
+            .filter(i => i.subindicator === c)
+            .map(i => utils.getLatestValue(i.values).value)
+            .reduce((acc, b) => {
+              let cleanValue = utils.parseValue(b)
+              return acc.includes(cleanValue) || cleanValue === null ? acc : acc.concat(cleanValue)
+            }, [])
+
+          // List with unique values in the chart definition
+          const cValues = chartValues
+            .filter(v => v.indicator === c)
+            .map(v => utils.parseValue(v.id))
+
+          // Compare both lists and check if there are missing values
+          const missingValues = uniqueValues
+            .reduce((acc, b) => cValues.includes(b) ? acc : acc.concat(b), [])
+
+          return !missingValues.length
+            ? acc
+            : acc.concat({
+              'subindicator': c,
+              'values': missingValues
+            })
+        }, [])
+
+      const missingDefString = missingDefinitions
+        .map(def => `${def.subindicator}: ${JSON.stringify(def.values)}`)
+        .join(', ')
+
+      return assert.isEmpty(missingDefinitions, `Subindicator values for the following charts are not defined in chart-values.csv. ${missingDefString}.`)
+    })
+  })
+
+  describe('Sub-indicators', async () => {
+    const fp = './input/subindicators.csv'
+
+    step('the subindicator file exists', async () =>
+      assert.isTrue(await fs.pathExists(fp), `${fp} does not exist`)
+    )
+
+    step('has all the required headers', async () => {
+      const requiredHeaders = [ 'id', 'topic', 'category', 'indicator', 'subindicator', 'units', 'geography', 'note' ]
+      const data = await utils.loadCSV(fp)
+
+      return assert.containsAllKeys(data[0], requiredHeaders, `The subindicator file doesn't have one of the required headers`)
     })
   })
 })

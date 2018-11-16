@@ -16,13 +16,18 @@ function averageValues (values) {
   return filteredValues.reduce((a, b) => a + b.value, 0) / filteredValues.length
 }
 
-// Parses a value. Any number should be a number, an empty string is null,
-// a hyphen is 0. Anything returns null
+// Parses a value:
+//   - any number should be a number
+//   - an empty string is null
+//   - a hyphen is 0
+//   - a string that's not a hyphen returns a string (eg. section copy)
+// Anything else returns null
 function parseValue (value) {
   let valNum = Number(value)
   if (value === '') return null
   if (typeof valNum === 'number' && !isNaN(valNum)) return valNum
   if (value.trim() === '-') return 0
+  if (typeof value === 'string') return value.trim()
   return null
 }
 

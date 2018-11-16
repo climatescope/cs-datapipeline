@@ -76,10 +76,11 @@ function generateProfileData (geo, indicators) {
 // Extract the section copy for all sections from the 'note' property.
 function generateSectionCopy (geo, indicators) {
   let countryCopy = indicators
+    // The .find checks if value of a particular year is not null
     .filter(i =>
       i.geography === geo.name &&
       i.category === 'BNEF Take' &&
-      i.note !== ''
+      i.values.find(v => v.year === 2017).value
     )
 
   if (countryCopy.length) {
@@ -91,7 +92,7 @@ function generateSectionCopy (geo, indicators) {
       return {
         'id': dashify(title),
         'name': title,
-        'value': section.note
+        'value': section.values['2017']
       }
     })
   } else {

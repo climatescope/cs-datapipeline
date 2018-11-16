@@ -92,7 +92,7 @@ function generateSectionCopy (geo, indicators) {
       return {
         'id': dashify(title),
         'name': title,
-        'value': section.values['2017']
+        'value': section.values.find(v => v.year === 2017).value
       }
     })
   } else {

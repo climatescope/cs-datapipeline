@@ -20,7 +20,7 @@ describe('Input Data', function () {
       const requiredHeaders = [ 'id', 'indicatorId', 'name', 'type', 'description', 'topic', 'labelX', 'labelY', 'unit' ]
       const data = await utils.loadCSV(fp)
 
-      return assert.containsAllKeys(data[0], requiredHeaders, `The chart definition doesn't require one of the required headers`)
+      return assert.containsAllKeys(data[0], requiredHeaders, `The chart definition doesn't have one of the required headers`)
     })
 
     step('valid chart types', async () => {
@@ -67,7 +67,7 @@ describe('Input Data', function () {
       const requiredHeaders = [ 'id', 'indicator', 'label' ]
       const data = await utils.loadCSV(fp)
 
-      return assert.containsAllKeys(data[0], requiredHeaders, `The chart values definition doesn't contain one of the required headers`)
+      return assert.containsAllKeys(data[0], requiredHeaders, `The chart values definition doesn't have one of the required headers`)
     })
 
     step(`all charts of type 'answer', have at least one option in the chart values definition`, async () => {
@@ -92,7 +92,7 @@ describe('Input Data', function () {
     step(`all the values of an 'answer' chart are defined in the chart definition`, async () => {
       const charts = await utils.loadCSV('./input/charts.csv')
       const chartValues = await utils.loadCSV(fp)
-      const rawIndicators = await utils.loadCSV('./input/2018/subindicators.csv')
+      const rawIndicators = await utils.loadCSV('./input/subindicators.csv')
       const subindicators = process.subindicators(rawIndicators)
 
       // Construct a list of answer charts
@@ -134,6 +134,21 @@ describe('Input Data', function () {
         .join(', ')
 
       return assert.isEmpty(missingDefinitions, `Subindicator values for the following charts are not defined in chart-values.csv. ${missingDefString}.`)
+    })
+  })
+
+  describe('Sub-indicators', async () => {
+    const fp = './input/subindicators.csv'
+
+    step('the subindicator file exists', async () =>
+      assert.isTrue(await fs.pathExists(fp), `${fp} does not exist`)
+    )
+
+    step('has all the required headers', async () => {
+      const requiredHeaders = [ 'id', 'topic', 'category', 'indicator', 'subindicator', 'units', 'geography', 'note' ]
+      const data = await utils.loadCSV(fp)
+
+      return assert.containsAllKeys(data[0], requiredHeaders, `The subindicator file doesn't have one of the required headers`)
     })
   })
 })

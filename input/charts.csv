@@ -7,7 +7,7 @@ upcomingAuctions,answer,Upcoming auctions,What is the volume of auctions announc
 wholesaleDistortions,answer,Wholesale price distortions,Are fossil fuels generators benefiting from subsidies that affect the price at which they can sell electricity onto the wholesale market?,fundamentals,Wholesale price distortions,,,
 sectorWholesale,answer,Power sector wholesale,,fundamentals,Wholesale power market,,,
 currencyVariation,answer,Currency variation,How high is the ten year variation of the local currency against the US dollar?,fundamentals,Currency variation,,,
-offtakerRisk,answer,Offtaker risk,How high is the offtake risk for independent generators?,fundamentals,Offtaker risk,,,
+offtakerRisk,range,Offtaker risk,How high is the offtake risk for independent generators?,fundamentals,Offtaker risk,,,
 standardisedPpa,answer,Standardised PPAs,Are power purchase agreements standardised in the market?,fundamentals,Standardised PPAs,,,
 ppaSufficientDuration,answer,PPAs of sufficient duration,Are PPAs of sufficient duration to be bankable for renewables developers?,fundamentals,PPAs of sufficient duration,,,
 purchaseObligation,answer,Purchase obligation,Is the offtaker obliged to pay for all the renewables output of generators?,fundamentals,Purchase obligation,,,

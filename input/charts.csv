@@ -14,14 +14,14 @@ purchaseObligation,answer,Purchase obligation,Is the offtaker obliged to pay for
 minigridLicensing,answer,Mini-grids: licensing,Is it legally possible to set up a mini-grid or small power project incl. for self use?,fundamentals,Mini-grids: licensing,,,
 keroseneDieselSubsidies,answer,Kerosene and diesel subsidies,Are retail diesel and kerosene prices subsidised?,opportunities,Kerosene and diesel subsidies,,,
 curtailmentRisk,answer,Curtailment risk,Are renewables projects at risk of seeing their production curtailed?,fundamentals,Curtailment risk,,,
-foreignInvestment,absolute,Foreign investment,Disclosed share of foreign investment in the clean energy sector.,experience,Foreign investment,,,%
+foreignInvestment,percent,Foreign investment,Disclosed share of foreign investment in the clean energy sector.,experience,Foreign investment,,,%
 electricityPrice,average,Electricity Price Data,Average residential electricity in the country,opportunities,Average residential electricity prices|Average commercial electricity prices|Average industrial electricity prices,,,$/MWh
 averageVAT,group,Average VAT paid by renewables,What is the average level of VAT for components needed to build a wind project?,opportunities,largeVAT|smallVAT,,,%
-largeVAT,absolute,Large scale renewables,,opportunities,VAT - Large scale renewables,,,%
-smallVAT,absolute,Small scale renewables,,opportunities,VAT - Small scale renewables,,,%
+largeVAT,percent,Large scale renewables,,opportunities,VAT - Large scale renewables,,,%
+smallVAT,percent,Small scale renewables,,opportunities,VAT - Small scale renewables,,,%
 importDuties,group,Import Duties,What is the average level of import duties for components needed for a solar project (panels and inverts)?,opportunities,largeDuties|smallDuties,,,
-largeDuties,absolute,Large scale renewables,,opportunities,Import duties - Large scale renewables,,,%
-smallDuties,absolute,Small scale renewables,,opportunities,Import duties - Small scale renewables,,,%
+largeDuties,percent,Large scale renewables,,opportunities,Import duties - Large scale renewables,,,%
+smallDuties,percent,Small scale renewables,,opportunities,Import duties - Small scale renewables,,,%
 availabilityFinance,range,Availability of finance,,experience,Availability of finance,,,
 installedCapacity,timeSeries,Installed Capacity,,experience,3.05,year,MW,
 powerGeneration,timeSeries,Power Generation,,experience,3.06,year,GWh,

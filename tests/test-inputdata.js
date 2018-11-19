@@ -24,7 +24,7 @@ describe('Input Data', function () {
     })
 
     step('valid chart types', async () => {
-      const validChartTypes = ['answer', 'average', 'range', 'timeSeries', 'absolute', 'group']
+      const validChartTypes = ['answer', 'average', 'percent', 'range', 'timeSeries', 'absolute', 'group']
       const data = await utils.loadCSV(fp)
 
       return assert.isTrue(data.map(c => c.type).every(r => validChartTypes.includes(r)), `The chart definition contains invalid chart types. Should be one of ${validChartTypes}`)

@@ -11,6 +11,7 @@ const config = {
     'absolute': chart.singleValue,
     'answer': chart.singleValue,
     'average': chart.averageValue,
+    'percent': chart.singleValue,
     'range': chart.singleValue,
     'timeSeries': chart.timeSeries
   }

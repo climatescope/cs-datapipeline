@@ -69,6 +69,9 @@ For example: `Average residential electricity prices|Average commercial electric
 
 `null` values are not taken into account to calculate the average.
 
+#### percent
+`percent` takes an absolute decimal value (`0.1`) and returns a percent value (10).
+
 #### range
 `range` allows a value to be specified on a scale. An example is 'Availability of Finance', which can have values between `0` and `2.5`. In the [Chart Values](#chart-values) file, these range steps will need to be specified. The minimum is the lower and upper bound, but intermediate steps can be specified as well (like: low, medium, high):
 

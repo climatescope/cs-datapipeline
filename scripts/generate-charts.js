@@ -38,9 +38,11 @@ function generateSingleValueChart (geo, data, chart) {
   // May contain values for multiple years. Get the latest value
   let latestValue = utils.getLatestValue(indicatorData.values)
 
+  let value = chart.type === 'percent' ? latestValue.value * 100 : latestValue.value
+
   return {
     ...answer,
-    'value': latestValue.value,
+    'value': value,
     'year': latestValue.year,
     'note': indicatorData.note === '' ? null : indicatorData.note
   }

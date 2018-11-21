@@ -14,7 +14,6 @@ BJ,Benin,off,africa
 BO,Bolivia,on,lac
 BR,Brazil,on,lac
 BW,Botswana,off,africa
-BY,Belarus,on,eu
 CD,Congo (Dem. Rep.),off,africa
 CF,Central African Republic,off,africa
 CG,Congo,off,africa
@@ -55,7 +54,6 @@ LY,Libya,on,africa
 MA,Morocco,on,africa
 MD,Moldova,on,eu
 MG,Madagascar,off,africa
-MK,Macedonia,on,eu
 ML,Mali,off,africa
 MM,Myanmar,off,asia
 MN,Mongolia,on,asia
@@ -72,7 +70,6 @@ NP,Nepal,off,asia
 OM,Oman,on,me
 PA,Panama,on,lac
 PE,Peru,off,lac
-PG,Papua New Guinea,off,asia
 PH,Philippines,off,asia
 PK,Pakistan,off,asia
 PS,West Bank and Gaza,off,me

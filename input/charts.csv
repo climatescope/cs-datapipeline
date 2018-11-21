@@ -25,6 +25,6 @@ smallDuties,percent,Small scale renewables,,opportunities,Import duties - Small 
 availabilityFinance,range,Availability of finance,,experience,Availability of finance,,,
 installedCapacity,timeSeries,Installed Capacity,,experience,3.05,year,MW,
 powerGeneration,timeSeries,Power Generation,,experience,3.06,year,GWh,
-cleanEnergyInvestment,timeSeries,Clean Energy Investment,What's the volume of clean energy investment in the country over the last five years?,experience,investment,year,usd/m,
+cleanEnergyInvestment,timeSeries,Clean Energy Investment,What's the volume of clean energy investment in the country over the last five years?,experience,investment,year,$ million,
 doingBusinessFeatures,group,Features,,,standardisedPpa|ppaSufficientDuration|purchaseObligation|minigridLicensing,,,
 barriersFeatures,group,Features,,,keroseneDieselSubsidies|curtailmentRisk,,,

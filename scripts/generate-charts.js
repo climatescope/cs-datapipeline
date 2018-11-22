@@ -39,6 +39,8 @@ function generateSingleValueChart (geo, data, chart) {
   let latestValue = utils.getLatestValue(indicatorData.values)
 
   let value = chart.type === 'percent' ? latestValue.value * 100 : latestValue.value
+  // Keep 2 decimals
+  value = value ? Math.round(value * 1e2) / 1e2 : value
 
   return {
     ...answer,

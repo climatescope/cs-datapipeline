@@ -30,12 +30,12 @@ Currency variation,1,Very low
 Currency variation,0.75,Low
 Currency variation,0.5,High
 Currency variation,0,Very high
-Offtaker risk,2,5
-Offtaker risk,1.5,4
-Offtaker risk,1,3
-Offtaker risk,0.5,2
-Offtaker risk,0.25,1
-Offtaker risk,0,0
+Offtaker risk,2,Low risk
+Offtaker risk,1.5,Somewhat low risk
+Offtaker risk,1,Medium risk
+Offtaker risk,0.5,Somewhat high risk
+Offtaker risk,0.25, High risk
+Offtaker risk,0,Very high risk
 Standardised PPAs,2,Yes
 Standardised PPAs,1,Somewhat
 Standardised PPAs,0,No

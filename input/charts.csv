@@ -22,7 +22,7 @@ smallVAT,percent,Small scale renewables,,opportunities,VAT - Small scale renewab
 importDuties,group,Import Duties,What is the average level of import duties for components needed for a solar project (panels and inverts)?,opportunities,largeDuties|smallDuties,,,
 largeDuties,percent,Large scale renewables,,opportunities,Import duties - Large scale renewables,,,%
 smallDuties,percent,Small scale renewables,,opportunities,Import duties - Small scale renewables,,,%
-availabilityFinance,range,Availability of finance,,experience,Availability of finance,,,
+availabilityFinance,range,Availability of finance,This score reflects whether or not existing projects have been able to secure concessional or commercial finance from domestic and international sources.,experience,Availability of finance,,,
 installedCapacity,timeSeries,Installed Capacity,,experience,3.05,year,MW,
 powerGeneration,timeSeries,Power Generation,,experience,3.06,year,GWh,
 cleanEnergyInvestment,timeSeries,Clean Energy Investment,What's the volume of clean energy investment in the country over the last five years?,experience,investment,year,$ million,

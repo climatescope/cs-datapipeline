@@ -48,9 +48,9 @@ Purchase obligation,0,No
 Mini-grids: licensing,1,Yes
 Mini-grids: licensing,0.5,Somewhat
 Mini-grids: licensing,0,No
-Kerosene and diesel subsidies,1,No
-Kerosene and diesel subsidies,0.5,Somewhat
 Kerosene and diesel subsidies,0,Yes
+Kerosene and diesel subsidies,0.5,Somewhat
+Kerosene and diesel subsidies,1,No
 Curtailment risk,2,Yes
 Curtailment risk,0.5,Somewhat
 Curtailment risk,0,No

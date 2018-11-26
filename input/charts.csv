@@ -15,16 +15,16 @@ minigridLicensing,answer,Mini-grids: licensing,Is it legally possible to set up 
 keroseneDieselSubsidies,answer,Kerosene and diesel subsidies,Are retail diesel and kerosene prices subsidised?,opportunities,Kerosene and diesel subsidies,,,
 curtailmentRisk,answer,Curtailment risk,Are renewables projects at risk of seeing their production curtailed?,fundamentals,Curtailment risk,,,
 foreignInvestment,percent,Foreign investment,Disclosed share of foreign investment in the clean energy sector.,experience,Foreign investment,,,%
-electricityPrice,average,Electricity Price Data,Average residential electricity in the country,opportunities,Average residential electricity prices|Average commercial electricity prices|Average industrial electricity prices,,,$/MWh
+electricityPrice,average,Electricity Price Data,Average retail electricity price,opportunities,Average residential electricity prices|Average commercial electricity prices|Average industrial electricity prices,,,$/MWh
 averageVAT,group,Average VAT paid by renewables,What is the average level of VAT for components needed to build a wind project?,opportunities,largeVAT|smallVAT,,,%
 largeVAT,percent,Large scale renewables,,opportunities,VAT - Large scale renewables,,,%
 smallVAT,percent,Small scale renewables,,opportunities,VAT - Small scale renewables,,,%
 importDuties,group,Import Duties,What is the average level of import duties for components needed for a solar project (panels and inverts)?,opportunities,largeDuties|smallDuties,,,
 largeDuties,percent,Large scale renewables,,opportunities,Import duties - Large scale renewables,,,%
 smallDuties,percent,Small scale renewables,,opportunities,Import duties - Small scale renewables,,,%
-availabilityFinance,range,Availability of finance,,experience,Availability of finance,,,
+availabilityFinance,range,Availability of finance,This score reflects whether or not existing projects have been able to secure concessional or commercial finance from domestic and international sources.,experience,Availability of finance,,,
 installedCapacity,timeSeries,Installed Capacity,,experience,3.05,year,MW,
 powerGeneration,timeSeries,Power Generation,,experience,3.06,year,GWh,
-cleanEnergyInvestment,timeSeries,Clean Energy Investment,What's the volume of clean energy investment in the country over the last five years?,experience,investment,year,usd/m,
+cleanEnergyInvestment,timeSeries,Clean Energy Investment,What's the volume of clean energy investment in the country over the last five years?,experience,investment,year,$ million,
 doingBusinessFeatures,group,Features,,,standardisedPpa|ppaSufficientDuration|purchaseObligation|minigridLicensing,,,
 barriersFeatures,group,Features,,,keroseneDieselSubsidies|curtailmentRisk,,,

@@ -26,8 +26,9 @@ function processRawGeographies (geographies, regions) {
 // Aggregate values by year, sector and geography
 function processRawInvestments (data) {
   // The data contains data for funky years. Filter those out.
+  // Exclude future years as well
   const cleanedData = data
-    .filter(d => Number(d.year) > 2000 && Number(d.year) < 2100)
+    .filter(d => Number(d.year) > 2000 && Number(d.year) <= 2017)
 
   // Get the years with investment data across the dataset.
   // Not all countries have investments in all years.
@@ -38,10 +39,10 @@ function processRawInvestments (data) {
 
   return [...cleanedData]
     .reduce((acc, b) => {
-      let v = {
-        year: Number(b.year),
-        value: Number(b.value)
-      }
+      const year = Number(b.year)
+      // Handle values like "1,244.54"
+      const value = Number(b.value.replace(',', ''))
+      const v = { year, value }
 
       let match = acc.find(o => o.geography === b.geography)
       if (!match) {
@@ -54,10 +55,10 @@ function processRawInvestments (data) {
       } else {
         // The input data can contain multiple investments for the same year,
         // sector, geography. Aggregate these.
-        let yrMatch = match.values.find(v => v.year === Number(b.year))
+        let yrMatch = match.values.find(v => v.year === year)
 
         if (yrMatch) {
-          yrMatch.value += Number(b.value)
+          yrMatch.value += value
         } else {
           match.values = match.values.concat(v)
         }
@@ -89,6 +90,8 @@ function processRawSubindicators (data) {
 
   return data.map(d => {
     let values = years
+      // Exclude future years
+      .filter(y => y <= 2017)
       .map(y => ({
         value: utils.parseValue(d[y]),
         year: Number(y)

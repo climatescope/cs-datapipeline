@@ -17,17 +17,24 @@ describe('Input Data', function () {
     )
 
     step('has all the required headers', async () => {
-      const requiredHeaders = [ 'id', 'indicatorId', 'name', 'type', 'description', 'topic', 'labelX', 'labelY', 'unit' ]
+      const requiredHeaders = [ 'id', 'indicatorId', 'name', 'type', 'description', 'topic', 'labelX', 'labelY', 'unit', 'applicable-grid' ]
       const data = await utils.loadCSV(fp)
 
-      return assert.containsAllKeys(data[0], requiredHeaders, `The chart definition doesn't have one of the required headers`)
+      return assert.containsAllKeys(data[0], requiredHeaders, `${fp} doesn't have one of the required headers`)
     })
 
     step('valid chart types', async () => {
       const validChartTypes = ['answer', 'average', 'percent', 'range', 'timeSeries', 'absolute', 'group']
       const data = await utils.loadCSV(fp)
 
-      return assert.isTrue(data.map(c => c.type).every(r => validChartTypes.includes(r)), `The chart definition contains invalid chart types. Should be one of ${validChartTypes}`)
+      return assert.isTrue(data.map(c => c.type).every(r => validChartTypes.includes(r)), `${fp} contains invalid chart types. Should be one of ${validChartTypes}`)
+    })
+
+    step('valid values for applicable-grid', async () => {
+      const validValues = ['both', 'on', 'off']
+      const data = await utils.loadCSV(fp)
+
+      return assert.isTrue(data.map(c => c['applicable-grid']).every(r => validValues.includes(r)), `${fp} contains invalid values for column 'applicable-grid'. Should be one of ${validValues}`)
     })
 
     step('all groups reference valid chart IDs', async () => {
@@ -52,7 +59,7 @@ describe('Input Data', function () {
           return acc.concat(b)
         }, [])
 
-      return assert.isEmpty(missingCharts, `The chart id's ${missingCharts} are referenced by a group, but not present in the definition file.`)
+      return assert.isEmpty(missingCharts, `The chart id's ${missingCharts} are referenced by a group, but not present in ${fp}.`)
     })
   })
 
@@ -67,7 +74,7 @@ describe('Input Data', function () {
       const requiredHeaders = [ 'id', 'indicator', 'label' ]
       const data = await utils.loadCSV(fp)
 
-      return assert.containsAllKeys(data[0], requiredHeaders, `The chart values definition doesn't have one of the required headers`)
+      return assert.containsAllKeys(data[0], requiredHeaders, `${fp} doesn't have one of the required headers`)
     })
 
     step(`all charts of type 'answer', have at least one option in the chart values definition`, async () => {
@@ -86,7 +93,7 @@ describe('Input Data', function () {
       let missingIndicators = chartIndicators
         .reduce((acc, b) => chartValuesIndicators.includes(b) ? acc : acc.concat(b), [])
 
-      return assert.isEmpty(missingIndicators, `The indicators ${missingIndicators} are used in a chart of type 'answer', but contain no values in the definition file.`)
+      return assert.isEmpty(missingIndicators, `The indicators ${missingIndicators} are used in a chart of type 'answer', but contain no values in ${fp}.`)
     })
 
     step(`all the values of an 'answer' chart are defined in the chart definition`, async () => {
@@ -133,7 +140,7 @@ describe('Input Data', function () {
         .map(def => `${def.subindicator}: ${JSON.stringify(def.values)}`)
         .join(', ')
 
-      return assert.isEmpty(missingDefinitions, `Subindicator values for the following charts are not defined in chart-values.csv. ${missingDefString}.`)
+      return assert.isEmpty(missingDefinitions, `Subindicator values for the following charts are not defined in ${fp}. ${missingDefString}.`)
     })
   })
 

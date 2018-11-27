@@ -7,6 +7,7 @@ The `input` folder contains a series of CSV files to prepare the data for the gl
 - [investments](#investmentscsv)
 - [regions](#regionscsv)
 - [subindicators](#subindicatorscsv)
+- [topics](#topicscsv)
 
 ## chart-values.csv
 An overview of the values and labels of chart type `answer` and `range`. This file will be used to translate the ID in the subindicator file into a human readable label on the frontend.
@@ -85,6 +86,15 @@ id,topic,category,indicator,subindicator,units,geography,2010,2011,2012,...,note
 ```
 
 It will try to get data for years between 2000 and 2100.
+
+## topics.csv
+Data about the topics.
+
+Structure:
+
+- `id` - ID of the topic. Eg. `opportunities`
+- `name` - name of the topic. Eg. `Opportunities`
+- `weight` - numeric value with the weight. The total of all weights should sum to 1. Eg. `0.25`
 
 ---
 

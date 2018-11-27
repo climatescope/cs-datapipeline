@@ -169,7 +169,7 @@ describe('Input Data', function () {
     })
   })
 
-  describe('Investment', async () => {
+  describe('Investments', async () => {
     const fp = './input/investments.csv'
 
     step('the definition file exists', async () =>
@@ -211,6 +211,28 @@ describe('Input Data', function () {
       const data = await utils.loadCSV(fp)
 
       return assert.containsAllKeys(data[0], requiredHeaders, `The subindicator file doesn't have one of the required headers`)
+    })
+  })
+
+  describe('Topics', async () => {
+    const fp = './input/topics.csv'
+
+    step('the definition file exists', async () =>
+      assert.isTrue(await fs.pathExists(fp), `${fp} does not exist`)
+    )
+
+    step('has all the required headers', async () => {
+      const requiredHeaders = [ 'id', 'name', 'weight' ]
+      const data = await utils.loadCSV(fp)
+
+      return assert.containsAllKeys(data[0], requiredHeaders, `${fp} doesn't have one of the required headers`)
+    })
+
+    step('the sum of all weights is 1', async () => {
+      const data = await utils.loadCSV(fp)
+      const sum = data.reduce((acc, b) => acc + Number(b.weight), 0)
+
+      return assert.equal(sum, 1, `sum of the weights is ${sum}. This should be 1.`)
     })
   })
 })

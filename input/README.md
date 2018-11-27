@@ -1,11 +1,11 @@
 # Climatescope Input data
 The `input` folder contains a series of CSV files to prepare the data for the global-climatescope.org. This readme outlines the requirements of each of the files:
 
-- [chart values](#chart-values.csv)
-- [charts](#charts.csv)
-- [geographies](#geographies.csv)
-- [regions](#regions.csv)
-- [subindicators](#subindicators.csv)
+- [chart values](#chart-valuescsv)
+- [charts](#chartscsv)
+- [geographies](#geographiescsv)
+- [regions](#regionscsv)
+- [subindicators](#subindicatorscsv)
 
 ## chart-values.csv
 An overview of the values and labels of chart type `answer` and `range`. This file will be used to translate the ID in the subindicator file into a human readable label on the frontend.
@@ -51,7 +51,15 @@ Structure:
 - `id` - the [ISO 3166-1 alpha-2](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2) code of the country
 - `name` - the name to be shown on the site. Note that this name needs to be exactly the same as used in the other files. (including `subindicators.csv` and `scores.csv`)
 - `grid` - the grid status of the country. One of: `on`, `off`
-- `region` - the ID of the region. Needs to be specified in [`regions.csv`](#Regions)
+- `region` - the ID of the region. Needs to be specified in [`regions.csv`](#regionscsv)
+
+## regions.csv
+This file contains the regions.
+
+Structure:
+
+- `id` - the ID of the region. This should correspond to the region ID's used in [`geographies.csv`](#geographiescsv)
+- `name` - the human readable name used on the website
 
 ## subindicators.csv
 Data with subindicator data. This expects the following columns: 
@@ -89,7 +97,7 @@ These chart types need to have a unit.
 
 When there are multiple data points for a country, the script will store the value for the latest year.
 
-See the section [Chart Values](#chart-values) for more information about labeling the answers.
+See the section [Chart Values](#chart-valuescsv) for more information about labeling the answers.
 
 ### average
 `average` takes multiple sub-indicators and returns their average. These sub-indicators have to be specified in the `indicatorId` column, separated by a `|`.
@@ -101,7 +109,7 @@ For example: `Average residential electricity prices|Average commercial electric
 `percent` takes an absolute decimal value (`0.1`) and returns a percent value (10).
 
 ### range
-`range` allows a value to be specified on a scale. An example is 'Availability of Finance', which can have values between `0` and `2.5`. In the [Chart Values](#chart-values) file, these range steps will need to be specified. The minimum is the lower and upper bound, but intermediate steps can be specified as well (like: low, medium, high):
+`range` allows a value to be specified on a scale. An example is 'Availability of Finance', which can have values between `0` and `2.5`. In the [Chart Values](#chart-valuescsv) file, these range steps will need to be specified. The minimum is the lower and upper bound, but intermediate steps can be specified as well (like: low, medium, high):
 
 ``` json
 "options": [

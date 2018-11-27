@@ -49,7 +49,7 @@ Additional columns in the dataset are ignored.
 - `labelX` - mandatory for chart type `timeSeries`. Eg .`year`
 - `labelY` - mandatory for chart type `timeSeries`. Eg. `Gwh`
 - `unit` - mandatory for chart type `absolute`. Eg. `%`
-
+- `applicable-grid` - control what countries this chart is show for. One of: `on`, `off`, and `both`
 
 ### Chart types
 #### absolute

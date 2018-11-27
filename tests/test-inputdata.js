@@ -166,7 +166,22 @@ describe('Input Data', function () {
         .reduce((acc, b) => availableRegionIds.includes(b) ? acc : acc.concat(b), [])
 
       return assert.isEmpty(missingRegions, `${fp} contains regions (${missingRegions}) that are not in the region definition file.`)
-    })    
+    })
+  })
+
+  describe('Investment', async () => {
+    const fp = './input/investments.csv'
+
+    step('the definition file exists', async () =>
+      assert.isTrue(await fs.pathExists(fp), `${fp} does not exist`)
+    )
+
+    step('has all the required headers', async () => {
+      const requiredHeaders = [ 'year', 'sector', 'geography', 'value' ]
+      const data = await utils.loadCSV(fp)
+
+      return assert.containsAllKeys(data[0], requiredHeaders, `${fp} doesn't have one of the required headers`)
+    })
   })
 
   describe('Regions', async () => {

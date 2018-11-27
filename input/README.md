@@ -4,6 +4,7 @@ The `input` folder contains a series of CSV files to prepare the data for the gl
 - [chart values](#chart-valuescsv)
 - [charts](#chartscsv)
 - [geographies](#geographiescsv)
+- [investments](#investmentscsv)
 - [regions](#regionscsv)
 - [subindicators](#subindicatorscsv)
 
@@ -53,6 +54,20 @@ Structure:
 - `grid` - the grid status of the country. One of: `on`, `off`
 - `region` - the ID of the region. Needs to be specified in [`regions.csv`](#regionscsv)
 
+## investments.csv
+Data on clean energy investments. The script aggregates data by year, sector and geography.
+
+Structure:
+
+- `year` - the year of the investment. Eg. `2014`
+- `sector` - the sector of the investment. Eg. `Wind`
+- `geography` - the geography of the investment. Note that this needs to be spelled the same as the name in [`geographies.csv`](#geographiescsv). Eg. `Albania`
+- `value` - the value of the investment
+
+If the dataset contains multiple entries for the same year, sector and geography, it will aggregate these into a single annual value. Only years between 2000 and 2100 are considered.
+
+Additional columns in the dataset are ignored.
+
 ## regions.csv
 This file contains the regions.
 
@@ -70,19 +85,6 @@ id,topic,category,indicator,subindicator,units,geography,2010,2011,2012,...,note
 ```
 
 It will try to get data for years between 2000 and 2100.
-
-## investment.csv
-Data for the Clean Energy Investment chart. The script aggregates data by year, sector and geography. It requires the following columns:
-
-``` csv
-year,sector,geography,value
-2017,Wind,Albania,36.1
-
-```
-
-If the dataset contains multiple entries for the same year, sector and geography, it will aggregate these into a single annual value. Only years between 2000 and 2100 are considered.
-
-Additional columns in the dataset are ignored.
 
 ---
 

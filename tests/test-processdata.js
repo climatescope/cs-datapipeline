@@ -1,6 +1,9 @@
 'use strict'
 const assert = require('chai').assert
+const fs = require('fs-extra')
+const yaml = require('js-yaml')
 
+const c = yaml.safeLoad(fs.readFileSync('./input/config.yml'))
 const process = require('../scripts/process-data')
 
 describe('Process Data', function () {
@@ -62,7 +65,7 @@ describe('Process Data', function () {
     ]
 
     it('aggregate investment data', async () =>
-      assert.deepEqual(process.investments(input, [2006, 2009]), expected, 'Data not aggregated properly')
+      assert.deepEqual(process.investments(input, c), expected, 'Data not aggregated properly')
     )
   })
 })

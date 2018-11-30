@@ -40,10 +40,11 @@ function generateResultData (geographies, scores, topics) {
 // data needed for the chart
 function generateDetailedResultData (resultData, indicators, charts, conf) {
   return resultData.map(geo => {
+    let yr = conf.subindicators.maxYear
     // Generate chart data for all types except group
     let chartData = charts
       .filter(c => c.type !== 'group')
-      .map(c => config.chartFunction[c.type](geo, indicators, c))
+      .map(c => config.chartFunction[c.type](geo, indicators, c, yr))
 
     let groups = charts.filter(c => c.type === 'group')
 

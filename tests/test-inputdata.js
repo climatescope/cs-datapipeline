@@ -2,7 +2,9 @@
 'use strict'
 const assert = require('chai').assert
 const fs = require('fs-extra')
+const yaml = require('js-yaml')
 
+const c = yaml.safeLoad(fs.readFileSync('./input/config.yml'))
 const process = require('../scripts/process-data')
 const utils = require('../scripts/utils')
 
@@ -100,7 +102,7 @@ describe('Input Data', function () {
       const charts = await utils.loadCSV('./input/charts.csv')
       const chartValues = await utils.loadCSV(fp)
       const rawIndicators = await utils.loadCSV('./input/subindicators.csv')
-      const subindicators = process.subindicators(rawIndicators)
+      const subindicators = process.subindicators(rawIndicators, c)
 
       // Construct a list of answer charts
       const answerCharts = charts
@@ -156,6 +158,24 @@ describe('Input Data', function () {
       const data = await utils.loadCSV(fp)
 
       return assert.containsAllKeys(data[0], requiredHeaders, `The subindicator file doesn't have one of the required headers`)
+    })
+
+    step('has data for all the years', async () => {
+      const data = await utils.loadCSV(fp)
+      const min = c.subindicators.minYear
+      const max = c.subindicators.maxYear
+      const header = Object.keys(data[0])
+        .map(str => Number(str))
+
+      // Construct an array with all years between min and max year
+      const years = Array(max - min + 1)
+        .fill()
+        .map((placeholder, i) => min + i)
+
+      let missingYears = years
+        .reduce((acc, b) => header.includes(b) ? acc : acc.concat(b), [])
+
+      return assert.isEmpty(missingYears, `config.yml specifies that subindicator data is generated between ${min} and ${max}, but ${fp} doesn't contain columns for ${missingYears}.`)
     })
   })
 })

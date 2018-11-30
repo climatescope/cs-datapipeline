@@ -1,5 +1,6 @@
 'use strict'
 const fs = require('fs-extra')
+const yaml = require('js-yaml')
 
 const process = require('./scripts/process-data')
 const generate = require('./scripts/generate-data')
@@ -7,8 +8,10 @@ const utils = require('./scripts/utils');
 
 (async function main () {
   try {
-    // Empty the output folder. Create them if they don't exist.
+    // Empty the output folders. Create them if they don't exist.
     await ['./output', './output/results'].forEach(f => fs.emptyDirSync(f))
+
+    const config = yaml.safeLoad(await fs.readFile('./input/config.yml'))
 
     // Load the raw data from CSV files
     const [
@@ -41,7 +44,7 @@ const utils = require('./scripts/utils');
     ] = await Promise.all([
       process.charts(rawCharts),
       process.geographies(rawGeographies, rawRegions),
-      [].concat(await process.subindicators(rawSubindicators), await process.investments(rawInvestments)),
+      [].concat(await process.subindicators(rawSubindicators, config), await process.investments(rawInvestments, config)),
       process.scores(rawScores, 2018),
       process.topics(rawTopics)
     ])
@@ -58,7 +61,7 @@ const utils = require('./scripts/utils');
     ])
 
     // Contains scores, and the auxiliary data to build the charts
-    const detailedResultData = generate.detailedResults(resultData, indicators, charts)
+    const detailedResultData = generate.detailedResults(resultData, indicators, charts, config)
 
     await Promise.all([
       ...detailedResultData.map(geo => fs.writeJson(`./output/results/${geo.iso}.json`, geo)),

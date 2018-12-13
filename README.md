@@ -16,7 +16,7 @@ Circle CI will automatically detect the Pull Request and run tests on the input 
 Once the tests pass, you can merge the Pull Request to the `master` branch.
 
 ## Updating section copy
-The copy for each of the sections on the country pages is stored in the CSV file with subindicators.csv. Updating the copy of these sections can be done through this file, following the instruction to [edit the data](#editingdata).
+The copy for each of the sections on the country pages is stored in `subindicators.csv`. Updating the copy of these sections can be done through this file, following the instruction to [edit the data](#editingdata).
 
 ## How to add a new edition
 Instructions forthcoming.

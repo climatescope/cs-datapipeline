@@ -23,8 +23,8 @@ function generateTimeSeriesChart (geo, data, chart) {
   }
 }
 
-// Generate data for a single answer chart
-function generateSingleValueChart (geo, data, chart) {
+// Generate data for a single answer chart, for a specific year
+function generateSingleValueChart (geo, data, chart, yr) {
   let indicatorData = data
     .find(i => i.subindicator === chart.indicatorId && i.geography === geo.name)
 
@@ -35,23 +35,23 @@ function generateSingleValueChart (geo, data, chart) {
     return answer
   }
 
-  // May contain values for multiple years. Get the latest value
-  let latestValue = utils.getLatestValue(indicatorData.values)
+  // Get the value for a specific year
+  let yrValue = indicatorData.values.find(v => v.year === yr)
 
-  let value = chart.type === 'percent' ? latestValue.value * 100 : latestValue.value
+  let value = chart.type === 'percent' ? yrValue.value * 100 : yrValue.value
   // Keep 2 decimals
   value = value ? Math.round(value * 1e2) / 1e2 : value
 
   return {
     ...answer,
     'value': value,
-    'year': latestValue.year,
+    'year': yr,
     'note': indicatorData.note === '' ? null : indicatorData.note
   }
 }
 
-// Generate an average for multiple indicators
-function generateAverageValue (geo, data, chart) {
+// Generate an average for multiple indicators, for a specific year
+function generateAverageValue (geo, data, chart, yr) {
   let indicatorsToAvg = chart['indicatorId'].split('|')
   let indicatorData = data
     .filter(d => d.geography === geo.name && indicatorsToAvg.includes(d.subindicator))
@@ -65,19 +65,19 @@ function generateAverageValue (geo, data, chart) {
 
   // Get the latest years we have a value for, for each indicator, and filter
   // out the nulls.
-  let latestValues = indicatorData
-    .map(ind => utils.getLatestValue(ind.values))
+  let yrValues = indicatorData
+    .map(ind => ind.values.find(v => v.year === yr))
     .filter(ind => ind.value)
 
-  if (!latestValues.length) {
+  if (!yrValues.length) {
     utils.noDataWarning(chart.name, geo.name)
     return value
   }
 
   return {
     ...value,
-    value: utils.averageValues(latestValues),
-    year: latestValues[0].year
+    value: utils.averageValues(yrValues),
+    year: yr
   }
 }
 

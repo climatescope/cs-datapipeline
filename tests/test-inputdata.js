@@ -146,6 +146,68 @@ describe('Input Data', function () {
     })
   })
 
+  describe('Geographies', async () => {
+    const fp = './input/geographies.csv'
+
+    step('the definition file exists', async () =>
+      assert.isTrue(await fs.pathExists(fp), `${fp} does not exist`)
+    )
+
+    step('has all the required headers', async () => {
+      const requiredHeaders = [ 'id', 'name', 'grid', 'region' ]
+      const data = await utils.loadCSV(fp)
+
+      return assert.containsAllKeys(data[0], requiredHeaders, `${fp} doesn't have one of the required headers`)
+    })
+
+    step('all the regions are valid', async () => {
+      const geographies = await utils.loadCSV(fp)
+      const regions = await utils.loadCSV('./input/regions.csv')
+
+      // List with unique region IDs in geography file
+      const referencedRegionIds = geographies
+        .reduce((acc, b) => acc.includes(b.region) ? acc : acc.concat(b.region), [])
+
+      // List with region IDs in region file
+      const availableRegionIds = regions.map(r => r.id)
+
+      const missingRegions = referencedRegionIds
+        .reduce((acc, b) => availableRegionIds.includes(b) ? acc : acc.concat(b), [])
+
+      return assert.isEmpty(missingRegions, `${fp} contains regions (${missingRegions}) that are not in the region definition file.`)
+    })
+  })
+
+  describe('Investments', async () => {
+    const fp = './input/investments.csv'
+
+    step('the definition file exists', async () =>
+      assert.isTrue(await fs.pathExists(fp), `${fp} does not exist`)
+    )
+
+    step('has all the required headers', async () => {
+      const requiredHeaders = [ 'year', 'sector', 'geography', 'value' ]
+      const data = await utils.loadCSV(fp)
+
+      return assert.containsAllKeys(data[0], requiredHeaders, `${fp} doesn't have one of the required headers`)
+    })
+  })
+
+  describe('Regions', async () => {
+    const fp = './input/regions.csv'
+
+    step('the definition file exists', async () =>
+      assert.isTrue(await fs.pathExists(fp), `${fp} does not exist`)
+    )
+
+    step('has all the required headers', async () => {
+      const requiredHeaders = [ 'id', 'name' ]
+      const data = await utils.loadCSV(fp)
+
+      return assert.containsAllKeys(data[0], requiredHeaders, `${fp} doesn't have one of the required headers`)
+    })
+  })
+
   describe('Sub-indicators', async () => {
     const fp = './input/subindicators.csv'
 
@@ -176,6 +238,28 @@ describe('Input Data', function () {
         .reduce((acc, b) => header.includes(b) ? acc : acc.concat(b), [])
 
       return assert.isEmpty(missingYears, `config.yml specifies that subindicator data is generated between ${min} and ${max}, but ${fp} doesn't contain columns for ${missingYears}.`)
+    })
+  })
+
+  describe('Topics', async () => {
+    const fp = './input/topics.csv'
+
+    step('the definition file exists', async () =>
+      assert.isTrue(await fs.pathExists(fp), `${fp} does not exist`)
+    )
+
+    step('has all the required headers', async () => {
+      const requiredHeaders = [ 'id', 'name', 'weight' ]
+      const data = await utils.loadCSV(fp)
+
+      return assert.containsAllKeys(data[0], requiredHeaders, `${fp} doesn't have one of the required headers`)
+    })
+
+    step('the sum of all weights is 1', async () => {
+      const data = await utils.loadCSV(fp)
+      const sum = data.reduce((acc, b) => acc + Number(b.weight), 0)
+
+      return assert.equal(sum, 1, `sum of the weights is ${sum}. This should be 1.`)
     })
   })
 })

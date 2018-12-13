@@ -27,7 +27,7 @@ const utils = require('./scripts/utils');
       utils.loadCSV('./input/charts.csv'),
       utils.loadCSV('./input/chart-values.csv'),
       utils.loadCSV('./input/geographies.csv'),
-      utils.loadCSV(`./input/2018/investment.csv`),
+      utils.loadCSV(`./input/investments.csv`),
       utils.loadCSV('./input/regions.csv'),
       utils.loadCSV(`./input/2018/scores.csv`),
       utils.loadCSV(`./input/subindicators.csv`),

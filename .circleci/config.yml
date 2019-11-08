@@ -10,7 +10,7 @@ jobs:
       # Branch on data pipeline that will trigger the build
       - PRODUCTION_BRANCH: master
       # Branch on climatescope/climatescope.org to push final data to
-      - API_BRANCH: master
+      - API_BRANCH: 2019
 
     steps:
       - checkout

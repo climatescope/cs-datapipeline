@@ -19,7 +19,12 @@ Once the tests pass, you can merge the Pull Request to the `master` branch.
 The copy for each of the sections on the country pages is stored in `subindicators.csv`. Updating the copy of these sections can be done through this file, following the instruction to [edit the data](#editingdata).
 
 ## How to add a new edition
-Instructions forthcoming.
+Ensure to push all changes to a staging environment:
+
+1. set up a staging branch on the `climatescope-datapipeline` and the `climatescope.org` repo
+2. change `API_BRANCH` in `.circle/config.yml` to match the staging branch on `climatescope.org`
+
+Once the changes on the staging branch are ready to be published, change the `API_BRANCH` back to `master`, and merge the changes into the `master` branch of this repo.
 
 ## Running the project locally
 Install the dependencies:

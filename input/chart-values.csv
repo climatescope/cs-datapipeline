@@ -45,13 +45,14 @@ PPAs of sufficient duration,0,No
 Purchase obligation,1,Yes
 Purchase obligation,0.5,Somewhat
 Purchase obligation,0,No
-Mini-grids: licensing,1,Yes
-Mini-grids: licensing,0.5,Somewhat
-Mini-grids: licensing,0,No
+Minigrids: licensing,1,Yes
+Minigrids: licensing,0.5,Somewhat
+Minigrids: licensing,0,No
 Kerosene and diesel subsidies,0,Yes
 Kerosene and diesel subsidies,0.5,Somewhat
 Kerosene and diesel subsidies,1,No
 Curtailment risk,2,No
+Curtailment risk,1,-
 Curtailment risk,0.5,Somewhat
 Curtailment risk,0,Yes
 Availability of finance,0,Low

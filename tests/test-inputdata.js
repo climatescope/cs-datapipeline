@@ -176,6 +176,21 @@ describe('Input Data', function () {
 
       return assert.isEmpty(missingRegions, `${fp} contains regions (${missingRegions}) that are not in the region definition file.`)
     })
+
+    step('all countries have a bbox in ne-110m_bbox', async () => {
+      const geographies = await utils.loadCSV(fp)
+      const bbox = JSON.parse(await fs.readFile('./input/lib/ne-110m_bbox.geojson'))
+
+      // List with ISO codes in bbox file
+      const bboxIso = bbox.features.map(ft => ft.properties.ISO_A2)
+
+      // List with ISO codes in geography file
+      const geoIso = geographies.map(geo => geo.id)
+      const missingBbox = geoIso
+        .reduce((acc, b) => bboxIso.includes(b) ? acc : acc.concat(b), [])
+
+      return assert.isEmpty(missingBbox, `${fp} contains countries (${missingBbox}) that don't have a bounding box in /input/lib/ne-110m_bbox.geojson.`)
+    })
   })
 
   describe('Investments', async () => {

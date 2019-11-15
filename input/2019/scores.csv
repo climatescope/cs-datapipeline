@@ -99,7 +99,7 @@ overall,97,Azerbaijan,0.826913685
 overall,98,Sudan,0.811547025
 overall,99,Paraguay,0.793663413
 overall,100,South Sudan,0.776113552
-overall,101,"Congo, Rep. ",0.656090851
+overall,101,"Congo, Rep.",0.656090851
 overall,102,Uzbekistan,0.614878484
 overall,103,Eritrea,0.537678576
 overall,104,Turkmenistan,0.324326387
@@ -203,7 +203,7 @@ fundamentals,97,Paraguay,0.921085859
 fundamentals,98,Sudan,0.798282828
 fundamentals,99,Azerbaijan,0.777851991
 fundamentals,100,Uzbekistan,0.726556475
-fundamentals,101,"Congo, Rep. ",0.710277778
+fundamentals,101,"Congo, Rep.",0.710277778
 fundamentals,102,South Sudan,0.691919192
 fundamentals,103,Eritrea,0.562218615
 fundamentals,104,Turkmenistan,0.343813131
@@ -305,7 +305,7 @@ opportunities,95,Eritrea,0.734885005
 opportunities,96,Serbia,0.72562291
 opportunities,97,Thailand,0.711195816
 opportunities,98,Singapore,0.697401715
-opportunities,99,"Congo, Rep. ",0.667178874
+opportunities,99,"Congo, Rep.",0.667178874
 opportunities,100,Ecuador,0.649132021
 opportunities,101,Turkmenistan,0.609114318
 opportunities,102,Uzbekistan,0.560778921
@@ -408,7 +408,7 @@ experience,94,Lebanon,0.637779591
 experience,95,Iraq,0.630720997
 experience,96,Somalia,0.566071074
 experience,97,Botswana,0.557129224
-experience,98,"Congo, Rep. ",0.536628973
+experience,98,"Congo, Rep.",0.536628973
 experience,99,South Sudan,0.469396652
 experience,100,Uzbekistan,0.445622062
 experience,101,Qatar,0.354179385

@@ -8,4 +8,4 @@ subindicators:
 # The range to filter the investment data by
 investments:
   minYear: 2005
-  maxYear: 2017
+  maxYear: 2018

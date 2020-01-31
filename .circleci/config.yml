@@ -11,6 +11,8 @@ jobs:
       - PRODUCTION_BRANCH: master
       # Branch on climatescope/climatescope.org to push final data to
       - API_BRANCH: master
+      - STAGING_BRANCH: 2019
+      - STAGING_API_BRANCH: 2019
 
     steps:
       - checkout
@@ -38,15 +40,32 @@ jobs:
 
       - run:
           name: Process the data
+          command: yarn build
+
+      - run:
+          name: Push the data to climatescope/climatescope.org - staging
           command: |
-            if [ "${CIRCLE_BRANCH}" == "${PRODUCTION_BRANCH}" ]; then
-              yarn build
+            if [ "${CIRCLE_BRANCH}" == "${STAGING_BRANCH}" ]; then
+              git clone -b "${STAGING_API_BRANCH}" --single-branch git@github.com:climatescope/climatescope.org.git
+              cd ./climatescope.org/app
+              git config --global push.default matching
+              git config user.name "Devseed-CI"
+              git config user.email "dev@developmentseed.org"
+              git rm -r ./api
+              mkdir ./api
+              cp -r ../../output/* ./api
+              git add ./api
+              git commit -m "Update Climatescope data
+              Automatically generated based on commits in the repository climatescope/cs-datapipeline"
+              git push
+              cd ../../
+              rm -rf ./climatescope.org
             else
-              echo "Skip processing the data"
+              echo "Not the branch you're looking for, skipping staging deploy"
             fi
 
       - run:
-          name: Push the data to climatescope/climatescope.org
+          name: Push the data to climatescope/climatescope.org - production
           command: |
             if [ "${CIRCLE_BRANCH}" == "${PRODUCTION_BRANCH}" ]; then
               git clone -b "${API_BRANCH}" --single-branch git@github.com:climatescope/climatescope.org.git
@@ -64,5 +83,5 @@ jobs:
               cd ../../
               rm -rf ./climatescope.org
             else
-              echo "Not the branch you're looking for, skipping deploy"
+              echo "Not the branch you're looking for, production deploy"
             fi

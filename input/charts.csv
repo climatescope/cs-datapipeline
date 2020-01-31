@@ -11,20 +11,20 @@ offtakerRisk,range,Offtaker risk,How high is the offtake risk for independent ge
 standardisedPpa,answer,Standardised PPAs,Are power purchase agreements standardised in the market?,fundamentals,Standardised PPAs,,,,both
 ppaSufficientDuration,answer,PPAs of sufficient duration,Are PPAs of sufficient duration to be bankable for renewables developers?,fundamentals,PPAs of sufficient duration,,,,both
 purchaseObligation,answer,Purchase obligation,Is the offtaker obliged to pay for all the renewables output of generators?,fundamentals,Purchase obligation,,,,both
-minigridLicensing,answer,Mini-grids: licensing,Is it legally possible to set up a mini-grid or small power project incl. for self use?,fundamentals,Mini-grids: licensing,,,,both
+minigridLicensing,answer,Mini-grids: licensing,Is it legally possible to set up a mini-grid or small power project incl. for self use?,fundamentals,Minigrids: licensing,,,,both
 keroseneDieselSubsidies,answer,Kerosene and diesel subsidies,Are retail diesel and kerosene prices subsidised?,opportunities,Kerosene and diesel subsidies,,,,off
 curtailmentRisk,answer,Curtailment risk,Are renewables projects at risk of seeing their production curtailed?,fundamentals,Curtailment risk,,,,both
 foreignInvestment,percent,Foreign investment,Disclosed share of foreign investment in the clean energy sector.,experience,Foreign investment,,,%,both
 electricityPrice,average,Electricity Price Data,Average retail electricity price,opportunities,Average residential electricity prices|Average commercial electricity prices|Average industrial electricity prices,,,$/MWh,both
 averageVAT,group,Average VAT paid by renewables,What is the average level of VAT for components needed to build a wind project?,opportunities,largeVAT|smallVAT,,,%,both
-largeVAT,percent,Large scale renewables,,opportunities,VAT - Large scale renewables,,,%,both
-smallVAT,percent,Small scale renewables,,opportunities,VAT - Small scale renewables,,,%,both
+largeVAT,percent,Large scale renewables,,opportunities,VAT  Large scale renewables,,,%,both
+smallVAT,percent,Small scale renewables,,opportunities,VAT  Small scale renewables,,,%,both
 importDuties,group,Import Duties,What is the average level of import duties for components needed for a solar project (panels and inverts)?,opportunities,largeDuties|smallDuties,,,,both
-largeDuties,percent,Large scale renewables,,opportunities,Import duties - Large scale renewables,,,%,both
-smallDuties,percent,Small scale renewables,,opportunities,Import duties - Small scale renewables,,,%,both
+largeDuties,percent,Large scale renewables,,opportunities,Import duties  Large scale renewables,,,%,both
+smallDuties,percent,Small scale renewables,,opportunities,Import duties  Small scale renewables,,,%,both
 availabilityFinance,range,Availability of finance,This score reflects whether or not existing projects have been able to secure concessional or commercial finance from domestic and international sources.,experience,Availability of finance,,,,both
 installedCapacity,timeSeries,Installed Capacity,,experience,3.05,year,MW,,both
 powerGeneration,timeSeries,Power Generation,,experience,3.06,year,GWh,,both
-cleanEnergyInvestment,timeSeries,Clean Energy Investment,What's the volume of clean energy investment in the country over the last five years?,experience,investment,year,$ million,,both
+cleanEnergyInvestment,timeSeries,Clean Energy Investment,What's the volume of clean energy investment in the country?,experience,investment,year,$ million,,both
 doingBusinessFeatures,group,Features,,,standardisedPpa|ppaSufficientDuration|purchaseObligation|minigridLicensing,,,,both
 barriersFeatures,group,Features,,,keroseneDieselSubsidies|curtailmentRisk,,,,both

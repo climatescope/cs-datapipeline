@@ -3,9 +3,9 @@
 # Charts with a single data point (including section copy) will use the maxYear
 subindicators:
   minYear: 2010
-  maxYear: 2017
+  maxYear: 2018
 
 # The range to filter the investment data by
 investments:
   minYear: 2005
-  maxYear: 2017
+  maxYear: 2018

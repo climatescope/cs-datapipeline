@@ -11,8 +11,8 @@ jobs:
       - PRODUCTION_BRANCH: master
       # Branch on climatescope/climatescope.org to push final data to
       - API_BRANCH: master
-      - STAGING_BRANCH: 2019
-      - STAGING_API_BRANCH: 2019
+      - STAGING_BRANCH: 2020
+      - STAGING_API_BRANCH: 2020
 
     steps:
       - checkout

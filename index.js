@@ -29,7 +29,7 @@ const utils = require('./scripts/utils');
       utils.loadCSV('./input/geographies.csv'),
       utils.loadCSV(`./input/investments.csv`),
       utils.loadCSV('./input/regions.csv'),
-      utils.loadCSV(`./input/2019/scores.csv`),
+      utils.loadCSV(`./input/2020/scores.csv`),
       utils.loadCSV(`./input/subindicators.csv`),
       utils.loadCSV('./input/topics.csv')
     ])
@@ -45,7 +45,7 @@ const utils = require('./scripts/utils');
       process.charts(rawCharts),
       process.geographies(rawGeographies, rawRegions),
       [].concat(await process.subindicators(rawSubindicators, config), await process.investments(rawInvestments, config)),
-      process.scores(rawScores, 2019),
+      process.scores(rawScores, 2020),
       process.topics(rawTopics)
     ])
 

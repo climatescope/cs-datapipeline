@@ -14,6 +14,7 @@ function processRawGeographies (geographies, regions) {
       iso: geo.id.toLowerCase(),
       name: geo.name,
       grid: geo.grid,
+      market:geo.market_grouping,
       region: {
         id: region.id,
         name: region.name

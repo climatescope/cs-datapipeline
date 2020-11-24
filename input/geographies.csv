@@ -1,4 +1,4 @@
-id,name,grid,region,market grouping
+id,name,grid,region,market_grouping
 CA,Canada,on,lac,developed market
 US,United States,on,lac,developed market
 AR,Argentina,on,lac,developing market

@@ -10,11 +10,16 @@ function processRawCharts (charts) {
 function processRawGeographies (geographies, regions) {
   return geographies.map(geo => {
     let region = regions.find(r => r.id === geo.region)
+    if (!['developing market', 'developed market'].includes(geo.market_grouping.trim())) {
+      utils.noDataWarning('market_grouping', geo.name)
+    }
+    const market = (geo.market_grouping || '').replace('market', '').trim()
+
     return {
       iso: geo.id.toLowerCase(),
       name: geo.name,
       grid: geo.grid,
-      market_grouping: geo.market_grouping,
+      market,
       region: {
         id: region.id,
         name: region.name

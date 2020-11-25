@@ -14,7 +14,7 @@ describe('Process Data', function () {
       iso: 'uy',
       name: 'Uruguay',
       grid: 'off',
-      market_grouping: 'developing market',
+      market: 'developing',
       region: {
         id: 'lac',
         name: 'Latin America and the Caribbean'

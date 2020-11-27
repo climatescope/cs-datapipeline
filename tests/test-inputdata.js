@@ -154,10 +154,35 @@ describe('Input Data', function () {
     )
 
     step('has all the required headers', async () => {
-      const requiredHeaders = [ 'id', 'name', 'grid', 'region' ]
+      const requiredHeaders = [ 'id', 'name', 'grid', 'region', 'market' ]
       const data = await utils.loadCSV(fp)
 
       return assert.containsAllKeys(data[0], requiredHeaders, `${fp} doesn't have one of the required headers`)
+    })
+
+    step('all the grid values are valid', async () => {
+      const geographies = await utils.loadCSV(fp)
+      const validValues = [ 'on', 'off' ]
+
+      const invalidValues = geographies.reduce((invalid, geo) => {
+        if (validValues.includes(geo.grid)) return invalid
+
+        return [...invalid, geo.grid]
+      }, [])
+
+      return assert.isEmpty(invalidValues, `${fp} contains invalid values in the 'grid' column: ${invalidValues}. Should be one of: ${validValues}.`)
+    })
+
+    step('all the market values are valid', async () => {
+      const geographies = await utils.loadCSV(fp)
+      const validValues = [ 'developing', 'developed' ]
+
+      const invalidValues = geographies.reduce((invalid, geo) => {
+        if (validValues.includes(geo.market)) return invalid
+        return [...invalid, geo.market]
+      }, [])
+
+      return assert.isEmpty(invalidValues, `${fp} contains invalid values in the 'market' column: ${invalidValues}. Should be one of: ${validValues}.`)
     })
 
     step('all the regions are valid', async () => {

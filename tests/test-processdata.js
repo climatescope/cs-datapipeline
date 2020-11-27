@@ -8,12 +8,13 @@ const process = require('../scripts/process-data')
 
 describe('Process Data', function () {
   describe('Geographies', async () => {
-    let inputGeographies = [{ id: 'UY', name: 'Uruguay', grid: 'off', region: 'lac' }]
+    let inputGeographies = [{ id: 'UY', name: 'Uruguay', grid: 'off', region: 'lac', market: 'developing' }]
     let inputRegions = [{ id: 'lac', name: 'Latin America and the Caribbean' }]
     let expected = [{
       iso: 'uy',
       name: 'Uruguay',
       grid: 'off',
+      market: 'developing',
       region: {
         id: 'lac',
         name: 'Latin America and the Caribbean'

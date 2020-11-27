@@ -1,138 +1,138 @@
-id,name,grid,region,market_grouping
-CA,Canada,on,lac,developed market
-US,United States,on,lac,developed market
-AR,Argentina,on,lac,developing market
-BO,Bolivia,off,lac,developing market
-BR,Brazil,on,lac,developing market
-CL,Chile,on,lac,developing market
-CO,Colombia,on,lac,developing market
-CR,Costa Rica,on,lac,developing market
-DO,Dominican Republic,off,lac,developing market
-EC,Ecuador,on,lac,developing market
-SV,El Salvador,off,lac,developing market
-GT,Guatemala,off,lac,developing market
-HT,Haiti,off,lac,developing market
-HN,Honduras,off,lac,developing market
-JM,Jamaica,off,lac,developing market
-MX,Mexico,on,lac,developing market
-NI,Nicaragua,off,lac,developing market
-PA,Panama,off,lac,developing market
-PY,Paraguay,on,lac,developing market
-PE,Peru,off,lac,developing market
-UY,Uruguay,on,lac,developing market
-AF,Afghanistan,off,asia,developing market
-AM,Armenia,on,asia,developing market
-AU,Australia,on,asia,developed market
-AZ,Azerbaijan,on,asia,developing market
-BD,Bangladesh,off,asia,developing market
-KH,Cambodia,off,asia,developing market
-CN,China,on,asia,developing market
-GE,Georgia,on,asia,developing market
-IN,India,off,asia,developing market
-ID,Indonesia,off,asia,developing market
-JP,Japan,on,asia,developed market
-KZ,Kazakhstan,on,asia,developing market
-KR,Korea (Republic),on,asia,developed market
-KG,Kyrgyzstan,on,asia,developing market
-LA,Laos,off,asia,developing market
-MY,Malaysia,on,asia,developing market
-MN,Mongolia,off,asia,developing market
-MM,Myanmar,off,asia,developing market
-NP,Nepal,off,asia,developing market
-NZ,New Zealand,on,asia,developed market
-PK,Pakistan,off,asia,developing market
-PH,Philippines,off,asia,developing market
-SG,Singapore,on,asia,developing market
-LK,Sri Lanka,off,asia,developing market
-TW,Taiwan,on,asia,developing market
-TJ,Tajikistan,off,asia,developing market
-TH,Thailand,on,asia,developing market
-TM,Turkmenistan,on,asia,developing market
-UZ,Uzbekistan,on,asia,developing market
-VN,Vietnam,on,asia,developing market
-AL,Albania,off,eu,developing market
-AT,Austria,on,eu,developed market
-BY,Belarus,on,eu,developing market
-BE,Belgium,on,eu,developed market
-BA,Bosnia and Herzegovina,on,eu,developing market
-BG,Bulgaria,on,eu,developing market
-HR,Croatia,on,eu,developing market
-CZ,Czech Republic,on,eu,developed market
-DK,Denmark,on,eu,developed market
-FI,Finland,on,eu,developed market
-FR,France,on,eu,developed market
-DE,Germany,on,eu,developed market
-GR,Greece,on,eu,developed market
-HU,Hungary,on,eu,developed market
-IE,Ireland,on,eu,developed market
-IT,Italy,on,eu,developed market
-LT,Lithuania,on,eu,developed market
-MD,Moldova,on,eu,developing market
-NL,Netherlands,on,eu,developed market
-MK,North Macedonia,on,eu,developing market
-NO,Norway,on,eu,developed market
-PL,Poland,on,eu,developed market
-PT,Portugal,on,eu,developed market
-RO,Romania,on,eu,developing market
-RU,Russia,on,eu,developing market
-RS,Serbia,on,eu,developing market
-SK,Slovakia,on,eu,developed market
-SI,Slovenia,on,eu,developed market
-ES,Spain,on,eu,developed market
-SE,Sweden,on,eu,developed market
-CH,Switzerland,on,eu,developed market
-TR,Turkey,on,eu,developing market
-UA,Ukraine,on,eu,developing market
-GB,United Kingdom,on,eu,developed market
-DZ,Algeria,on,africa,developing market
-AO,Angola,off,africa,developing market
-BJ,Benin,off,africa,developing market
-BW,Botswana,off,africa,developing market
-BF,Burkina Faso,off,africa,developing market
-BI,Burundi,off,africa,developing market
-CM,Cameroon,off,africa,developing market
-CF,Central African Republic,off,africa,developing market
-TD,Chad,off,africa,developing market
-CG,Congo,off,africa,developing market
-CD,Congo (Dem. Rep.),off,africa,developing market
-CI,Cote d'Ivoire,off,africa,developing market
-EG,Egypt,on,africa,developing market
-ER,Eritrea,off,africa,developing market
-ET,Ethiopia,off,africa,developing market
-GH,Ghana,off,africa,developing market
-GN,Guinea,off,africa,developing market
-IQ,Iraq,off,africa,developing market
-IL,Israel,on,africa,developed market
-JO,Jordan,on,africa,developing market
-KE,Kenya,off,africa,developing market
-KW,Kuwait,on,africa,developing market
-LB,Lebanon,on,africa,developing market
-LS,Lesotho,off,africa,developing market
-LR,Liberia,off,africa,developing market
-MG,Madagascar,off,africa,developing market
-MW,Malawi,off,africa,developing market
-ML,Mali,off,africa,developing market
-MR,Mauritania,off,africa,developing market
-MA,Morocco,on,africa,developing market
-MZ,Mozambique,off,africa,developing market
-NA,Namibia,off,africa,developing market
-NE,Niger,off,africa,developing market
-NG,Nigeria,off,africa,developing market
-OM,Oman,on,africa,developing market
-PS,Palestinian Authority,off,africa,developing market
-QA,Qatar,on,africa,developing market
-RW,Rwanda,off,africa,developing market
-SA,Saudi Arabia,on,africa,developing market
-SN,Senegal,off,africa,developing market
-SL,Sierra Leone,off,africa,developing market
-SO,Somalia,off,africa,developing market
-ZA,South Africa,off,africa,developing market
-DS,South Sudan,off,africa,developing market
-SD,Sudan,off,africa,developing market
-TZ,Tanzania,off,africa,developing market
-TG,Togo,off,africa,developing market
-TN,Tunisia,on,africa,developing market
-UG,Uganda,off,africa,developing market
-AE,United Arab Emirates,on,africa,developing market
-ZM,Zambia,off,africa,developing market
-ZW,Zimbabwe,off,africa,developing market
+id,name,grid,region,market
+CA,Canada,on,lac,developed
+US,United States,on,lac,developed
+AR,Argentina,on,lac,developing
+BO,Bolivia,off,lac,developing
+BR,Brazil,on,lac,developing
+CL,Chile,on,lac,developing
+CO,Colombia,on,lac,developing
+CR,Costa Rica,on,lac,developing
+DO,Dominican Republic,off,lac,developing
+EC,Ecuador,on,lac,developing
+SV,El Salvador,off,lac,developing
+GT,Guatemala,off,lac,developing
+HT,Haiti,off,lac,developing
+HN,Honduras,off,lac,developing
+JM,Jamaica,off,lac,developing
+MX,Mexico,on,lac,developing
+NI,Nicaragua,off,lac,developing
+PA,Panama,off,lac,developing
+PY,Paraguay,on,lac,developing
+PE,Peru,off,lac,developing
+UY,Uruguay,on,lac,developing
+AF,Afghanistan,off,asia,developing
+AM,Armenia,on,asia,developing
+AU,Australia,on,asia,developed
+AZ,Azerbaijan,on,asia,developing
+BD,Bangladesh,off,asia,developing
+KH,Cambodia,off,asia,developing
+CN,China,on,asia,developing
+GE,Georgia,on,asia,developing
+IN,India,off,asia,developing
+ID,Indonesia,off,asia,developing
+JP,Japan,on,asia,developed
+KZ,Kazakhstan,on,asia,developing
+KR,Korea (Republic),on,asia,developed
+KG,Kyrgyzstan,on,asia,developing
+LA,Laos,off,asia,developing
+MY,Malaysia,on,asia,developing
+MN,Mongolia,off,asia,developing
+MM,Myanmar,off,asia,developing
+NP,Nepal,off,asia,developing
+NZ,New Zealand,on,asia,developed
+PK,Pakistan,off,asia,developing
+PH,Philippines,off,asia,developing
+SG,Singapore,on,asia,developing
+LK,Sri Lanka,off,asia,developing
+TW,Taiwan,on,asia,developing
+TJ,Tajikistan,off,asia,developing
+TH,Thailand,on,asia,developing
+TM,Turkmenistan,on,asia,developing
+UZ,Uzbekistan,on,asia,developing
+VN,Vietnam,on,asia,developing
+AL,Albania,off,eu,developing
+AT,Austria,on,eu,developed
+BY,Belarus,on,eu,developing
+BE,Belgium,on,eu,developed
+BA,Bosnia and Herzegovina,on,eu,developing
+BG,Bulgaria,on,eu,developing
+HR,Croatia,on,eu,developing
+CZ,Czech Republic,on,eu,developed
+DK,Denmark,on,eu,developed
+FI,Finland,on,eu,developed
+FR,France,on,eu,developed
+DE,Germany,on,eu,developed
+GR,Greece,on,eu,developed
+HU,Hungary,on,eu,developed
+IE,Ireland,on,eu,developed
+IT,Italy,on,eu,developed
+LT,Lithuania,on,eu,developed
+MD,Moldova,on,eu,developing
+NL,Netherlands,on,eu,developed
+MK,North Macedonia,on,eu,developing
+NO,Norway,on,eu,developed
+PL,Poland,on,eu,developed
+PT,Portugal,on,eu,developed
+RO,Romania,on,eu,developing
+RU,Russia,on,eu,developing
+RS,Serbia,on,eu,developing
+SK,Slovakia,on,eu,developed
+SI,Slovenia,on,eu,developed
+ES,Spain,on,eu,developed
+SE,Sweden,on,eu,developed
+CH,Switzerland,on,eu,developed
+TR,Turkey,on,eu,developing
+UA,Ukraine,on,eu,developing
+GB,United Kingdom,on,eu,developed
+DZ,Algeria,on,africa,developing
+AO,Angola,off,africa,developing
+BJ,Benin,off,africa,developing
+BW,Botswana,off,africa,developing
+BF,Burkina Faso,off,africa,developing
+BI,Burundi,off,africa,developing
+CM,Cameroon,off,africa,developing
+CF,Central African Republic,off,africa,developing
+TD,Chad,off,africa,developing
+CG,Congo,off,africa,developing
+CD,Congo (Dem. Rep.),off,africa,developing
+CI,Cote d'Ivoire,off,africa,developing
+EG,Egypt,on,africa,developing
+ER,Eritrea,off,africa,developing
+ET,Ethiopia,off,africa,developing
+GH,Ghana,off,africa,developing
+GN,Guinea,off,africa,developing
+IQ,Iraq,off,africa,developing
+IL,Israel,on,africa,developed
+JO,Jordan,on,africa,developing
+KE,Kenya,off,africa,developing
+KW,Kuwait,on,africa,developing
+LB,Lebanon,on,africa,developing
+LS,Lesotho,off,africa,developing
+LR,Liberia,off,africa,developing
+MG,Madagascar,off,africa,developing
+MW,Malawi,off,africa,developing
+ML,Mali,off,africa,developing
+MR,Mauritania,off,africa,developing
+MA,Morocco,on,africa,developing
+MZ,Mozambique,off,africa,developing
+NA,Namibia,off,africa,developing
+NE,Niger,off,africa,developing
+NG,Nigeria,off,africa,developing
+OM,Oman,on,africa,developing
+PS,Palestinian Authority,off,africa,developing
+QA,Qatar,on,africa,developing
+RW,Rwanda,off,africa,developing
+SA,Saudi Arabia,on,africa,developing
+SN,Senegal,off,africa,developing
+SL,Sierra Leone,off,africa,developing
+SO,Somalia,off,africa,developing
+ZA,South Africa,off,africa,developing
+DS,South Sudan,off,africa,developing
+SD,Sudan,off,africa,developing
+TZ,Tanzania,off,africa,developing
+TG,Togo,off,africa,developing
+TN,Tunisia,on,africa,developing
+UG,Uganda,off,africa,developing
+AE,United Arab Emirates,on,africa,developing
+ZM,Zambia,off,africa,developing
+ZW,Zimbabwe,off,africa,developing

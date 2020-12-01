@@ -1,549 +1,549 @@
-category,rank,geography,score,market
-overall,1,Chile,2.797934949,developing
-overall,2,Denmark,2.737697379,developed
-overall,3,Netherlands,2.632158723,developed
-overall,4,Ireland,2.587711247,developed
-overall,5,India,2.580736043,developing
-overall,6,France,2.531501538,developed
-overall,7,Lithuania,2.519171716,developed
-overall,8,Spain,2.516904003,developed
-overall,9,Germany,2.516584435,developed
-overall,10,United Kingdom,2.484191875,developed
-overall,11,Belgium,2.434265338,developed
-overall,12,Greece,2.410794796,developed
-overall,13,Brazil,2.396890043,developing
-overall,14,Jordan,2.370490164,developing
-overall,15,China,2.349397859,developing
-overall,16,Taiwan,2.309399933,developing
-overall,17,Finland,2.30736615,developed
-overall,18,United Arab Emirates,2.289705177,developing
-overall,19,Morocco,2.261852778,developing
-overall,20,Nigeria,2.205208238,developing
-overall,21,Portugal,2.188863915,developed
-overall,22,Ukraine,2.183950428,developing
-overall,23,Colombia,2.18275081,developing
-overall,24,Hungary,2.181640367,developed
-overall,25,Philippines,2.180315076,developing
-overall,26,Kenya,2.174758729,developing
-overall,27,Poland,2.173736051,developed
-overall,28,Croatia,2.172844777,developing
-overall,29,North Macedonia,2.141758023,developing
-overall,30,Dominican Republic,2.124683985,developing
-overall,31,Argentina,2.110782009,developing
-overall,32,Canada,2.098812238,developed
-overall,33,Italy,2.097709063,developed
-overall,34,Albania,2.095783503,developing
-overall,35,Vietnam,2.065743368,developing
-overall,36,Sweden,2.047308551,developed
-overall,37,Kazakhstan,2.013131056,developing
-overall,38,Tunisia,2.005267437,developing
-overall,39,Turkey,1.995217138,developing
-overall,40,Guatemala,1.992127973,developing
-overall,41,Saudi Arabia,1.989849073,developing
-overall,42,El Salvador,1.97809095,developing
-overall,43,Serbia,1.972932845,developing
-overall,44,Namibia,1.971640586,developing
-overall,45,Armenia,1.97157118,developing
-overall,46,Switzerland,1.970928187,developed
-overall,47,United States,1.968862306,developed
-overall,48,Thailand,1.946081002,developing
-overall,49,Austria,1.945265796,developed
-overall,50,Uruguay,1.941307878,developing
-overall,51,Slovenia,1.919818248,developed
-overall,52,Peru,1.912250652,developing
-overall,53,Norway,1.899057512,developed
-overall,54,Malaysia,1.894980713,developing
-overall,55,South Africa,1.892393937,developing
-overall,56,Panama,1.887146628,developing
-overall,57,Pakistan,1.884766087,developing
-overall,58,Mongolia,1.880617655,developing
-overall,59,Egypt,1.874628645,developing
-overall,60,Senegal,1.868164169,developing
-overall,61,Honduras,1.860525707,developing
-overall,62,New Zealand,1.853113321,developed
-overall,63,Nicaragua,1.80371544,developing
-overall,64,Japan,1.786648352,developed
-overall,65,Australia,1.781987623,developed
-overall,66,Bangladesh,1.774756461,developing
-overall,67,Cambodia,1.773270914,developing
-overall,68,Korea (Republic),1.747076851,developed
-overall,69,Zimbabwe,1.73022592,developing
-overall,70,Zambia,1.688112559,developing
-overall,71,Romania,1.674523214,developing
-overall,72,Oman,1.655058581,developing
-overall,73,Singapore,1.645356952,developing
-overall,74,Rwanda,1.627075191,developing
-overall,75,Madagascar,1.626097521,developing
-overall,76,Georgia,1.612647282,developing
-overall,77,Burkina Faso,1.611526194,developing
-overall,78,Mexico,1.607845061,developing
-overall,79,Tanzania,1.595253013,developing
-overall,80,Malawi,1.59492287,developing
-overall,81,Costa Rica,1.588802496,developing
-overall,82,Uganda,1.580455662,developing
-overall,83,Russia,1.578202993,developing
-overall,84,Bosnia and Herzegovina,1.571277862,developing
-overall,85,Nepal,1.56660143,developing
-overall,86,Mali,1.55829095,developing
-overall,87,Myanmar,1.555155431,developing
-overall,88,Cameroon,1.53873638,developing
-overall,89,Algeria,1.498675453,developing
-overall,90,Benin,1.497162662,developing
-overall,91,Uzbekistan,1.496800045,developing
-overall,92,Bulgaria,1.49292294,developing
-overall,93,Belarus,1.491175151,developing
-overall,94,Israel,1.488452121,developed
-overall,95,Czech Republic,1.481714043,developed
-overall,96,Iraq,1.469562883,developing
-overall,97,Sri Lanka,1.446614035,developing
-overall,98,Ghana,1.445518071,developing
-overall,99,Indonesia,1.440623207,developing
-overall,100,Ecuador,1.432217751,developing
-overall,101,Jamaica,1.431130146,developing
-overall,102,Sierra Leone,1.418891604,developing
-overall,103,Moldova,1.418342081,developing
-overall,104,Bolivia,1.353470402,developing
-overall,105,Botswana,1.336285998,developing
-overall,106,Slovakia,1.335895701,developed
-overall,107,Cote d'Ivoire,1.299589216,developing
-overall,108,Afghanistan,1.290557719,developing
-overall,109,Togo,1.265420207,developing
-overall,110,Ethiopia,1.263230959,developing
-overall,111,Laos,1.25591517,developing
-overall,112,Mozambique,1.187885382,developing
-overall,113,Lebanon,1.175602796,developing
-overall,114,Palestinian Authority,1.166334936,developing
-overall,115,Liberia,1.148543705,developing
-overall,116,Qatar,1.137251365,developing
-overall,117,Niger,1.096704909,developing
-overall,118,Burundi,1.082757719,developing
-overall,119,Mauritania,1.053127985,developing
-overall,120,Angola,1.041874523,developing
-overall,121,Kuwait,1.005492161,developing
-overall,122,Somalia,0.966960943,developing
-overall,123,Azerbaijan,0.941989098,developing
-overall,124,Kyrgyzstan,0.868690783,developing
-overall,125,Haiti,0.855679462,developing
-overall,126,Guinea,0.830680642,developing
-overall,127,Tajikistan,0.827423128,developing
-overall,128,Congo (Dem. Rep.),0.813984192,developing
-overall,129,Lesotho,0.750565294,developing
-overall,130,Central African Republic,0.733594182,developing
-overall,131,Paraguay,0.720586097,developing
-overall,132,South Sudan,0.676371435,developing
-overall,133,Chad,0.670677246,developing
-overall,134,Eritrea,0.59278477,developing
-overall,135,Congo,0.522091205,developing
-overall,136,Sudan,0.451490453,developing
-overall,137,Turkmenistan,0.342008994,developing
-fundamentals,1,Netherlands,3.972590016,developed
-fundamentals,2,Greece,3.623988277,developed
-fundamentals,3,India,3.604429564,developing
-fundamentals,4,Chile,3.50611746,developing
-fundamentals,5,Brazil,3.505583916,developing
-fundamentals,6,Canada,3.441121665,developed
-fundamentals,7,France,3.430673116,developed
-fundamentals,8,Colombia,3.423693182,developing
-fundamentals,9,Denmark,3.417472577,developed
-fundamentals,10,Germany,3.408734944,developed
-fundamentals,11,Belgium,3.375970964,developed
-fundamentals,12,United Kingdom,3.358759095,developed
-fundamentals,13,Spain,3.253746764,developed
-fundamentals,14,Jordan,3.215937641,developing
-fundamentals,15,Argentina,3.209961413,developing
-fundamentals,16,Ireland,3.188927898,developed
-fundamentals,17,Finland,3.179507481,developed
-fundamentals,18,Switzerland,3.12003177,developed
-fundamentals,19,Lithuania,3.117272931,developed
-fundamentals,20,Italy,3.107447595,developed
-fundamentals,21,United States,3.072170728,developed
-fundamentals,22,Portugal,3.065672314,developed
-fundamentals,23,Philippines,3.064022434,developing
-fundamentals,24,Taiwan,3.058859994,developing
-fundamentals,25,North Macedonia,3.016510553,developing
-fundamentals,26,Morocco,3.00213172,developing
-fundamentals,27,Sweden,2.996524789,developed
-fundamentals,28,Slovenia,2.994632275,developed
-fundamentals,29,Thailand,2.991584658,developing
-fundamentals,30,Peru,2.982879273,developing
-fundamentals,31,United Arab Emirates,2.95663838,developing
-fundamentals,32,Hungary,2.955504004,developed
-fundamentals,33,Ukraine,2.930425126,developing
-fundamentals,34,Kazakhstan,2.929254366,developing
-fundamentals,35,Guatemala,2.92866844,developing
-fundamentals,36,Norway,2.9125273,developed
-fundamentals,37,China,2.910166475,developing
-fundamentals,38,Malaysia,2.864235723,developing
-fundamentals,39,Nigeria,2.857921587,developing
-fundamentals,40,Dominican Republic,2.847710242,developing
-fundamentals,41,Austria,2.817066862,developed
-fundamentals,42,New Zealand,2.814094094,developed
-fundamentals,43,Croatia,2.778810256,developing
-fundamentals,44,Albania,2.768926825,developing
-fundamentals,45,Armenia,2.708573616,developing
-fundamentals,46,Singapore,2.69896669,developing
-fundamentals,47,Saudi Arabia,2.697144407,developing
-fundamentals,48,Poland,2.680174089,developed
-fundamentals,49,Panama,2.671974773,developing
-fundamentals,50,Pakistan,2.66437469,developing
-fundamentals,51,Vietnam,2.647509248,developing
-fundamentals,52,Tunisia,2.596894021,developing
-fundamentals,53,Korea (Republic),2.589283037,developed
-fundamentals,54,El Salvador,2.58838944,developing
-fundamentals,55,Australia,2.587527375,developed
-fundamentals,56,Uruguay,2.574415114,developing
-fundamentals,57,Japan,2.50006033,developed
-fundamentals,58,Egypt,2.453569219,developing
-fundamentals,59,Nicaragua,2.450241344,developing
-fundamentals,60,Turkey,2.435258646,developing
-fundamentals,61,Senegal,2.421163958,developing
-fundamentals,62,Georgia,2.407947233,developing
-fundamentals,63,Tanzania,2.403549403,developing
-fundamentals,64,Serbia,2.372204651,developing
-fundamentals,65,Moldova,2.291763298,developing
-fundamentals,66,Romania,2.28068688,developing
-fundamentals,67,Oman,2.272251815,developing
-fundamentals,68,Zambia,2.265680656,developing
-fundamentals,69,Madagascar,2.264438203,developing
-fundamentals,70,Bangladesh,2.263773626,developing
-fundamentals,71,Namibia,2.261304679,developing
-fundamentals,72,Ecuador,2.257825653,developing
-fundamentals,73,Ghana,2.244640919,developing
-fundamentals,74,Algeria,2.242847386,developing
-fundamentals,75,Uganda,2.197783458,developing
-fundamentals,76,Kenya,2.186158026,developing
-fundamentals,77,Nepal,2.16893981,developing
-fundamentals,78,Mongolia,2.151278251,developing
-fundamentals,79,Czech Republic,2.146646817,developed
-fundamentals,80,Russia,2.139431151,developing
-fundamentals,81,Sri Lanka,2.127687719,developing
-fundamentals,82,Costa Rica,2.12618398,developing
-fundamentals,83,Honduras,2.066210813,developing
-fundamentals,84,Bosnia and Herzegovina,2.059399413,developing
-fundamentals,85,Mexico,2.052003575,developing
-fundamentals,86,Malawi,2.047576152,developing
-fundamentals,87,Qatar,2.045027191,developing
-fundamentals,88,South Africa,2.021923404,developing
-fundamentals,89,Iraq,2.020619004,developing
-fundamentals,90,Belarus,1.988614854,developing
-fundamentals,91,Slovakia,1.988314598,developed
-fundamentals,92,Bulgaria,1.974584509,developing
-fundamentals,93,Cameroon,1.955864935,developing
-fundamentals,94,Rwanda,1.954343168,developing
-fundamentals,95,Cambodia,1.929945677,developing
-fundamentals,96,Myanmar,1.909922457,developing
-fundamentals,97,Cote d'Ivoire,1.901338534,developing
-fundamentals,98,Israel,1.889630808,developed
-fundamentals,99,Indonesia,1.883691294,developing
-fundamentals,100,Benin,1.829154978,developing
-fundamentals,101,Mali,1.80155915,developing
-fundamentals,102,Burkina Faso,1.778147694,developing
-fundamentals,103,Zimbabwe,1.760949953,developing
-fundamentals,104,Palestinian Authority,1.758796993,developing
-fundamentals,105,Uzbekistan,1.729719466,developing
-fundamentals,106,Laos,1.678222259,developing
-fundamentals,107,Jamaica,1.615410073,developing
-fundamentals,108,Bolivia,1.575224224,developing
-fundamentals,109,Ethiopia,1.528512181,developing
-fundamentals,110,Togo,1.517683725,developing
-fundamentals,111,Liberia,1.502306912,developing
-fundamentals,112,Botswana,1.452233328,developing
-fundamentals,113,Sierra Leone,1.394246694,developing
-fundamentals,114,Lebanon,1.383755887,developing
-fundamentals,115,Angola,1.382509009,developing
-fundamentals,116,Afghanistan,1.361912558,developing
-fundamentals,117,Azerbaijan,1.342647565,developing
-fundamentals,118,Kuwait,1.334316684,developing
-fundamentals,119,Haiti,1.187592444,developing
-fundamentals,120,Somalia,1.169797403,developing
-fundamentals,121,Paraguay,1.140208501,developing
-fundamentals,122,Mozambique,1.13862343,developing
-fundamentals,123,Kyrgyzstan,1.13400727,developing
-fundamentals,124,Tajikistan,1.129923759,developing
-fundamentals,125,Congo (Dem. Rep.),1.102573595,developing
-fundamentals,126,Burundi,1.033016162,developing
-fundamentals,127,Niger,1.032408861,developing
-fundamentals,128,Lesotho,1.029134554,developing
-fundamentals,129,Guinea,1.007516883,developing
-fundamentals,130,Mauritania,0.962693286,developing
-fundamentals,131,Chad,0.894538638,developing
-fundamentals,132,Congo,0.705127273,developing
-fundamentals,133,South Sudan,0.599854545,developing
-fundamentals,134,Central African Republic,0.599745455,developing
-fundamentals,135,Sudan,0.5472,developing
-fundamentals,136,Eritrea,0.492192208,developing
-fundamentals,137,Turkmenistan,0.3,developing
-opportunities,1,Botswana,2.438704257,developing
-opportunities,2,South Africa,2.412717838,developing
-opportunities,3,France,2.313208609,developed
-opportunities,4,Nigeria,2.302930041,developing
-opportunities,5,Tunisia,2.29151589,developing
-opportunities,6,China,2.264221319,developing
-opportunities,7,Ireland,2.245437314,developed
-opportunities,8,Myanmar,2.204348073,developing
-opportunities,9,Benin,2.203444416,developing
-opportunities,10,Zimbabwe,2.197447491,developing
-opportunities,11,Lithuania,2.130789959,developed
-opportunities,12,Chile,2.12391237,developing
-opportunities,13,India,2.069866868,developing
-opportunities,14,Poland,2.056389607,developed
-opportunities,15,Turkey,2.014819784,developing
-opportunities,16,Philippines,1.938432708,developing
-opportunities,17,Namibia,1.925779414,developing
-opportunities,18,Uzbekistan,1.925226179,developing
-opportunities,19,Lebanon,1.861548222,developing
-opportunities,20,Zambia,1.811156474,developing
-opportunities,21,Jamaica,1.782467181,developing
-opportunities,22,Mongolia,1.755581558,developing
-opportunities,23,Serbia,1.720795487,developing
-opportunities,24,Spain,1.720227734,developed
-opportunities,25,Togo,1.694139415,developing
-opportunities,26,Ethiopia,1.690308815,developing
-opportunities,27,Hungary,1.686886106,developed
-opportunities,28,Dominican Republic,1.681368669,developing
-opportunities,29,Croatia,1.676186817,developing
-opportunities,30,Russia,1.675248024,developing
-opportunities,31,Niger,1.649321893,developing
-opportunities,32,Bosnia and Herzegovina,1.648268301,developing
-opportunities,33,Kenya,1.637421196,developing
-opportunities,34,Taiwan,1.610214206,developing
-opportunities,35,Indonesia,1.590058098,developing
-opportunities,36,Cameroon,1.570840475,developing
-opportunities,37,Denmark,1.55542168,developed
-opportunities,38,Bangladesh,1.533931386,developing
-opportunities,39,Germany,1.512095517,developed
-opportunities,40,Armenia,1.508892529,developing
-opportunities,41,Mali,1.508713149,developing
-opportunities,42,Pakistan,1.481097169,developing
-opportunities,43,Burkina Faso,1.44811333,developing
-opportunities,44,Algeria,1.43673011,developing
-opportunities,45,Liberia,1.429419599,developing
-opportunities,46,Colombia,1.422191322,developing
-opportunities,47,Belgium,1.413898299,developed
-opportunities,48,Bolivia,1.407389958,developing
-opportunities,49,Romania,1.395605954,developing
-opportunities,50,United Arab Emirates,1.394309594,developing
-opportunities,51,Cambodia,1.390712731,developing
-opportunities,52,Laos,1.382695356,developing
-opportunities,53,Cote d'Ivoire,1.324901233,developing
-opportunities,54,Iraq,1.312492034,developing
-opportunities,55,Vietnam,1.309604797,developing
-opportunities,56,Tanzania,1.308065924,developing
-opportunities,57,Malaysia,1.306687273,developing
-opportunities,58,Angola,1.30397946,developing
-opportunities,59,Afghanistan,1.297407923,developing
-opportunities,60,Oman,1.248407567,developing
-opportunities,61,Brazil,1.243580982,developing
-opportunities,62,Finland,1.232535577,developed
-opportunities,63,North Macedonia,1.230721591,developing
-opportunities,64,Madagascar,1.226127408,developing
-opportunities,65,Senegal,1.213332831,developing
-opportunities,66,Morocco,1.207607902,developing
-opportunities,67,Korea (Republic),1.200548827,developed
-opportunities,68,Sierra Leone,1.189454331,developing
-opportunities,69,Guinea,1.189359903,developing
-opportunities,70,Czech Republic,1.189349465,developed
-opportunities,71,Kyrgyzstan,1.177146657,developing
-opportunities,72,Burundi,1.175637224,developing
-opportunities,73,Nepal,1.154643163,developing
-opportunities,74,Netherlands,1.148994289,developed
-opportunities,75,Ghana,1.147057444,developing
-opportunities,76,Uganda,1.142171545,developing
-opportunities,77,Mexico,1.13605427,developing
-opportunities,78,Italy,1.130108443,developed
-opportunities,79,United Kingdom,1.110295935,developed
-opportunities,80,Greece,1.109206388,developed
-opportunities,81,Palestinian Authority,1.096224067,developing
-opportunities,82,Egypt,1.086371444,developing
-opportunities,83,Rwanda,1.079479484,developing
-opportunities,84,Sri Lanka,1.059241841,developing
-opportunities,85,Eritrea,1.035668407,developing
-opportunities,86,Slovenia,1.031173516,developed
-opportunities,87,Moldova,1.026595357,developing
-opportunities,88,Central African Republic,1.026426394,developing
-opportunities,89,Haiti,1.024422141,developing
-opportunities,90,Georgia,1.020710452,developing
-opportunities,91,Thailand,1.018673928,developing
-opportunities,92,Malawi,0.994468034,developing
-opportunities,93,Tajikistan,0.99188247,developing
-opportunities,94,Albania,0.988017898,developing
-opportunities,95,Kazakhstan,0.983237716,developing
-opportunities,96,Panama,0.983102733,developing
-opportunities,97,Portugal,0.97880632,developed
-opportunities,98,Saudi Arabia,0.977866318,developing
-opportunities,99,Honduras,0.976915828,developing
-opportunities,100,Azerbaijan,0.970220633,developing
-opportunities,101,Japan,0.966702755,developed
-opportunities,102,Bulgaria,0.958209608,developing
-opportunities,103,Congo (Dem. Rep.),0.957888533,developing
-opportunities,104,Mozambique,0.954837522,developing
-opportunities,105,Kuwait,0.954052253,developing
-opportunities,106,Guatemala,0.951905513,developing
-opportunities,107,Belarus,0.94912947,developing
-opportunities,108,Israel,0.931386503,developed
-opportunities,109,South Sudan,0.890059226,developing
-opportunities,110,Jordan,0.88988151,developing
-opportunities,111,Chad,0.882731163,developing
-opportunities,112,Canada,0.872361008,developed
-opportunities,113,Mauritania,0.871981518,developing
-opportunities,114,Nicaragua,0.868294707,developing
-opportunities,115,Austria,0.859844373,developed
-opportunities,116,Somalia,0.857586162,developing
-opportunities,117,Peru,0.839538559,developing
-opportunities,118,United States,0.816164687,developed
-opportunities,119,Costa Rica,0.795570071,developing
-opportunities,120,Lesotho,0.787460945,developing
-opportunities,121,Switzerland,0.78193861,developed
-opportunities,122,Argentina,0.77971323,developing
-opportunities,123,Turkmenistan,0.767805503,developing
-opportunities,124,Uruguay,0.763899209,developing
-opportunities,125,Norway,0.739363306,developed
-opportunities,126,Ukraine,0.703497978,developing
-opportunities,127,Sudan,0.678061092,developing
-opportunities,128,Slovakia,0.631945329,developed
-opportunities,129,Ecuador,0.623332549,developing
-opportunities,130,New Zealand,0.613777435,developed
-opportunities,131,Singapore,0.609992176,developing
-opportunities,132,Paraguay,0.601927385,developing
-opportunities,133,Congo,0.598509688,developing
-opportunities,134,Australia,0.50325586,developed
-opportunities,135,Qatar,0.450191223,developing
-opportunities,136,Sweden,0.446245273,developed
-opportunities,137,El Salvador,0.411502501,developing
-experience,1,Kenya,2.689297669,developing
-experience,2,Denmark,2.560422683,developed
-experience,3,Honduras,2.332765375,developing
-experience,4,El Salvador,2.324082419,developing
-experience,5,Ukraine,2.171453483,developing
-experience,6,Jordan,2.160203865,developing
-experience,7,United Kingdom,2.108953376,developed
-experience,8,Chile,2.055592504,developing
-experience,9,Albania,1.857262465,developing
-experience,10,Uruguay,1.852502075,developing
-experience,11,United Arab Emirates,1.851234354,developing
-experience,12,Cambodia,1.84247957,developing
-experience,13,Spain,1.839894748,developed
-experience,14,Morocco,1.835539768,developing
-experience,15,Sweden,1.749939354,developed
-experience,16,Germany,1.736772334,developed
-experience,17,Ireland,1.72755188,developed
-experience,18,Lithuania,1.711351042,developed
-experience,19,Sierra Leone,1.697618698,developing
-experience,20,Vietnam,1.658350179,developing
-experience,21,Portugal,1.645304712,developed
-experience,22,Finland,1.63791406,developed
-experience,23,Saudi Arabia,1.587241158,developing
-experience,24,Belgium,1.571221125,developed
-experience,25,Rwanda,1.520134943,developing
-experience,26,Mozambique,1.519457145,developing
-experience,27,Taiwan,1.509665538,developing
-experience,28,Egypt,1.505004699,developing
-experience,29,Mongolia,1.464332562,developing
-experience,30,Croatia,1.457571778,developing
-experience,31,Australia,1.449639882,developed
-experience,32,Nicaragua,1.446084365,developing
-experience,33,Burkina Faso,1.441696059,developing
-experience,34,Namibia,1.438173573,developing
-experience,35,Netherlands,1.434460572,developed
-experience,36,Serbia,1.426526592,developing
-experience,37,Senegal,1.41699593,developing
-experience,38,Mauritania,1.415143851,developing
-experience,39,Brazil,1.332811356,developing
-experience,40,China,1.313037165,developing
-experience,41,Costa Rica,1.307271954,developing
-experience,42,North Macedonia,1.303289394,developing
-experience,43,Malawi,1.290071143,developing
-experience,44,Austria,1.287085085,developed
-experience,45,Greece,1.28599624,developed
-experience,46,Poland,1.278206419,developed
-experience,47,Argentina,1.243491981,developing
-experience,48,Israel,1.243160365,developed
-experience,49,Panama,1.221534233,developing
-experience,50,Kazakhstan,1.210777777,developing
-experience,51,Zimbabwe,1.201556283,developing
-experience,52,Mexico,1.191318824,developing
-experience,53,Japan,1.179769991,developed
-experience,54,New Zealand,1.170487664,developed
-experience,55,Guatemala,1.159269499,developing
-experience,56,Afghanistan,1.140997838,developing
-experience,57,Hungary,1.128667354,developed
-experience,58,Dominican Republic,1.121946787,developing
-experience,59,Mali,1.121332353,developing
-experience,60,South Africa,1.113011103,developing
-experience,61,Turkey,1.095531476,developing
-experience,62,Burundi,1.089361326,developing
-experience,63,Bulgaria,1.064313136,developing
-experience,64,Italy,1.045832621,developed
-experience,65,India,1.044218174,developing
-experience,66,Belarus,1.038341426,developing
-experience,67,Bangladesh,1.037547207,developing
-experience,68,Norway,1.031812141,developed
-experience,69,Armenia,0.96024496,developing
-experience,70,France,0.951451311,developed
-experience,71,United States,0.91494308,developed
-experience,72,Switzerland,0.861710598,developed
-experience,73,Bolivia,0.856043202,developing
-experience,74,Peru,0.843705502,developing
-experience,75,Oman,0.82732313,developing
-experience,76,Nigeria,0.802059737,developing
-experience,77,Uganda,0.784084185,developing
-experience,78,Thailand,0.782480762,developing
-experience,79,Nepal,0.773882935,developing
-experience,80,Madagascar,0.749386268,developing
-experience,81,Romania,0.741113141,developing
-experience,82,Slovakia,0.735008278,developed
-experience,83,Pakistan,0.7292178,developing
-experience,84,Jamaica,0.711233256,developing
-experience,85,Central African Republic,0.708459425,developing
-experience,86,Niger,0.672680021,developing
-experience,87,Cameroon,0.672375173,developing
-experience,88,Somalia,0.670662804,developing
-experience,89,Slovenia,0.658834923,developed
-experience,90,Philippines,0.654782728,developing
-experience,91,Canada,0.640644616,developed
-experience,92,South Sudan,0.615717424,developing
-experience,93,Georgia,0.613984212,developing
-experience,94,Korea (Republic),0.609192502,developed
-experience,95,Uzbekistan,0.60253507,developing
-experience,96,Ecuador,0.589887149,developing
-experience,97,Singapore,0.573502253,developing
-experience,98,Malaysia,0.544764135,developing
-experience,99,Tunisia,0.535765817,developing
-experience,100,Iraq,0.524521488,developing
-experience,101,Bosnia and Herzegovina,0.518044319,developing
-experience,102,Sri Lanka,0.471838863,developing
-experience,103,Colombia,0.461425555,developing
-experience,104,Czech Republic,0.444213073,developed
-experience,105,Zambia,0.409932451,developing
-experience,106,Indonesia,0.40505214,developing
-experience,107,Kuwait,0.399283024,developing
-experience,108,Russia,0.358701647,developing
-experience,109,Eritrea,0.351086257,developing
-experience,110,Togo,0.332173962,developing
-experience,111,Ethiopia,0.305590658,developing
-experience,112,Laos,0.284520806,developing
-experience,113,Tanzania,0.265847324,developing
-experience,114,Myanmar,0.196428737,developing
-experience,115,Liberia,0.160141397,developing
-experience,116,Lesotho,0.156531124,developing
-experience,117,Ghana,0.145733003,developing
-experience,118,Benin,0.126896279,developing
-experience,119,Guinea,0.118328898,developing
-experience,120,Azerbaijan,0.112440629,developing
-experience,121,Angola,0.098500613,developing
-experience,122,Congo (Dem. Rep.),0.092901044,developing
-experience,123,Congo,0.079600586,developing
-experience,124,Lebanon,0.073351188,developing
-experience,125,Algeria,0.07227693,developing
-experience,126,Cote d'Ivoire,0.070778563,developing
-experience,127,Moldova,0.06324637,developing
-experience,128,Tajikistan,0.057962525,developing
-experience,129,Palestinian Authority,0.051521693,developing
-experience,130,Sudan,0.033500721,developing
-experience,131,Kyrgyzstan,0.029601934,developing
-experience,132,Haiti,0.023110818,developing
-experience,133,Chad,0.010900546,developing
-experience,134,Qatar,0.008759853,developing
-experience,135,Botswana,0.001973079,developing
-experience,136,Turkmenistan,0.000230472,developing
-experience,137,Paraguay,0.00023047,developing
+category,rank,geography,score
+overall,1,Chile,2.797934949
+overall,2,Denmark,2.737697379
+overall,3,Netherlands,2.632158723
+overall,4,Ireland,2.587711247
+overall,5,India,2.580736043
+overall,6,France,2.531501538
+overall,7,Lithuania,2.519171716
+overall,8,Spain,2.516904003
+overall,9,Germany,2.516584435
+overall,10,United Kingdom,2.484191875
+overall,11,Belgium,2.434265338
+overall,12,Greece,2.410794796
+overall,13,Brazil,2.396890043
+overall,14,Jordan,2.370490164
+overall,15,China,2.349397859
+overall,16,Taiwan,2.309399933
+overall,17,Finland,2.30736615
+overall,18,United Arab Emirates,2.289705177
+overall,19,Morocco,2.261852778
+overall,20,Nigeria,2.205208238
+overall,21,Portugal,2.188863915
+overall,22,Ukraine,2.183950428
+overall,23,Colombia,2.18275081
+overall,24,Hungary,2.181640367
+overall,25,Philippines,2.180315076
+overall,26,Kenya,2.174758729
+overall,27,Poland,2.173736051
+overall,28,Croatia,2.172844777
+overall,29,North Macedonia,2.141758023
+overall,30,Dominican Republic,2.124683985
+overall,31,Argentina,2.110782009
+overall,32,Canada,2.098812238
+overall,33,Italy,2.097709063
+overall,34,Albania,2.095783503
+overall,35,Vietnam,2.065743368
+overall,36,Sweden,2.047308551
+overall,37,Kazakhstan,2.013131056
+overall,38,Tunisia,2.005267437
+overall,39,Turkey,1.995217138
+overall,40,Guatemala,1.992127973
+overall,41,Saudi Arabia,1.989849073
+overall,42,El Salvador,1.97809095
+overall,43,Serbia,1.972932845
+overall,44,Namibia,1.971640586
+overall,45,Armenia,1.97157118
+overall,46,Switzerland,1.970928187
+overall,47,United States,1.968862306
+overall,48,Thailand,1.946081002
+overall,49,Austria,1.945265796
+overall,50,Uruguay,1.941307878
+overall,51,Slovenia,1.919818248
+overall,52,Peru,1.912250652
+overall,53,Norway,1.899057512
+overall,54,Malaysia,1.894980713
+overall,55,South Africa,1.892393937
+overall,56,Panama,1.887146628
+overall,57,Pakistan,1.884766087
+overall,58,Mongolia,1.880617655
+overall,59,Egypt,1.874628645
+overall,60,Senegal,1.868164169
+overall,61,Honduras,1.860525707
+overall,62,New Zealand,1.853113321
+overall,63,Nicaragua,1.80371544
+overall,64,Japan,1.786648352
+overall,65,Australia,1.781987623
+overall,66,Bangladesh,1.774756461
+overall,67,Cambodia,1.773270914
+overall,68,Korea (Republic),1.747076851
+overall,69,Zimbabwe,1.73022592
+overall,70,Zambia,1.688112559
+overall,71,Romania,1.674523214
+overall,72,Oman,1.655058581
+overall,73,Singapore,1.645356952
+overall,74,Rwanda,1.627075191
+overall,75,Madagascar,1.626097521
+overall,76,Georgia,1.612647282
+overall,77,Burkina Faso,1.611526194
+overall,78,Mexico,1.607845061
+overall,79,Tanzania,1.595253013
+overall,80,Malawi,1.59492287
+overall,81,Costa Rica,1.588802496
+overall,82,Uganda,1.580455662
+overall,83,Russia,1.578202993
+overall,84,Bosnia and Herzegovina,1.571277862
+overall,85,Nepal,1.56660143
+overall,86,Mali,1.55829095
+overall,87,Myanmar,1.555155431
+overall,88,Cameroon,1.53873638
+overall,89,Algeria,1.498675453
+overall,90,Benin,1.497162662
+overall,91,Uzbekistan,1.496800045
+overall,92,Bulgaria,1.49292294
+overall,93,Belarus,1.491175151
+overall,94,Israel,1.488452121
+overall,95,Czech Republic,1.481714043
+overall,96,Iraq,1.469562883
+overall,97,Sri Lanka,1.446614035
+overall,98,Ghana,1.445518071
+overall,99,Indonesia,1.440623207
+overall,100,Ecuador,1.432217751
+overall,101,Jamaica,1.431130146
+overall,102,Sierra Leone,1.418891604
+overall,103,Moldova,1.418342081
+overall,104,Bolivia,1.353470402
+overall,105,Botswana,1.336285998
+overall,106,Slovakia,1.335895701
+overall,107,Cote d'Ivoire,1.299589216
+overall,108,Afghanistan,1.290557719
+overall,109,Togo,1.265420207
+overall,110,Ethiopia,1.263230959
+overall,111,Laos,1.25591517
+overall,112,Mozambique,1.187885382
+overall,113,Lebanon,1.175602796
+overall,114,Palestinian Authority,1.166334936
+overall,115,Liberia,1.148543705
+overall,116,Qatar,1.137251365
+overall,117,Niger,1.096704909
+overall,118,Burundi,1.082757719
+overall,119,Mauritania,1.053127985
+overall,120,Angola,1.041874523
+overall,121,Kuwait,1.005492161
+overall,122,Somalia,0.966960943
+overall,123,Azerbaijan,0.941989098
+overall,124,Kyrgyzstan,0.868690783
+overall,125,Haiti,0.855679462
+overall,126,Guinea,0.830680642
+overall,127,Tajikistan,0.827423128
+overall,128,Congo (Dem. Rep.),0.813984192
+overall,129,Lesotho,0.750565294
+overall,130,Central African Republic,0.733594182
+overall,131,Paraguay,0.720586097
+overall,132,South Sudan,0.676371435
+overall,133,Chad,0.670677246
+overall,134,Eritrea,0.59278477
+overall,135,Congo,0.522091205
+overall,136,Sudan,0.451490453
+overall,137,Turkmenistan,0.342008994
+fundamentals,1,Netherlands,3.972590016
+fundamentals,2,Greece,3.623988277
+fundamentals,3,India,3.604429564
+fundamentals,4,Chile,3.50611746
+fundamentals,5,Brazil,3.505583916
+fundamentals,6,Canada,3.441121665
+fundamentals,7,France,3.430673116
+fundamentals,8,Colombia,3.423693182
+fundamentals,9,Denmark,3.417472577
+fundamentals,10,Germany,3.408734944
+fundamentals,11,Belgium,3.375970964
+fundamentals,12,United Kingdom,3.358759095
+fundamentals,13,Spain,3.253746764
+fundamentals,14,Jordan,3.215937641
+fundamentals,15,Argentina,3.209961413
+fundamentals,16,Ireland,3.188927898
+fundamentals,17,Finland,3.179507481
+fundamentals,18,Switzerland,3.12003177
+fundamentals,19,Lithuania,3.117272931
+fundamentals,20,Italy,3.107447595
+fundamentals,21,United States,3.072170728
+fundamentals,22,Portugal,3.065672314
+fundamentals,23,Philippines,3.064022434
+fundamentals,24,Taiwan,3.058859994
+fundamentals,25,North Macedonia,3.016510553
+fundamentals,26,Morocco,3.00213172
+fundamentals,27,Sweden,2.996524789
+fundamentals,28,Slovenia,2.994632275
+fundamentals,29,Thailand,2.991584658
+fundamentals,30,Peru,2.982879273
+fundamentals,31,United Arab Emirates,2.95663838
+fundamentals,32,Hungary,2.955504004
+fundamentals,33,Ukraine,2.930425126
+fundamentals,34,Kazakhstan,2.929254366
+fundamentals,35,Guatemala,2.92866844
+fundamentals,36,Norway,2.9125273
+fundamentals,37,China,2.910166475
+fundamentals,38,Malaysia,2.864235723
+fundamentals,39,Nigeria,2.857921587
+fundamentals,40,Dominican Republic,2.847710242
+fundamentals,41,Austria,2.817066862
+fundamentals,42,New Zealand,2.814094094
+fundamentals,43,Croatia,2.778810256
+fundamentals,44,Albania,2.768926825
+fundamentals,45,Armenia,2.708573616
+fundamentals,46,Singapore,2.69896669
+fundamentals,47,Saudi Arabia,2.697144407
+fundamentals,48,Poland,2.680174089
+fundamentals,49,Panama,2.671974773
+fundamentals,50,Pakistan,2.66437469
+fundamentals,51,Vietnam,2.647509248
+fundamentals,52,Tunisia,2.596894021
+fundamentals,53,Korea (Republic),2.589283037
+fundamentals,54,El Salvador,2.58838944
+fundamentals,55,Australia,2.587527375
+fundamentals,56,Uruguay,2.574415114
+fundamentals,57,Japan,2.50006033
+fundamentals,58,Egypt,2.453569219
+fundamentals,59,Nicaragua,2.450241344
+fundamentals,60,Turkey,2.435258646
+fundamentals,61,Senegal,2.421163958
+fundamentals,62,Georgia,2.407947233
+fundamentals,63,Tanzania,2.403549403
+fundamentals,64,Serbia,2.372204651
+fundamentals,65,Moldova,2.291763298
+fundamentals,66,Romania,2.28068688
+fundamentals,67,Oman,2.272251815
+fundamentals,68,Zambia,2.265680656
+fundamentals,69,Madagascar,2.264438203
+fundamentals,70,Bangladesh,2.263773626
+fundamentals,71,Namibia,2.261304679
+fundamentals,72,Ecuador,2.257825653
+fundamentals,73,Ghana,2.244640919
+fundamentals,74,Algeria,2.242847386
+fundamentals,75,Uganda,2.197783458
+fundamentals,76,Kenya,2.186158026
+fundamentals,77,Nepal,2.16893981
+fundamentals,78,Mongolia,2.151278251
+fundamentals,79,Czech Republic,2.146646817
+fundamentals,80,Russia,2.139431151
+fundamentals,81,Sri Lanka,2.127687719
+fundamentals,82,Costa Rica,2.12618398
+fundamentals,83,Honduras,2.066210813
+fundamentals,84,Bosnia and Herzegovina,2.059399413
+fundamentals,85,Mexico,2.052003575
+fundamentals,86,Malawi,2.047576152
+fundamentals,87,Qatar,2.045027191
+fundamentals,88,South Africa,2.021923404
+fundamentals,89,Iraq,2.020619004
+fundamentals,90,Belarus,1.988614854
+fundamentals,91,Slovakia,1.988314598
+fundamentals,92,Bulgaria,1.974584509
+fundamentals,93,Cameroon,1.955864935
+fundamentals,94,Rwanda,1.954343168
+fundamentals,95,Cambodia,1.929945677
+fundamentals,96,Myanmar,1.909922457
+fundamentals,97,Cote d'Ivoire,1.901338534
+fundamentals,98,Israel,1.889630808
+fundamentals,99,Indonesia,1.883691294
+fundamentals,100,Benin,1.829154978
+fundamentals,101,Mali,1.80155915
+fundamentals,102,Burkina Faso,1.778147694
+fundamentals,103,Zimbabwe,1.760949953
+fundamentals,104,Palestinian Authority,1.758796993
+fundamentals,105,Uzbekistan,1.729719466
+fundamentals,106,Laos,1.678222259
+fundamentals,107,Jamaica,1.615410073
+fundamentals,108,Bolivia,1.575224224
+fundamentals,109,Ethiopia,1.528512181
+fundamentals,110,Togo,1.517683725
+fundamentals,111,Liberia,1.502306912
+fundamentals,112,Botswana,1.452233328
+fundamentals,113,Sierra Leone,1.394246694
+fundamentals,114,Lebanon,1.383755887
+fundamentals,115,Angola,1.382509009
+fundamentals,116,Afghanistan,1.361912558
+fundamentals,117,Azerbaijan,1.342647565
+fundamentals,118,Kuwait,1.334316684
+fundamentals,119,Haiti,1.187592444
+fundamentals,120,Somalia,1.169797403
+fundamentals,121,Paraguay,1.140208501
+fundamentals,122,Mozambique,1.13862343
+fundamentals,123,Kyrgyzstan,1.13400727
+fundamentals,124,Tajikistan,1.129923759
+fundamentals,125,Congo (Dem. Rep.),1.102573595
+fundamentals,126,Burundi,1.033016162
+fundamentals,127,Niger,1.032408861
+fundamentals,128,Lesotho,1.029134554
+fundamentals,129,Guinea,1.007516883
+fundamentals,130,Mauritania,0.962693286
+fundamentals,131,Chad,0.894538638
+fundamentals,132,Congo,0.705127273
+fundamentals,133,South Sudan,0.599854545
+fundamentals,134,Central African Republic,0.599745455
+fundamentals,135,Sudan,0.5472
+fundamentals,136,Eritrea,0.492192208
+fundamentals,137,Turkmenistan,0.3
+opportunities,1,Botswana,2.438704257
+opportunities,2,South Africa,2.412717838
+opportunities,3,France,2.313208609
+opportunities,4,Nigeria,2.302930041
+opportunities,5,Tunisia,2.29151589
+opportunities,6,China,2.264221319
+opportunities,7,Ireland,2.245437314
+opportunities,8,Myanmar,2.204348073
+opportunities,9,Benin,2.203444416
+opportunities,10,Zimbabwe,2.197447491
+opportunities,11,Lithuania,2.130789959
+opportunities,12,Chile,2.12391237
+opportunities,13,India,2.069866868
+opportunities,14,Poland,2.056389607
+opportunities,15,Turkey,2.014819784
+opportunities,16,Philippines,1.938432708
+opportunities,17,Namibia,1.925779414
+opportunities,18,Uzbekistan,1.925226179
+opportunities,19,Lebanon,1.861548222
+opportunities,20,Zambia,1.811156474
+opportunities,21,Jamaica,1.782467181
+opportunities,22,Mongolia,1.755581558
+opportunities,23,Serbia,1.720795487
+opportunities,24,Spain,1.720227734
+opportunities,25,Togo,1.694139415
+opportunities,26,Ethiopia,1.690308815
+opportunities,27,Hungary,1.686886106
+opportunities,28,Dominican Republic,1.681368669
+opportunities,29,Croatia,1.676186817
+opportunities,30,Russia,1.675248024
+opportunities,31,Niger,1.649321893
+opportunities,32,Bosnia and Herzegovina,1.648268301
+opportunities,33,Kenya,1.637421196
+opportunities,34,Taiwan,1.610214206
+opportunities,35,Indonesia,1.590058098
+opportunities,36,Cameroon,1.570840475
+opportunities,37,Denmark,1.55542168
+opportunities,38,Bangladesh,1.533931386
+opportunities,39,Germany,1.512095517
+opportunities,40,Armenia,1.508892529
+opportunities,41,Mali,1.508713149
+opportunities,42,Pakistan,1.481097169
+opportunities,43,Burkina Faso,1.44811333
+opportunities,44,Algeria,1.43673011
+opportunities,45,Liberia,1.429419599
+opportunities,46,Colombia,1.422191322
+opportunities,47,Belgium,1.413898299
+opportunities,48,Bolivia,1.407389958
+opportunities,49,Romania,1.395605954
+opportunities,50,United Arab Emirates,1.394309594
+opportunities,51,Cambodia,1.390712731
+opportunities,52,Laos,1.382695356
+opportunities,53,Cote d'Ivoire,1.324901233
+opportunities,54,Iraq,1.312492034
+opportunities,55,Vietnam,1.309604797
+opportunities,56,Tanzania,1.308065924
+opportunities,57,Malaysia,1.306687273
+opportunities,58,Angola,1.30397946
+opportunities,59,Afghanistan,1.297407923
+opportunities,60,Oman,1.248407567
+opportunities,61,Brazil,1.243580982
+opportunities,62,Finland,1.232535577
+opportunities,63,North Macedonia,1.230721591
+opportunities,64,Madagascar,1.226127408
+opportunities,65,Senegal,1.213332831
+opportunities,66,Morocco,1.207607902
+opportunities,67,Korea (Republic),1.200548827
+opportunities,68,Sierra Leone,1.189454331
+opportunities,69,Guinea,1.189359903
+opportunities,70,Czech Republic,1.189349465
+opportunities,71,Kyrgyzstan,1.177146657
+opportunities,72,Burundi,1.175637224
+opportunities,73,Nepal,1.154643163
+opportunities,74,Netherlands,1.148994289
+opportunities,75,Ghana,1.147057444
+opportunities,76,Uganda,1.142171545
+opportunities,77,Mexico,1.13605427
+opportunities,78,Italy,1.130108443
+opportunities,79,United Kingdom,1.110295935
+opportunities,80,Greece,1.109206388
+opportunities,81,Palestinian Authority,1.096224067
+opportunities,82,Egypt,1.086371444
+opportunities,83,Rwanda,1.079479484
+opportunities,84,Sri Lanka,1.059241841
+opportunities,85,Eritrea,1.035668407
+opportunities,86,Slovenia,1.031173516
+opportunities,87,Moldova,1.026595357
+opportunities,88,Central African Republic,1.026426394
+opportunities,89,Haiti,1.024422141
+opportunities,90,Georgia,1.020710452
+opportunities,91,Thailand,1.018673928
+opportunities,92,Malawi,0.994468034
+opportunities,93,Tajikistan,0.99188247
+opportunities,94,Albania,0.988017898
+opportunities,95,Kazakhstan,0.983237716
+opportunities,96,Panama,0.983102733
+opportunities,97,Portugal,0.97880632
+opportunities,98,Saudi Arabia,0.977866318
+opportunities,99,Honduras,0.976915828
+opportunities,100,Azerbaijan,0.970220633
+opportunities,101,Japan,0.966702755
+opportunities,102,Bulgaria,0.958209608
+opportunities,103,Congo (Dem. Rep.),0.957888533
+opportunities,104,Mozambique,0.954837522
+opportunities,105,Kuwait,0.954052253
+opportunities,106,Guatemala,0.951905513
+opportunities,107,Belarus,0.94912947
+opportunities,108,Israel,0.931386503
+opportunities,109,South Sudan,0.890059226
+opportunities,110,Jordan,0.88988151
+opportunities,111,Chad,0.882731163
+opportunities,112,Canada,0.872361008
+opportunities,113,Mauritania,0.871981518
+opportunities,114,Nicaragua,0.868294707
+opportunities,115,Austria,0.859844373
+opportunities,116,Somalia,0.857586162
+opportunities,117,Peru,0.839538559
+opportunities,118,United States,0.816164687
+opportunities,119,Costa Rica,0.795570071
+opportunities,120,Lesotho,0.787460945
+opportunities,121,Switzerland,0.78193861
+opportunities,122,Argentina,0.77971323
+opportunities,123,Turkmenistan,0.767805503
+opportunities,124,Uruguay,0.763899209
+opportunities,125,Norway,0.739363306
+opportunities,126,Ukraine,0.703497978
+opportunities,127,Sudan,0.678061092
+opportunities,128,Slovakia,0.631945329
+opportunities,129,Ecuador,0.623332549
+opportunities,130,New Zealand,0.613777435
+opportunities,131,Singapore,0.609992176
+opportunities,132,Paraguay,0.601927385
+opportunities,133,Congo,0.598509688
+opportunities,134,Australia,0.50325586
+opportunities,135,Qatar,0.450191223
+opportunities,136,Sweden,0.446245273
+opportunities,137,El Salvador,0.411502501
+experience,1,Kenya,2.689297669
+experience,2,Denmark,2.560422683
+experience,3,Honduras,2.332765375
+experience,4,El Salvador,2.324082419
+experience,5,Ukraine,2.171453483
+experience,6,Jordan,2.160203865
+experience,7,United Kingdom,2.108953376
+experience,8,Chile,2.055592504
+experience,9,Albania,1.857262465
+experience,10,Uruguay,1.852502075
+experience,11,United Arab Emirates,1.851234354
+experience,12,Cambodia,1.84247957
+experience,13,Spain,1.839894748
+experience,14,Morocco,1.835539768
+experience,15,Sweden,1.749939354
+experience,16,Germany,1.736772334
+experience,17,Ireland,1.72755188
+experience,18,Lithuania,1.711351042
+experience,19,Sierra Leone,1.697618698
+experience,20,Vietnam,1.658350179
+experience,21,Portugal,1.645304712
+experience,22,Finland,1.63791406
+experience,23,Saudi Arabia,1.587241158
+experience,24,Belgium,1.571221125
+experience,25,Rwanda,1.520134943
+experience,26,Mozambique,1.519457145
+experience,27,Taiwan,1.509665538
+experience,28,Egypt,1.505004699
+experience,29,Mongolia,1.464332562
+experience,30,Croatia,1.457571778
+experience,31,Australia,1.449639882
+experience,32,Nicaragua,1.446084365
+experience,33,Burkina Faso,1.441696059
+experience,34,Namibia,1.438173573
+experience,35,Netherlands,1.434460572
+experience,36,Serbia,1.426526592
+experience,37,Senegal,1.41699593
+experience,38,Mauritania,1.415143851
+experience,39,Brazil,1.332811356
+experience,40,China,1.313037165
+experience,41,Costa Rica,1.307271954
+experience,42,North Macedonia,1.303289394
+experience,43,Malawi,1.290071143
+experience,44,Austria,1.287085085
+experience,45,Greece,1.28599624
+experience,46,Poland,1.278206419
+experience,47,Argentina,1.243491981
+experience,48,Israel,1.243160365
+experience,49,Panama,1.221534233
+experience,50,Kazakhstan,1.210777777
+experience,51,Zimbabwe,1.201556283
+experience,52,Mexico,1.191318824
+experience,53,Japan,1.179769991
+experience,54,New Zealand,1.170487664
+experience,55,Guatemala,1.159269499
+experience,56,Afghanistan,1.140997838
+experience,57,Hungary,1.128667354
+experience,58,Dominican Republic,1.121946787
+experience,59,Mali,1.121332353
+experience,60,South Africa,1.113011103
+experience,61,Turkey,1.095531476
+experience,62,Burundi,1.089361326
+experience,63,Bulgaria,1.064313136
+experience,64,Italy,1.045832621
+experience,65,India,1.044218174
+experience,66,Belarus,1.038341426
+experience,67,Bangladesh,1.037547207
+experience,68,Norway,1.031812141
+experience,69,Armenia,0.96024496
+experience,70,France,0.951451311
+experience,71,United States,0.91494308
+experience,72,Switzerland,0.861710598
+experience,73,Bolivia,0.856043202
+experience,74,Peru,0.843705502
+experience,75,Oman,0.82732313
+experience,76,Nigeria,0.802059737
+experience,77,Uganda,0.784084185
+experience,78,Thailand,0.782480762
+experience,79,Nepal,0.773882935
+experience,80,Madagascar,0.749386268
+experience,81,Romania,0.741113141
+experience,82,Slovakia,0.735008278
+experience,83,Pakistan,0.7292178
+experience,84,Jamaica,0.711233256
+experience,85,Central African Republic,0.708459425
+experience,86,Niger,0.672680021
+experience,87,Cameroon,0.672375173
+experience,88,Somalia,0.670662804
+experience,89,Slovenia,0.658834923
+experience,90,Philippines,0.654782728
+experience,91,Canada,0.640644616
+experience,92,South Sudan,0.615717424
+experience,93,Georgia,0.613984212
+experience,94,Korea (Republic),0.609192502
+experience,95,Uzbekistan,0.60253507
+experience,96,Ecuador,0.589887149
+experience,97,Singapore,0.573502253
+experience,98,Malaysia,0.544764135
+experience,99,Tunisia,0.535765817
+experience,100,Iraq,0.524521488
+experience,101,Bosnia and Herzegovina,0.518044319
+experience,102,Sri Lanka,0.471838863
+experience,103,Colombia,0.461425555
+experience,104,Czech Republic,0.444213073
+experience,105,Zambia,0.409932451
+experience,106,Indonesia,0.40505214
+experience,107,Kuwait,0.399283024
+experience,108,Russia,0.358701647
+experience,109,Eritrea,0.351086257
+experience,110,Togo,0.332173962
+experience,111,Ethiopia,0.305590658
+experience,112,Laos,0.284520806
+experience,113,Tanzania,0.265847324
+experience,114,Myanmar,0.196428737
+experience,115,Liberia,0.160141397
+experience,116,Lesotho,0.156531124
+experience,117,Ghana,0.145733003
+experience,118,Benin,0.126896279
+experience,119,Guinea,0.118328898
+experience,120,Azerbaijan,0.112440629
+experience,121,Angola,0.098500613
+experience,122,Congo (Dem. Rep.),0.092901044
+experience,123,Congo,0.079600586
+experience,124,Lebanon,0.073351188
+experience,125,Algeria,0.07227693
+experience,126,Cote d'Ivoire,0.070778563
+experience,127,Moldova,0.06324637
+experience,128,Tajikistan,0.057962525
+experience,129,Palestinian Authority,0.051521693
+experience,130,Sudan,0.033500721
+experience,131,Kyrgyzstan,0.029601934
+experience,132,Haiti,0.023110818
+experience,133,Chad,0.010900546
+experience,134,Qatar,0.008759853
+experience,135,Botswana,0.001973079
+experience,136,Turkmenistan,0.000230472
+experience,137,Paraguay,0.00023047

@@ -1,11 +1,13 @@
+edition: 2020
+
 # The range to filter the subindicator data by
 # Time series charts (eg. clean energy investment) will use the full range
 # Charts with a single data point (including section copy) will use the maxYear
 subindicators:
   minYear: 2010
-  maxYear: 2018
+  maxYear: 2019
 
 # The range to filter the investment data by
 investments:
   minYear: 2005
-  maxYear: 2018
+  maxYear: 2019

@@ -248,6 +248,41 @@ describe('Input Data', function () {
     })
   })
 
+  describe('Scores', async () => {
+    const fp = './input/scores.csv'
+
+    step('the scores file exists', async () =>
+      assert.isTrue(await fs.pathExists(fp), `${fp} does not exist`)
+    )
+
+    step('has all the required headers', async () => {
+      const requiredHeaders = [ 'category', 'rank', 'geography', 'score' ]
+      const data = await utils.loadCSV(fp)
+
+      return assert.containsAllKeys(data[0], requiredHeaders, `${fp} doesn't have one of the required headers`)
+    })
+
+    step('all countries have an overall and topic scores', async () => {
+      const data = await utils.loadCSV(fp)
+      const topics = await utils.loadCSV('./input/topics.csv')
+      const countries = await utils.loadCSV('./input/geographies.csv')
+
+      const categories = [...topics.map(t => t.id), 'overall']
+
+      const missingScores = countries.reduce((missing, c) => {
+        const countryCategories = data
+          .filter(score => score.geography === c.name)
+          .map(score => score.category)
+
+        if (categories.every(cat => countryCategories.includes(cat))) return missing
+
+        return [...missing, c.name]
+      }, [])
+
+      return assert.isEmpty(missingScores, `Not all countries have a score for all categories (${categories}) in ${fp}. Double-check ${missingScores}.`)
+    })
+  })
+
   describe('Sub-indicators', async () => {
     const fp = './input/subindicators.csv'
 

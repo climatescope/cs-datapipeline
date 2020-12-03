@@ -1,8 +1,8 @@
 indicator,id,label
 Utility privatisation,1,All segments
-Utility privatisation,0.8,Generation and distribution
-Utility privatisation,0.7,Generation and transmission
-Utility privatisation,0.5,Generation
+Utility privatisation,0.99,Generation and distribution
+Utility privatisation,0.66,Generation and transmission
+Utility privatisation,0.33,Generation
 Utility privatisation,0,No
 Concentration of generation market,0,Yes
 Concentration of generation market,1,Somewhat
@@ -28,7 +28,8 @@ Wholesale power market,1,Somewhat
 Wholesale power market,0,No
 Currency variation,1,Very low
 Currency variation,0.75,Low
-Currency variation,0.5,High
+Currency variation,0.5,Somewhat high
+Currency variation,0.25,High
 Currency variation,0,Very high
 Offtaker risk,2,Low risk
 Offtaker risk,1.5,Somewhat low risk

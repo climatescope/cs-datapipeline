@@ -23,8 +23,8 @@ importDuties,group,Import Duties,What is the average level of import duties for 
 largeDuties,percent,Large scale renewables,,opportunities,Import duties  Large scale renewables,,,%,both
 smallDuties,percent,Small scale renewables,,opportunities,Import duties  Small scale renewables,,,%,both
 availabilityFinance,range,Availability of finance,This score reflects whether or not existing projects have been able to secure concessional or commercial finance from domestic and international sources.,experience,Availability of finance,,,,both
-installedCapacity,timeSeries,Installed Capacity,,experience,3.05,year,MW,,both
-powerGeneration,timeSeries,Power Generation,,experience,3.06,year,GWh,,both
+installedCapacity,timeSeries,Installed Capacity,,experience,3.07,year,MW,,both
+powerGeneration,timeSeries,Power Generation,,experience,3.08,year,GWh,,both
 cleanEnergyInvestment,timeSeries,Clean Energy Investment,What's the volume of clean energy investment in the country?,experience,investment,year,$ million,,both
 doingBusinessFeatures,group,Features,,,standardisedPpa|ppaSufficientDuration|purchaseObligation|minigridLicensing,,,,both
 barriersFeatures,group,Features,,,keroseneDieselSubsidies|curtailmentRisk,,,,both

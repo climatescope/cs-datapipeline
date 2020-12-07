@@ -17,5 +17,5 @@ electricityPrice,average,Electricity Price Data,Average retail electricity price
 installedCapacity,timeSeries,Installed Capacity,,experience,3.07,year,MW,,both
 powerGeneration,timeSeries,Power Generation,,experience,3.08,year,GWh,,both
 cleanEnergyInvestment,timeSeries,Clean Energy Investment,What's the volume of clean energy investment in the country?,experience,investment,year,$ million,,both
-doingBusinessFeatures,group,Features,,,standardisedPpa|ppaSufficientDuration|purchaseObligation|minigridLicensing,,,,both
+doingBusinessFeatures,group,Features,,,standardisedPpa|ppaSufficientDuration|purchaseObligation,,,,both
 barriersFeatures,group,Features,,,keroseneDieselSubsidies|curtailmentRisk,,,,both

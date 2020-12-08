@@ -1217,7 +1217,7 @@ year,month,quarter,period,geography,sector,Deal Type,value
 2006,,Q4,2006Q4,Ireland,Wind,Asset Finance,62.25416
 2008,,Q4,2008Q4,Mainland China,Biomass & waste,Asset Finance,35.172
 2007,,Q2,2007Q2,Italy,Wind,Asset Finance,42.63
-2007,,Q2,2007Q2,Russian Federation,Biomass & waste,Asset Finance,65.8
+2007,,Q2,2007Q2,Russia,Biomass & waste,Asset Finance,65.8
 2007,,Q2,2007Q2,Mainland China,Biomass & waste,Asset Finance,39.057
 2006,,Q2,2006Q2,India,Biofuels,Asset Finance,5.5555
 2009,,Q3,2009Q3,Mainland China,Biomass & waste,Asset Finance,74.49215
@@ -1459,7 +1459,7 @@ year,month,quarter,period,geography,sector,Deal Type,value
 2007,,Q2,2007Q2,United States,Solar,Asset Finance,6.9
 2007,,Q4,2007Q4,United States,Biofuels,Asset Finance,117
 2007,,Q3,2007Q3,Mainland China,Biofuels,Asset Finance,36.9908
-2005,,Q3,< 2006,Macedonia (Former Yugoslav Republic),Biofuels,Asset Finance,14.8308
+2005,,Q3,< 2006,North Macedonia,Biofuels,Asset Finance,14.8308
 2007,,Q3,2007Q3,Mainland China,Biomass & waste,Asset Finance,34.3486
 2008,,Q4,2008Q4,Mainland China,Biomass & waste,Asset Finance,38.19996
 2005,,Q4,< 2006,Mainland China,Wind,Asset Finance,39.23913
@@ -2097,7 +2097,7 @@ year,month,quarter,period,geography,sector,Deal Type,value
 2008,,Q1,2008Q1,Mainland China,Wind,Asset Finance,61.68909
 2005,,Q3,< 2006,India,Wind,Asset Finance,10.68477
 2007,,Q2,2007Q2,Germany,Wind,Asset Finance,29.4
-2007,,Q2,2007Q2,Russian Federation,Wind,Asset Finance,1.47
+2007,,Q2,2007Q2,Russia,Wind,Asset Finance,1.47
 2018,,Q4,2018Q4,Spain,Wind,Asset Finance,28.6675
 2008,,Q1,2008Q1,United States,Geothermal,Asset Finance,18
 2008,,Q1,2008Q1,Mainland China,Biofuels,Asset Finance,49.98
@@ -5640,7 +5640,7 @@ year,month,quarter,period,geography,sector,Deal Type,value
 2008,,Q4,2008Q4,Australia,Biofuels,Asset Finance,11.66434
 2010,,Q1,2010Q1,Italy,Wind,Asset Finance,36.4
 2006,,Q2,2006Q2,India,Biomass & waste,Asset Finance,21.2
-2010,,Q1,2010Q1,Russian Federation,Wind,Asset Finance,338.6163312
+2010,,Q1,2010Q1,Russia,Wind,Asset Finance,338.6163312
 2009,,Q2,2009Q2,Spain,Wind,Asset Finance,60.50169
 2009,,Q3,2009Q3,Denmark,Clean energy (other),Asset Finance,1.725
 2010,,Q1,2010Q1,Italy,Solar,Asset Finance,59.8708
@@ -8900,7 +8900,7 @@ year,month,quarter,period,geography,sector,Deal Type,value
 2011,,Q1,2011Q1,Romania,Wind,Asset Finance,112
 2007,,Q1,2007Q1,United States,Biomass & waste,Asset Finance,57.915
 2008,,Q1,2008Q1,United States,Biomass & waste,Asset Finance,112
-2010,,Q4,2010Q4,Macedonia (Former Yugoslav Republic),Wind,Asset Finance,72.84375
+2010,,Q4,2010Q4,North Macedonia,Wind,Asset Finance,72.84375
 2004,,Q4,< 2006,United States,Biomass & waste,Asset Finance,59.8
 2011,,Q1,2011Q1,Sweden,Wind,Asset Finance,15.7766
 2004,,Q4,< 2006,Germany,Wind,Asset Finance,7.62552
@@ -9529,7 +9529,7 @@ year,month,quarter,period,geography,sector,Deal Type,value
 2014,,Q1,2014Q1,United Kingdom,Wind,Asset Finance,2144.274
 2011,,Q2,2011Q2,Germany,Wind,Asset Finance,244.2
 2010,,Q3,2010Q3,India,Wind,Asset Finance,26.84
-2006,,Q1,2006Q1,Macedonia (Former Yugoslav Republic),Small hydro,Asset Finance,101.405352
+2006,,Q1,2006Q1,North Macedonia,Small hydro,Asset Finance,101.405352
 2010,,Q3,2010Q3,Belgium,Biomass & waste,Asset Finance,40.902
 2008,,Q2,2008Q2,United States,Wind,Asset Finance,7.2
 2009,,Q4,2009Q4,United States,Wind,Asset Finance,620
@@ -9608,7 +9608,7 @@ year,month,quarter,period,geography,sector,Deal Type,value
 2011,,Q1,2011Q1,Brazil,Biomass & waste,Asset Finance,0.84714
 2006,,Q3,2006Q3,Netherlands,Biomass & waste,Asset Finance,5.7033
 2017,,Q4,2017Q4,Mainland China,Wind,Asset Finance,137.503772
-2011,,Q2,2011Q2,Macedonia (Former Yugoslav Republic),Small hydro,Asset Finance,8.19
+2011,,Q2,2011Q2,North Macedonia,Small hydro,Asset Finance,8.19
 2010,,Q1,2010Q1,India,Wind,Asset Finance,26.291
 2004,,Q4,< 2006,Germany,Biomass & waste,Asset Finance,24.375
 2010,,Q2,2010Q2,India,Wind,Asset Finance,6.33866976
@@ -10026,7 +10026,7 @@ year,month,quarter,period,geography,sector,Deal Type,value
 2011,,Q4,2011Q4,Mainland China,Wind,Asset Finance,65.88775
 2011,,Q4,2011Q4,Mainland China,Solar,Asset Finance,1.2609846
 2011,,Q3,2011Q3,Estonia,Wind,Asset Finance,31.5
-2008,,Q1,2008Q1,Russian Federation,Biofuels,Asset Finance,20.00109
+2008,,Q1,2008Q1,Russia,Biofuels,Asset Finance,20.00109
 2011,,Q4,2011Q4,Estonia,Wind,Asset Finance,117.414
 2005,,Q3,< 2006,United States,Biofuels,Asset Finance,85.05
 2007,,Q1,2007Q1,United States,Biofuels,Asset Finance,21.66
@@ -10439,9 +10439,9 @@ year,month,quarter,period,geography,sector,Deal Type,value
 2011,,Q4,2011Q4,India,Small hydro,Asset Finance,25.2
 2011,,Q4,2011Q4,India,Small hydro,Asset Finance,25.2
 2010,,Q2,2010Q2,Philippines,Biomass & waste,Asset Finance,3.77973192
-2010,,Q4,2010Q4,Macedonia (Former Yugoslav Republic),Small hydro,Asset Finance,64.64
+2010,,Q4,2010Q4,North Macedonia,Small hydro,Asset Finance,64.64
 2005,,Q2,< 2006,Switzerland,Wind,Asset Finance,2.8
-2006,,Q4,2006Q4,Russian Federation,Biofuels,Asset Finance,13.0313568
+2006,,Q4,2006Q4,Russia,Biofuels,Asset Finance,13.0313568
 2005,,Q2,< 2006,Switzerland,Wind,Asset Finance,1.09256
 2012,,Q1,2012Q1,Romania,Wind,Asset Finance,316.675
 2006,,Q2,2006Q2,Poland,Biofuels,Asset Finance,27.1502
@@ -15731,7 +15731,7 @@ year,month,quarter,period,geography,sector,Deal Type,value
 2012,,Q4,2012Q4,Denmark,Wind,Asset Finance,8.4
 2011,,Q3,2011Q3,France,Solar,Asset Finance,36.55
 2011,,Q3,2011Q3,India,Wind,Asset Finance,2.604
-2011,,Q4,2011Q4,Russian Federation,Geothermal,Asset Finance,29.3255
+2011,,Q4,2011Q4,Russia,Geothermal,Asset Finance,29.3255
 2011,,Q1,2011Q1,India,Wind,Asset Finance,1.984
 2014,,Q1,2014Q1,Italy,Wind,Asset Finance,69.91115
 2012,,Q1,2012Q1,Italy,Solar,Asset Finance,9
@@ -17343,7 +17343,7 @@ year,month,quarter,period,geography,sector,Deal Type,value
 2013,,Q1,2013Q1,Mainland China,Solar,Asset Finance,8.394
 2010,,Q3,2010Q3,United States,Solar,Asset Finance,5.4
 2013,,Q2,2013Q2,Mainland China,Solar,Asset Finance,3.3831
-2011,,Q4,2011Q4,Russian Federation,Biomass & waste,Asset Finance,279
+2011,,Q4,2011Q4,Russia,Biomass & waste,Asset Finance,279
 2013,,Q1,2013Q1,Ukraine,Solar,Asset Finance,54.624
 2013,,Q1,2013Q1,United Kingdom,Solar,Asset Finance,9.92
 2012,,Q4,2012Q4,United Kingdom,Solar,Asset Finance,23.1
@@ -18777,7 +18777,7 @@ year,month,quarter,period,geography,sector,Deal Type,value
 2015,,Q3,2015Q3,Mainland China,Solar,Asset Finance,32
 2014,,Q4,2014Q4,Mainland China,Solar,Asset Finance,48
 2010,,Q4,2010Q4,Italy,Solar,Asset Finance,33.34
-2013,,Q4,2013Q4,Russian Federation,Solar,Asset Finance,1.6
+2013,,Q4,2013Q4,Russia,Solar,Asset Finance,1.6
 2014,,Q1,2014Q1,Turkey,Wind,Asset Finance,14
 2010,,Q1,2010Q1,Peru,Biofuels,Asset Finance,280
 2013,,Q2,2013Q2,United States,Solar,Asset Finance,4
@@ -20628,8 +20628,8 @@ year,month,quarter,period,geography,sector,Deal Type,value
 2010,,Q1,2010Q1,Mexico,Biomass & waste,Asset Finance,69.75
 2004,,Q1,< 2006,Nepal,Biomass & waste,Asset Finance,38.272
 2005,,Q1,< 2006,Nepal,Biomass & waste,Asset Finance,38.272
-2006,,Q2,2006Q2,Russian Federation,Biomass & waste,Asset Finance,21.105
-2005,,Q2,< 2006,Russian Federation,Biomass & waste,Asset Finance,14.81552
+2006,,Q2,2006Q2,Russia,Biomass & waste,Asset Finance,21.105
+2005,,Q2,< 2006,Russia,Biomass & waste,Asset Finance,14.81552
 2008,,Q1,2008Q1,Armenia,Small hydro,Asset Finance,12.41
 2006,,Q2,2006Q2,Armenia,Small hydro,Asset Finance,7.52
 2006,,Q3,2006Q3,Armenia,Small hydro,Asset Finance,7.05
@@ -20923,14 +20923,14 @@ year,month,quarter,period,geography,sector,Deal Type,value
 2006,,Q1,2006Q1,Spain,Wind,Asset Finance,75.11
 2009,,Q3,2009Q3,Canada,Wind,Asset Finance,9.6
 2007,,Q3,2007Q3,United States,Wind,Asset Finance,22.05
-2009,,Q1,2009Q1,Russian Federation,Small hydro,Asset Finance,43.8
+2009,,Q1,2009Q1,Russia,Small hydro,Asset Finance,43.8
 2005,,Q2,< 2006,Germany,Wind,Asset Finance,11.2
 2011,,Q2,2011Q2,Germany,Wind,Asset Finance,19.32
 2004,,Q2,< 2006,Netherlands,Biomass & waste,Asset Finance,1.792
 2007,,Q3,2007Q3,Spain,Solar,Asset Finance,11.1
-2004,,Q1,< 2006,Russian Federation,Geothermal,Asset Finance,12.96
+2004,,Q1,< 2006,Russia,Geothermal,Asset Finance,12.96
 2007,,Q2,2007Q2,Czech Republic,Biomass & waste,Asset Finance,2.777
-2006,,Q4,2006Q4,Russian Federation,Biomass & waste,Asset Finance,36.387432
+2006,,Q4,2006Q4,Russia,Biomass & waste,Asset Finance,36.387432
 2006,,Q3,2006Q3,Ukraine,Biomass & waste,Asset Finance,17.06922
 2008,,Q2,2008Q2,Argentina,Biomass & waste,Asset Finance,12.8
 2006,,Q3,2006Q3,Mainland China,Small hydro,Asset Finance,14.1
@@ -21204,7 +21204,7 @@ year,month,quarter,period,geography,sector,Deal Type,value
 2007,,Q3,2007Q3,Morocco,Biomass & waste,Asset Finance,35.724
 2006,,Q2,2006Q2,Sweden,Wind,Asset Finance,12.528
 2008,,Q1,2008Q1,Hungary,Biomass & waste,Asset Finance,1.6
-2006,,Q3,2006Q3,Russian Federation,Biomass & waste,Asset Finance,1.298127
+2006,,Q3,2006Q3,Russia,Biomass & waste,Asset Finance,1.298127
 2008,,Q1,2008Q1,Argentina,Biomass & waste,Asset Finance,50.087
 2005,,Q2,< 2006,Mainland China,Small hydro,Asset Finance,30.848
 2006,,Q4,2006Q4,Mainland China,Small hydro,Asset Finance,27.448
@@ -21296,7 +21296,7 @@ year,month,quarter,period,geography,sector,Deal Type,value
 2005,,Q3,< 2006,Czech Republic,Wind,Asset Finance,8.4
 2006,,Q3,2006Q3,Ireland,Wind,Asset Finance,59.6316
 2005,,Q2,< 2006,Ireland,Wind,Asset Finance,10.78
-2008,,Q1,2008Q1,Russian Federation,Geothermal,Asset Finance,11.7
+2008,,Q1,2008Q1,Russia,Geothermal,Asset Finance,11.7
 2007,,Q2,2007Q2,India,Wind,Asset Finance,14.7
 2005,,Q2,< 2006,Mainland China,Solar,Asset Finance,1.0268
 2004,,Q3,< 2006,Mainland China,Solar,Asset Finance,0.57
@@ -25533,7 +25533,7 @@ year,month,quarter,period,geography,sector,Deal Type,value
 2014,,Q1,2014Q1,Mainland China,Wind,Asset Finance,391.632
 2012,,Q3,2012Q3,Mainland China,Wind,Asset Finance,67.9389924
 2014,,Q3,2014Q3,Mainland China,Biofuels,Asset Finance,274.0361352
-2014,,Q2,2014Q2,Russian Federation,Solar,Asset Finance,15.42
+2014,,Q2,2014Q2,Russia,Solar,Asset Finance,15.42
 2012,,Q3,2012Q3,Germany,Wind,Asset Finance,2.8
 2013,,Q4,2013Q4,Germany,Wind,Asset Finance,2.8
 2013,,Q4,2013Q4,Germany,Wind,Asset Finance,8.4
@@ -28264,7 +28264,7 @@ year,month,quarter,period,geography,sector,Deal Type,value
 2015,,Q2,2015Q2,Mainland China,Solar,Asset Finance,16
 2015,,Q2,2015Q2,Mainland China,Solar,Asset Finance,29.0484
 2014,,Q3,2014Q3,Mainland China,Solar,Asset Finance,8
-2010,,Q4,2010Q4,Russian Federation,Wind,Asset Finance,98.31
+2010,,Q4,2010Q4,Russia,Wind,Asset Finance,98.31
 2013,,Q1,2013Q1,Italy,Wind,Asset Finance,22.4
 2013,,Q1,2013Q1,Italy,Wind,Asset Finance,19.6
 2014,,Q4,2014Q4,United Kingdom,Solar,Asset Finance,8.32
@@ -28819,7 +28819,7 @@ year,month,quarter,period,geography,sector,Deal Type,value
 2015,,Q2,2015Q2,Canada,Wind,Asset Finance,324.41488
 2015,,Q2,2015Q2,Netherlands,Biomass & waste,Asset Finance,11.04068
 2015,,Q3,2015Q3,United States,Solar,Asset Finance,3
-2015,,Q1,2015Q1,Russian Federation,Solar,Asset Finance,8
+2015,,Q1,2015Q1,Russia,Solar,Asset Finance,8
 2014,,Q3,2014Q3,United Kingdom,Solar,Asset Finance,112.8
 2014,,Q3,2014Q3,Mainland China,Biomass & waste,Asset Finance,32.538
 2015,,Q2,2015Q2,Mainland China,Solar,Asset Finance,32.282
@@ -30779,8 +30779,8 @@ year,month,quarter,period,geography,sector,Deal Type,value
 2008,,Q2,2008Q2,Portugal,Wind,Asset Finance,58.94966
 2015,,Q4,2015Q4,United States,Solar,Asset Finance,21.328
 2015,,Q3,2015Q3,Mainland China,Solar,Asset Finance,16
-2015,,Q3,2015Q3,Russian Federation,Solar,Asset Finance,8.4637
-2015,,Q3,2015Q3,Russian Federation,Solar,Asset Finance,8.462202
+2015,,Q3,2015Q3,Russia,Solar,Asset Finance,8.4637
+2015,,Q3,2015Q3,Russia,Solar,Asset Finance,8.462202
 2014,,Q2,2014Q2,United Kingdom,Wind,Asset Finance,2.38
 2015,,Q1,2015Q1,India,Solar,Asset Finance,44
 2015,,Q1,2015Q1,United Kingdom,Wind,Asset Finance,3.22
@@ -30794,8 +30794,8 @@ year,month,quarter,period,geography,sector,Deal Type,value
 2015,,Q3,2015Q3,United Kingdom,Wind,Asset Finance,17.5
 2015,,Q3,2015Q3,United Kingdom,Wind,Asset Finance,19.32
 2015,,Q4,2015Q4,United Kingdom,Wind,Asset Finance,123.18165
-2015,,Q3,2015Q3,Russian Federation,Solar,Asset Finance,8
-2015,,Q3,2015Q3,Russian Federation,Solar,Asset Finance,16
+2015,,Q3,2015Q3,Russia,Solar,Asset Finance,8
+2015,,Q3,2015Q3,Russia,Solar,Asset Finance,16
 2015,,Q4,2015Q4,India,Solar,Asset Finance,4.6007732
 2015,,Q4,2015Q4,Brazil,Wind,Asset Finance,13.28
 2015,,Q3,2015Q3,India,Solar,Asset Finance,11
@@ -30907,7 +30907,7 @@ year,month,quarter,period,geography,sector,Deal Type,value
 2015,,Q4,2015Q4,Mainland China,Solar,Asset Finance,37.7592
 2014,,Q3,2014Q3,Mainland China,Solar,Asset Finance,31.47637
 2015,,Q3,2015Q3,Mainland China,Solar,Asset Finance,10.72
-2015,,Q3,2015Q3,Russian Federation,Solar,Asset Finance,9.048
+2015,,Q3,2015Q3,Russia,Solar,Asset Finance,9.048
 2015,,Q4,2015Q4,Mainland China,Solar,Asset Finance,20.0356
 2015,,Q2,2015Q2,Mainland China,Solar,Asset Finance,48
 2015,,Q3,2015Q3,India,Solar,Asset Finance,7.92
@@ -31083,7 +31083,7 @@ year,month,quarter,period,geography,sector,Deal Type,value
 2007,,Q3,2007Q3,Denmark,Wind,Asset Finance,6.248
 2015,,Q3,2015Q3,Mainland China,Solar,Asset Finance,48
 2015,,Q2,2015Q2,Italy,Wind,Asset Finance,25.2
-2015,,Q2,2015Q2,Russian Federation,Solar,Asset Finance,55.44
+2015,,Q2,2015Q2,Russia,Solar,Asset Finance,55.44
 2005,,Q2,< 2006,Germany,Wind,Asset Finance,2.1
 2015,,Q2,2015Q2,Germany,Solar,Asset Finance,16
 2015,,Q3,2015Q3,Korea (Republic),Solar,Asset Finance,5.7419
@@ -33152,7 +33152,7 @@ year,month,quarter,period,geography,sector,Deal Type,value
 2015,,Q4,2015Q4,United States,Wind,Asset Finance,150
 2016,,Q1,2016Q1,United States,Wind,Asset Finance,84
 2016,,Q2,2016Q2,United States,Wind,Asset Finance,4.65
-2017,,Q2,2017Q2,Russian Federation,Wind,Asset Finance,73.086
+2017,,Q2,2017Q2,Russia,Wind,Asset Finance,73.086
 2016,,Q1,2016Q1,United States,Wind,Asset Finance,232.5
 2016,,Q1,2016Q1,United States,Wind,Asset Finance,312.015
 2014,,Q2,2014Q2,United States,Solar,Asset Finance,4.4
@@ -34065,7 +34065,7 @@ year,month,quarter,period,geography,sector,Deal Type,value
 2015,,Q2,2015Q2,Mainland China,Wind,Asset Finance,280
 2016,,Q3,2016Q3,Norway,Wind,Asset Finance,172.98
 2013,,Q4,2013Q4,India,Solar,Asset Finance,1.2
-2016,,Q3,2016Q3,Russian Federation,Wind,Asset Finance,77.5
+2016,,Q3,2016Q3,Russia,Wind,Asset Finance,77.5
 2016,,Q2,2016Q2,India,Small hydro,Asset Finance,10.5
 2016,,Q3,2016Q3,Germany,Wind,Asset Finance,14.88
 2015,,Q2,2015Q2,Austria,Wind,Asset Finance,13.44
@@ -34408,7 +34408,7 @@ year,month,quarter,period,geography,sector,Deal Type,value
 2015,,Q2,2015Q2,Japan,Solar,Asset Finance,10.24
 2015,,Q4,2015Q4,Mainland China,Solar,Asset Finance,66.39326
 2016,,Q1,2016Q1,Mainland China,Wind,Asset Finance,123.3313417
-2006,,Q4,2006Q4,Russian Federation,Biomass & waste,Asset Finance,46.107
+2006,,Q4,2006Q4,Russia,Biomass & waste,Asset Finance,46.107
 2016,,Q3,2016Q3,Denmark,Wind,Asset Finance,44.88
 2016,,Q2,2016Q2,United States,Solar,Asset Finance,16.456
 2015,,Q3,2015Q3,Chile,Wind,Asset Finance,240
@@ -35678,7 +35678,7 @@ year,month,quarter,period,geography,sector,Deal Type,value
 2016,,Q3,2016Q3,Mainland China,Solar,Asset Finance,24.2
 2016,,Q3,2016Q3,Mainland China,Solar,Asset Finance,24.2
 2016,,Q4,2016Q4,Mainland China,Solar,Asset Finance,84.7
-2016,,Q3,2016Q3,Russian Federation,Solar,Asset Finance,6.05
+2016,,Q3,2016Q3,Russia,Solar,Asset Finance,6.05
 2016,,Q2,2016Q2,Mainland China,Solar,Asset Finance,12.81105
 2016,,Q4,2016Q4,India,Solar,Asset Finance,4.5
 2016,,Q3,2016Q3,Italy,Wind,Asset Finance,56.5779
@@ -37319,7 +37319,7 @@ year,month,quarter,period,geography,sector,Deal Type,value
 2017,,Q2,2017Q2,Mainland China,Solar,Asset Finance,22.3713285
 2017,,Q1,2017Q1,Turkey,Solar,Asset Finance,7.139
 2019,,Q2,2019Q2,Zimbabwe,Solar,Asset Finance,142.4
-2017,,Q2,2017Q2,Russian Federation,Solar,Asset Finance,12.1
+2017,,Q2,2017Q2,Russia,Solar,Asset Finance,12.1
 2017,,Q1,2017Q1,Germany,Wind,Asset Finance,5.115
 2016,,Q3,2016Q3,Germany,Wind,Asset Finance,10.54
 2016,,Q4,2016Q4,Mainland China,Solar,Asset Finance,23.958
@@ -38057,7 +38057,7 @@ year,month,quarter,period,geography,sector,Deal Type,value
 2017,,Q3,2017Q3,Turkey,Wind,Asset Finance,102.3
 2017,,Q3,2017Q3,Turkey,Wind,Asset Finance,81.84
 2016,,Q4,2016Q4,Germany,Wind,Asset Finance,10.23
-2018,,Q4,2018Q4,Macedonia (Former Yugoslav Republic),Wind,Asset Finance,23.8581
+2018,,Q4,2018Q4,North Macedonia,Wind,Asset Finance,23.8581
 2016,,Q4,2016Q4,Mainland China,Wind,Asset Finance,20.79066
 2017,,Q2,2017Q2,Mainland China,Solar,Asset Finance,17.3772
 2017,,Q3,2017Q3,Mainland China,Solar,Asset Finance,15.161
@@ -38226,7 +38226,7 @@ year,month,quarter,period,geography,sector,Deal Type,value
 2017,,Q2,2017Q2,United States,Solar,Asset Finance,8.47
 2017,,Q3,2017Q3,Dominican Republic,Wind,Asset Finance,110
 2017,,Q3,2017Q3,United States,Wind,Asset Finance,90
-2013,,Q1,2013Q1,Russian Federation,Biomass & waste,Asset Finance,16.74
+2013,,Q1,2013Q1,Russia,Biomass & waste,Asset Finance,16.74
 2017,,Q2,2017Q2,Mainland China,Solar,Asset Finance,10.43064
 2017,,Q3,2017Q3,Eritrea,Solar,Asset Finance,6.56355
 2017,,Q2,2017Q2,Mainland China,Solar,Asset Finance,6.24919
@@ -38401,10 +38401,10 @@ year,month,quarter,period,geography,sector,Deal Type,value
 2014,,Q4,2014Q4,Belarus,Wind,Asset Finance,3.78
 2010,,Q4,2010Q4,Zambia,Small hydro,Asset Finance,6.54
 2011,,Q2,2011Q2,Belarus,Wind,Asset Finance,30.8
-2016,,Q4,2016Q4,Russian Federation,Solar,Asset Finance,12.1
-2016,,Q4,2016Q4,Russian Federation,Solar,Asset Finance,12.1
-2016,,Q4,2016Q4,Russian Federation,Solar,Asset Finance,6.05
-2016,,Q2,2016Q2,Russian Federation,Solar,Asset Finance,6.05
+2016,,Q4,2016Q4,Russia,Solar,Asset Finance,12.1
+2016,,Q4,2016Q4,Russia,Solar,Asset Finance,12.1
+2016,,Q4,2016Q4,Russia,Solar,Asset Finance,6.05
+2016,,Q2,2016Q2,Russia,Solar,Asset Finance,6.05
 2017,,Q2,2017Q2,Uganda,Small hydro,Asset Finance,88.2
 2012,,Q3,2012Q3,Ukraine,Solar,Asset Finance,4.5
 2017,,Q1,2017Q1,Mainland China,Solar,Asset Finance,21.417
@@ -38464,7 +38464,7 @@ year,month,quarter,period,geography,sector,Deal Type,value
 2012,,Q4,2012Q4,Georgia,Small hydro,Asset Finance,12.6
 2017,,Q1,2017Q1,Georgia,Small hydro,Asset Finance,30.03
 2014,,Q4,2014Q4,Georgia,Small hydro,Asset Finance,37.8
-2014,,Q4,2014Q4,Russian Federation,Small hydro,Asset Finance,64.26
+2014,,Q4,2014Q4,Russia,Small hydro,Asset Finance,64.26
 2016,,Q4,2016Q4,Georgia,Small hydro,Asset Finance,29.5
 2013,,Q4,2013Q4,Georgia,Small hydro,Asset Finance,6.72
 2016,,Q4,2016Q4,Georgia,Small hydro,Asset Finance,46.386
@@ -38476,12 +38476,12 @@ year,month,quarter,period,geography,sector,Deal Type,value
 2016,,Q3,2016Q3,Mainland China,Solar,Asset Finance,4.586
 2016,,Q3,2016Q3,Mainland China,Solar,Asset Finance,27.9456738
 2017,,Q1,2017Q1,Mainland China,Solar,Asset Finance,33.4397
-2005,,Q2,< 2006,Russian Federation,Small hydro,Asset Finance,110.44
+2005,,Q2,< 2006,Russia,Small hydro,Asset Finance,110.44
 2016,,Q3,2016Q3,Mainland China,Solar,Asset Finance,14.52
 2017,,Q2,2017Q2,Mainland China,Solar,Asset Finance,24.2
 2017,,Q1,2017Q1,Mainland China,Solar,Asset Finance,5.723
 2016,,Q4,2016Q4,Mainland China,Solar,Asset Finance,24.2
-2016,,Q4,2016Q4,Russian Federation,Solar,Asset Finance,18.15
+2016,,Q4,2016Q4,Russia,Solar,Asset Finance,18.15
 2017,,Q3,2017Q3,Mainland China,Solar,Asset Finance,19.2322
 2017,,Q3,2017Q3,Malaysia,Solar,Asset Finance,78.9192
 2016,,Q4,2016Q4,Mainland China,Solar,Asset Finance,10.0716
@@ -38960,11 +38960,11 @@ year,month,quarter,period,geography,sector,Deal Type,value
 2016,,Q1,2016Q1,Mainland China,Solar,Asset Finance,24.2
 2016,,Q2,2016Q2,Mainland China,Solar,Asset Finance,13.539336
 2017,,Q2,2017Q2,Mainland China,Solar,Asset Finance,24.2
-2017,,Q3,2017Q3,Russian Federation,Small hydro,Asset Finance,105
+2017,,Q3,2017Q3,Russia,Small hydro,Asset Finance,105
 2017,,Q1,2017Q1,Mainland China,Solar,Asset Finance,4.84
 2017,,Q1,2017Q1,Mainland China,Solar,Asset Finance,72.695
 2017,,Q1,2017Q1,Mainland China,Solar,Asset Finance,24.2
-2016,,Q3,2016Q3,Russian Federation,Small hydro,Asset Finance,105
+2016,,Q3,2016Q3,Russia,Small hydro,Asset Finance,105
 2016,,Q4,2016Q4,Mainland China,Wind,Asset Finance,711.5853754
 2017,,Q1,2017Q1,Mainland China,Solar,Asset Finance,24.2
 2017,,Q1,2017Q1,Mainland China,Solar,Asset Finance,24.2
@@ -39338,7 +39338,7 @@ year,month,quarter,period,geography,sector,Deal Type,value
 2017,,Q3,2017Q3,Mainland China,Wind,Asset Finance,77.5
 2017,,Q3,2017Q3,Norway,Wind,Asset Finance,149.73
 2017,,Q2,2017Q2,Ukraine,Solar,Asset Finance,12.1
-2017,,Q1,2017Q1,Russian Federation,Solar,Asset Finance,18.15
+2017,,Q1,2017Q1,Russia,Solar,Asset Finance,18.15
 2017,,Q2,2017Q2,France,Wind,Asset Finance,27.9
 2017,,Q3,2017Q3,Afghanistan,Solar,Asset Finance,19
 2017,,Q3,2017Q3,United States,Wind,Asset Finance,310
@@ -39348,9 +39348,9 @@ year,month,quarter,period,geography,sector,Deal Type,value
 2017,,Q3,2017Q3,Brazil,Wind,Asset Finance,7.2
 2017,,Q2,2017Q2,United States,Solar,Asset Finance,16.335
 2017,,Q2,2017Q2,United States,Solar,Asset Finance,3.388
-2017,,Q1,2017Q1,Russian Federation,Solar,Asset Finance,24.2
-2017,,Q2,2017Q2,Russian Federation,Solar,Asset Finance,6.05
-2017,,Q2,2017Q2,Russian Federation,Solar,Asset Finance,26.49
+2017,,Q1,2017Q1,Russia,Solar,Asset Finance,24.2
+2017,,Q2,2017Q2,Russia,Solar,Asset Finance,6.05
+2017,,Q2,2017Q2,Russia,Solar,Asset Finance,26.49
 2017,,Q3,2017Q3,Iran (Islamic Republic),Solar,Asset Finance,36.3
 2016,,Q4,2016Q4,Iran (Islamic Republic),Solar,Asset Finance,18.5
 2017,,Q1,2017Q1,United States,Solar,Asset Finance,14.23
@@ -39657,7 +39657,7 @@ year,month,quarter,period,geography,sector,Deal Type,value
 2016,,Q2,2016Q2,Germany,Wind,Asset Finance,6.51
 2016,,Q1,2016Q1,Pakistan,Solar,Asset Finance,14.52
 2014,,Q1,2014Q1,Germany,Wind,Asset Finance,21
-2017,,Q4,2017Q4,Russian Federation,Wind,Asset Finance,78.12
+2017,,Q4,2017Q4,Russia,Wind,Asset Finance,78.12
 2017,,Q1,2017Q1,Finland,Wind,Asset Finance,9.92
 2017,,Q2,2017Q2,Japan,Solar,Asset Finance,19.7758
 2017,,Q4,2017Q4,Mainland China,Wind,Asset Finance,64.715
@@ -40385,7 +40385,7 @@ year,month,quarter,period,geography,sector,Deal Type,value
 2015,,Q1,2015Q1,Mainland China,Solar,Asset Finance,2.928
 2016,,Q4,2016Q4,Mainland China,Solar,Asset Finance,60.5
 2015,,Q4,2015Q4,Japan,Solar,Asset Finance,47.904
-2016,,Q4,2016Q4,Russian Federation,Solar,Asset Finance,12.1
+2016,,Q4,2016Q4,Russia,Solar,Asset Finance,12.1
 2017,,Q1,2017Q1,Mainland China,Solar,Asset Finance,12.9465
 2017,,Q1,2017Q1,Mainland China,Solar,Asset Finance,6.05
 2016,,Q3,2016Q3,Mainland China,Solar,Asset Finance,8.954
@@ -40407,7 +40407,7 @@ year,month,quarter,period,geography,sector,Deal Type,value
 2016,,Q4,2016Q4,Korea (Republic),Solar,Asset Finance,2.42
 2017,,Q2,2017Q2,Korea (Republic),Solar,Asset Finance,4.84
 2016,,Q4,2016Q4,Korea (Republic),Solar,Asset Finance,2.42
-2016,,Q4,2016Q4,Russian Federation,Solar,Asset Finance,12.1
+2016,,Q4,2016Q4,Russia,Solar,Asset Finance,12.1
 2015,,Q2,2015Q2,Korea (Republic),Wind,Asset Finance,44.64642
 2016,,Q4,2016Q4,Mainland China,Solar,Asset Finance,6.752
 2017,,Q2,2017Q2,Greece,Solar,Asset Finance,2.42
@@ -40469,7 +40469,7 @@ year,month,quarter,period,geography,sector,Deal Type,value
 2016,,Q3,2016Q3,Turkey,Solar,Asset Finance,6.05
 2017,,Q2,2017Q2,Japan,Solar,Asset Finance,1.174
 2017,,Q2,2017Q2,France,Wind,Asset Finance,32.085
-2016,,Q3,2016Q3,Russian Federation,Solar,Asset Finance,6.05
+2016,,Q3,2016Q3,Russia,Solar,Asset Finance,6.05
 2017,,Q3,2017Q3,Korea (Republic),Solar,Asset Finance,6.897
 2017,,Q1,2017Q1,Mainland China,Solar,Asset Finance,1.815
 2017,,Q3,2017Q3,Japan,Solar,Asset Finance,2.977
@@ -42438,7 +42438,7 @@ year,month,quarter,period,geography,sector,Deal Type,value
 2017,,Q1,2017Q1,Germany,Wind,Asset Finance,4.263
 2011,,Q4,2011Q4,United States,Solar,Asset Finance,16.77
 2016,,Q3,2016Q3,Germany,Wind,Asset Finance,3.875
-2017,,Q2,2017Q2,Russian Federation,Solar,Asset Finance,12.1
+2017,,Q2,2017Q2,Russia,Solar,Asset Finance,12.1
 2016,,Q4,2016Q4,Germany,Wind,Asset Finance,4.96
 2017,,Q1,2017Q1,Germany,Wind,Asset Finance,4.96
 2017,,Q1,2017Q1,Germany,Wind,Asset Finance,5.115
@@ -42927,7 +42927,7 @@ year,month,quarter,period,geography,sector,Deal Type,value
 2014,,Q3,2014Q3,Japan,Solar,Asset Finance,2.72
 2014,,Q3,2014Q3,Japan,Solar,Asset Finance,1.92
 2018,,Q1,2018Q1,France,Solar,Asset Finance,4.65
-2018,,Q1,2018Q1,Russian Federation,Solar,Asset Finance,3.72
+2018,,Q1,2018Q1,Russia,Solar,Asset Finance,3.72
 2018,,Q1,2018Q1,United Arab Emirates,Solar,Asset Finance,6.045
 2017,,Q3,2017Q3,United States,Solar,Asset Finance,8.712
 2018,,Q1,2018Q1,Ireland,Wind,Asset Finance,23.184
@@ -42960,7 +42960,7 @@ year,month,quarter,period,geography,sector,Deal Type,value
 2016,,Q2,2016Q2,Japan,Solar,Asset Finance,1.174
 2014,,Q4,2014Q4,Japan,Wind,Asset Finance,184.92
 2017,,Q1,2017Q1,United Kingdom,Solar,Asset Finance,4.961
-2019,,Q4,2019Q4,Russian Federation,Wind,Asset Finance,128.44
+2019,,Q4,2019Q4,Russia,Wind,Asset Finance,128.44
 2017,,Q1,2017Q1,Mainland China,Solar,Asset Finance,2.977
 2017,,Q1,2017Q1,United Kingdom,Solar,Asset Finance,6.897
 2012,,Q4,2012Q4,Honduras,Small hydro,Asset Finance,16
@@ -44471,8 +44471,8 @@ year,month,quarter,period,geography,sector,Deal Type,value
 2017,,Q4,2017Q4,Mainland China,Solar,Asset Finance,3.025
 2016,,Q4,2016Q4,Mainland China,Wind,Asset Finance,153.45
 2017,,Q2,2017Q2,Netherlands,Solar,Asset Finance,27.995
-2018,,Q2,2018Q2,Russian Federation,Solar,Asset Finance,55.8
-2017,,Q3,2017Q3,Russian Federation,Solar,Asset Finance,28.88479
+2018,,Q2,2018Q2,Russia,Solar,Asset Finance,55.8
+2017,,Q3,2017Q3,Russia,Solar,Asset Finance,28.88479
 2018,,Q2,2018Q2,United States,Wind,Asset Finance,250
 2017,,Q3,2017Q3,Ukraine,Solar,Asset Finance,6.05
 2018,,Q1,2018Q1,Ukraine,Solar,Asset Finance,4.185
@@ -45591,8 +45591,8 @@ year,month,quarter,period,geography,sector,Deal Type,value
 2018,,Q4,2018Q4,Spain,Biomass & waste,Asset Finance,114.53
 2016,,Q2,2016Q2,Japan,Solar,Asset Finance,1.513
 2018,,Q1,2018Q1,United States,Solar,Asset Finance,74
-2018,,Q1,2018Q1,Russian Federation,Solar,Asset Finance,55.8
-2018,,Q1,2018Q1,Russian Federation,Solar,Asset Finance,27.9
+2018,,Q1,2018Q1,Russia,Solar,Asset Finance,55.8
+2018,,Q1,2018Q1,Russia,Solar,Asset Finance,27.9
 2018,,Q2,2018Q2,United States,Wind,Asset Finance,101.4
 2018,,Q2,2018Q2,United States,Wind,Asset Finance,50.7
 2018,,Q1,2018Q1,Mainland China,Solar,Asset Finance,27.9
@@ -45642,7 +45642,7 @@ year,month,quarter,period,geography,sector,Deal Type,value
 2018,,Q1,2018Q1,Mainland China,Solar,Asset Finance,18.6
 2015,,Q1,2015Q1,India,Solar,Asset Finance,10.5
 2017,,Q2,2017Q2,United States,Solar,Asset Finance,31.46
-2018,,Q3,2018Q3,Russian Federation,Solar,Asset Finance,23.7
+2018,,Q3,2018Q3,Russia,Solar,Asset Finance,23.7
 2018,,Q3,2018Q3,United States,Solar,Asset Finance,18.73333333
 2018,,Q3,2018Q3,United States,Solar,Asset Finance,18.73333333
 2018,,Q3,2018Q3,United States,Solar,Asset Finance,18.73333333
@@ -47520,7 +47520,7 @@ year,month,quarter,period,geography,sector,Deal Type,value
 2017,,Q3,2017Q3,Iran (Islamic Republic),Wind,Asset Finance,105.999
 2018,,Q2,2018Q2,United States,Solar,Asset Finance,1.7
 2018,,Q2,2018Q2,Mainland China,Solar,Asset Finance,1.786
-2019,,Q1,2019Q1,Macedonia (Former Yugoslav Republic),Solar,Asset Finance,7.86255
+2019,,Q1,2019Q1,North Macedonia,Solar,Asset Finance,7.86255
 2018,,Q3,2018Q3,Turkey,Wind,Asset Finance,6.048
 2015,,Q4,2015Q4,Mainland China,Solar,Asset Finance,1.648
 2013,,Q4,2013Q4,Mainland China,Solar,Asset Finance,3.2
@@ -47949,7 +47949,7 @@ year,month,quarter,period,geography,sector,Deal Type,value
 2012,,Q3,2012Q3,Germany,Wind,Asset Finance,74.34
 2014,,Q2,2014Q2,Germany,Wind,Asset Finance,10.92
 2015,,Q2,2015Q2,Germany,Wind,Asset Finance,7.56
-2018,,Q4,2018Q4,Russian Federation,Wind,Asset Finance,149.9916
+2018,,Q4,2018Q4,Russia,Wind,Asset Finance,149.9916
 2017,,Q4,2017Q4,Turkey,Geothermal,Asset Finance,110
 2017,,Q3,2017Q3,Mainland China,Wind,Asset Finance,65.9384
 2017,,Q4,2017Q4,Mainland China,Wind,Asset Finance,119.4875
@@ -47975,8 +47975,8 @@ year,month,quarter,period,geography,sector,Deal Type,value
 2018,,Q4,2018Q4,Belgium,Wind,Asset Finance,369.9204
 2018,,Q4,2018Q4,Belgium,Wind,Asset Finance,369.9204
 2018,,Q3,2018Q3,United States,Solar,Asset Finance,3.441
-2018,,Q3,2018Q3,Russian Federation,Solar,Asset Finance,13.95
-2018,,Q3,2018Q3,Russian Federation,Solar,Asset Finance,9.3
+2018,,Q3,2018Q3,Russia,Solar,Asset Finance,13.95
+2018,,Q3,2018Q3,Russia,Solar,Asset Finance,9.3
 2004,,Q1,< 2006,United States,Wind,Asset Finance,216
 2010,,Q1,2010Q1,United States,Solar,Asset Finance,5.85
 2010,,Q1,2010Q1,United States,Solar,Asset Finance,2.7
@@ -48071,8 +48071,8 @@ year,month,quarter,period,geography,sector,Deal Type,value
 2017,,Q3,2017Q3,France,Solar,Asset Finance,5.445
 2017,,Q3,2017Q3,France,Solar,Asset Finance,5.445
 2018,,Q3,2018Q3,France,Solar,Asset Finance,2.976
-2017,,Q2,2017Q2,Russian Federation,Solar,Asset Finance,6.05
-2019,,Q4,2019Q4,Russian Federation,Solar,Asset Finance,8
+2017,,Q2,2017Q2,Russia,Solar,Asset Finance,6.05
+2019,,Q4,2019Q4,Russia,Solar,Asset Finance,8
 2019,,Q1,2019Q1,France,Wind,Asset Finance,60.1073
 2019,,Q1,2019Q1,France,Wind,Asset Finance,60.1073
 2017,,Q3,2017Q3,France,Solar,Asset Finance,12.1
@@ -48170,7 +48170,7 @@ year,month,quarter,period,geography,sector,Deal Type,value
 2014,,Q2,2014Q2,Algeria,Solar,Asset Finance,48
 2017,,Q1,2017Q1,India,Solar,Asset Finance,8.395
 2017,,Q2,2017Q2,United States,Solar,Asset Finance,140
-2018,,Q2,2018Q2,Russian Federation,Solar,Asset Finance,13.95
+2018,,Q2,2018Q2,Russia,Solar,Asset Finance,13.95
 2016,,Q4,2016Q4,United States,Solar,Asset Finance,76.8
 2016,,Q3,2016Q3,United States,Solar,Asset Finance,195.052
 2017,,Q4,2017Q4,Japan,Solar,Asset Finance,15.113
@@ -49024,7 +49024,7 @@ year,month,quarter,period,geography,sector,Deal Type,value
 2018,,Q4,2018Q4,Netherlands,Wind,Asset Finance,72.9152
 2017,,Q3,2017Q3,Japan,Solar,Asset Finance,25.41
 2018,,Q4,2018Q4,Mainland China,Solar,Asset Finance,5.534
-2016,,Q4,2016Q4,Russian Federation,Solar,Asset Finance,30.25
+2016,,Q4,2016Q4,Russia,Solar,Asset Finance,30.25
 2018,,Q2,2018Q2,Japan,Solar,Asset Finance,37.767
 2018,,Q4,2018Q4,France,Solar,Asset Finance,3.72
 2017,,Q3,2017Q3,India,Wind,Asset Finance,61.8
@@ -49036,7 +49036,7 @@ year,month,quarter,period,geography,sector,Deal Type,value
 2018,,Q3,2018Q3,Japan,Solar,Asset Finance,23.114
 2018,,Q4,2018Q4,United States,Solar,Asset Finance,3.906
 2014,,Q1,2014Q1,United States,Solar,Asset Finance,2.88
-2017,,Q3,2017Q3,Russian Federation,Solar,Asset Finance,25.635
+2017,,Q3,2017Q3,Russia,Solar,Asset Finance,25.635
 2017,,Q1,2017Q1,India,Wind,Asset Finance,2.163
 2010,,Q3,2010Q3,Italy,Solar,Asset Finance,8.55
 2018,,Q4,2018Q4,France,Wind,Asset Finance,67.2
@@ -49264,7 +49264,7 @@ year,month,quarter,period,geography,sector,Deal Type,value
 2017,,Q3,2017Q3,India,Wind,Asset Finance,2.163
 2017,,Q3,2017Q3,India,Wind,Asset Finance,3.09
 2018,,Q2,2018Q2,Germany,Wind,Asset Finance,57.96
-2019,,Q1,2019Q1,Russian Federation,Wind,Asset Finance,342
+2019,,Q1,2019Q1,Russia,Wind,Asset Finance,342
 2017,,Q1,2017Q1,India,Wind,Asset Finance,2.163
 2018,,Q4,2018Q4,Mainland China,Solar,Asset Finance,3.488
 2018,,Q1,2018Q1,Mainland China,Solar,Asset Finance,18.6
@@ -49913,7 +49913,7 @@ year,month,quarter,period,geography,sector,Deal Type,value
 2018,,Q3,2018Q3,Mainland China,Solar,Asset Finance,2.511
 2018,,Q4,2018Q4,Mainland China,Solar,Asset Finance,13.95
 2017,,Q1,2017Q1,Mainland China,Solar,Asset Finance,24.2
-2018,,Q2,2018Q2,Russian Federation,Wind,Asset Finance,1.512
+2018,,Q2,2018Q2,Russia,Wind,Asset Finance,1.512
 2019,,Q1,2019Q1,United States,Solar,Asset Finance,1.44
 2017,,Q3,2017Q3,Denmark,Wind,Asset Finance,2.79
 2019,,Q2,2019Q2,Argentina,Wind,Asset Finance,556.24
@@ -50223,7 +50223,7 @@ year,month,quarter,period,geography,sector,Deal Type,value
 2018,,Q4,2018Q4,Spain,Wind,Asset Finance,30.24
 2016,,Q2,2016Q2,American Samoa,Solar,Asset Finance,2.178
 2019,,Q1,2019Q1,Spain,Wind,Asset Finance,27.04
-2018,,Q4,2018Q4,Russian Federation,Wind,Asset Finance,165.984
+2018,,Q4,2018Q4,Russia,Wind,Asset Finance,165.984
 2007,,Q4,2007Q4,United States,Wind,Asset Finance,191.835
 2018,,Q3,2018Q3,Japan,Solar,Asset Finance,1.851
 2017,,Q4,2017Q4,Japan,Solar,Asset Finance,1.404
@@ -50396,7 +50396,7 @@ year,month,quarter,period,geography,sector,Deal Type,value
 2018,,Q4,2018Q4,Iran (Islamic Republic),Solar,Asset Finance,7.9849
 2019,,Q1,2019Q1,Ukraine,Solar,Asset Finance,46.08
 2018,,Q2,2018Q2,United States,Solar,Asset Finance,6.045
-2019,,Q1,2019Q1,Macedonia (Former Yugoslav Republic),Wind,Asset Finance,46.8
+2019,,Q1,2019Q1,North Macedonia,Wind,Asset Finance,46.8
 2018,,Q2,2018Q2,United States,Solar,Asset Finance,6.045
 2018,,Q2,2018Q2,Iran (Islamic Republic),Solar,Asset Finance,6.51
 2018,,Q1,2018Q1,Mainland China,Solar,Asset Finance,29.8097688
@@ -50554,7 +50554,7 @@ year,month,quarter,period,geography,sector,Deal Type,value
 2018,,Q2,2018Q2,Japan,Solar,Asset Finance,2.325
 2019,,Q1,2019Q1,Japan,Biomass & waste,Asset Finance,208.692
 2018,,Q1,2018Q1,Korea (Republic),Solar,Asset Finance,1.786
-2018,,Q3,2018Q3,Russian Federation,Solar,Asset Finance,55.8
+2018,,Q3,2018Q3,Russia,Solar,Asset Finance,55.8
 2019,,Q1,2019Q1,United States,Solar,Asset Finance,260
 2012,,Q3,2012Q3,Greece,Solar,Asset Finance,27
 2012,,Q3,2012Q3,Greece,Solar,Asset Finance,18
@@ -50621,10 +50621,10 @@ year,month,quarter,period,geography,sector,Deal Type,value
 2019,,Q1,2019Q1,Mainland China,Solar,Asset Finance,13.8776825
 2015,,Q3,2015Q3,Japan,Solar,Asset Finance,2.208
 2017,,Q3,2017Q3,Mainland China,Solar,Asset Finance,13.3434
-2018,,Q3,2018Q3,Russian Federation,Solar,Asset Finance,48.939
-2018,,Q2,2018Q2,Russian Federation,Solar,Asset Finance,52.635
-2018,,Q4,2018Q4,Russian Federation,Solar,Asset Finance,40.1345
-2018,,Q4,2018Q4,Russian Federation,Solar,Asset Finance,47.685
+2018,,Q3,2018Q3,Russia,Solar,Asset Finance,48.939
+2018,,Q2,2018Q2,Russia,Solar,Asset Finance,52.635
+2018,,Q4,2018Q4,Russia,Solar,Asset Finance,40.1345
+2018,,Q4,2018Q4,Russia,Solar,Asset Finance,47.685
 2017,,Q4,2017Q4,Germany,Wind,Asset Finance,21.39
 2019,,Q1,2019Q1,Canada,Wind,Asset Finance,5.52537
 2018,,Q1,2018Q1,Korea (Republic),Solar,Asset Finance,2.79
@@ -50653,7 +50653,7 @@ year,month,quarter,period,geography,sector,Deal Type,value
 2019,,Q1,2019Q1,Spain,Wind,Asset Finance,8.58
 2015,,Q2,2015Q2,United Kingdom,Wind,Asset Finance,19.32
 2019,,Q1,2019Q1,Spain,Wind,Asset Finance,54.08
-2018,,Q1,2018Q1,Russian Federation,Solar,Asset Finance,51.823
+2018,,Q1,2018Q1,Russia,Solar,Asset Finance,51.823
 2019,,Q1,2019Q1,Spain,Wind,Asset Finance,36.01
 2018,,Q3,2018Q3,Argentina,Solar,Asset Finance,4
 2014,,Q4,2014Q4,Japan,Solar,Asset Finance,1.92
@@ -50679,7 +50679,7 @@ year,month,quarter,period,geography,sector,Deal Type,value
 2014,,Q2,2014Q2,Japan,Solar,Asset Finance,1.776
 2018,,Q4,2018Q4,Mainland China,Solar,Asset Finance,1.395
 2013,,Q2,2013Q2,Japan,Solar,Asset Finance,3.616
-2018,,Q2,2018Q2,Russian Federation,Solar,Asset Finance,55.8
+2018,,Q2,2018Q2,Russia,Solar,Asset Finance,55.8
 2017,,Q3,2017Q3,Korea (Republic),Solar,Asset Finance,3.63
 2016,,Q1,2016Q1,Korea (Republic),Solar,Asset Finance,1.21
 2018,,Q1,2018Q1,Mainland China,Solar,Asset Finance,2.325
@@ -50919,7 +50919,7 @@ year,month,quarter,period,geography,sector,Deal Type,value
 2017,,Q3,2017Q3,Korea (Republic),Solar,Asset Finance,1.21
 2018,,Q3,2018Q3,Japan,Solar,Asset Finance,1.488
 2019,,Q1,2019Q1,Greece,Wind,Asset Finance,140.4
-2019,,Q1,2019Q1,Russian Federation,Solar,Asset Finance,165.101
+2019,,Q1,2019Q1,Russia,Solar,Asset Finance,165.101
 2015,,Q2,2015Q2,United Kingdom,Solar,Asset Finance,8
 2018,,Q4,2018Q4,Vietnam,Solar,Asset Finance,47.09935216
 2018,,Q4,2018Q4,United States,Solar,Asset Finance,3.162
@@ -51231,14 +51231,14 @@ year,month,quarter,period,geography,sector,Deal Type,value
 2013,,Q4,2013Q4,Korea (Republic),Solar,Asset Finance,2.464
 2019,,Q1,2019Q1,Japan,Solar,Asset Finance,65.94
 2018,,Q2,2018Q2,Korea (Republic),Solar,Asset Finance,1.879
-2019,,Q1,2019Q1,Russian Federation,Solar,Asset Finance,8
+2019,,Q1,2019Q1,Russia,Solar,Asset Finance,8
 2018,,Q4,2018Q4,Taiwan,Solar,Asset Finance,1.841
 2017,,Q1,2017Q1,India,Solar,Asset Finance,36.5
 2017,,Q3,2017Q3,India,Solar,Asset Finance,36.5
 2015,,Q3,2015Q3,India,Solar,Asset Finance,40.95
 2017,,Q2,2017Q2,India,Solar,Asset Finance,30.66
 2018,,Q3,2018Q3,Taiwan,Solar,Asset Finance,1.841
-2019,,Q2,2019Q2,Russian Federation,Solar,Asset Finance,4
+2019,,Q2,2019Q2,Russia,Solar,Asset Finance,4
 2015,,Q3,2015Q3,India,Solar,Asset Finance,22.05
 2017,,Q3,2017Q3,India,Solar,Asset Finance,36.5
 2019,,Q1,2019Q1,Argentina,Solar,Asset Finance,2.5
@@ -51795,8 +51795,8 @@ year,month,quarter,period,geography,sector,Deal Type,value
 2018,,Q4,2018Q4,Mainland China,Solar,Asset Finance,9.15012
 2018,,Q2,2018Q2,Mainland China,Solar,Asset Finance,10.452
 2018,,Q4,2018Q4,Spain,Wind,Asset Finance,18.1248
-2019,,Q2,2019Q2,Russian Federation,Solar,Asset Finance,12
-2019,,Q2,2019Q2,Russian Federation,Solar,Asset Finance,26.8
+2019,,Q2,2019Q2,Russia,Solar,Asset Finance,12
+2019,,Q2,2019Q2,Russia,Solar,Asset Finance,26.8
 2019,,Q2,2019Q2,United States,Solar,Asset Finance,1.68
 2017,,Q3,2017Q3,Japan,Solar,Asset Finance,26.148
 2015,,Q2,2015Q2,Japan,Solar,Asset Finance,20.704
@@ -52048,7 +52048,7 @@ year,month,quarter,period,geography,sector,Deal Type,value
 2019,,Q2,2019Q2,Argentina,Biomass & waste,Asset Finance,27.9
 2018,,Q4,2018Q4,Portugal,Wind,Asset Finance,51.0525
 2012,,Q2,2012Q2,Germany,Wind,Asset Finance,12.88
-2019,,Q1,2019Q1,Russian Federation,Solar,Asset Finance,8
+2019,,Q1,2019Q1,Russia,Solar,Asset Finance,8
 2007,,Q2,2007Q2,Germany,Wind,Asset Finance,8.82
 2019,,Q2,2019Q2,Brazil,Biomass & waste,Asset Finance,55.8
 2005,,Q2,< 2006,Canada,Wind,Asset Finance,63
@@ -52354,11 +52354,11 @@ year,month,quarter,period,geography,sector,Deal Type,value
 2019,,Q1,2019Q1,Austria,Solar,Asset Finance,1.44
 2018,,Q3,2018Q3,France,Solar,Asset Finance,9.207
 2017,,Q3,2017Q3,United States,Solar,Asset Finance,3.63
-2019,,Q2,2019Q2,Russian Federation,Solar,Asset Finance,12
-2019,,Q2,2019Q2,Russian Federation,Solar,Asset Finance,12
+2019,,Q2,2019Q2,Russia,Solar,Asset Finance,12
+2019,,Q2,2019Q2,Russia,Solar,Asset Finance,12
 2019,,Q2,2019Q2,Hungary,Solar,Asset Finance,80
 2017,,Q3,2017Q3,Germany,Wind,Asset Finance,17.67
-2019,,Q2,2019Q2,Russian Federation,Solar,Asset Finance,12
+2019,,Q2,2019Q2,Russia,Solar,Asset Finance,12
 2019,,Q2,2019Q2,Cameroon,Solar,Asset Finance,17.0535
 2019,,Q2,2019Q2,Denmark,Wind,Asset Finance,74.88
 2019,,Q2,2019Q2,Japan,Wind,Asset Finance,156.52
@@ -52376,10 +52376,10 @@ year,month,quarter,period,geography,sector,Deal Type,value
 2019,,Q1,2019Q1,Japan,Solar,Asset Finance,1.84
 2019,,Q1,2019Q1,Mainland China,Solar,Asset Finance,11.0831776
 2019,,Q1,2019Q1,Japan,Solar,Asset Finance,3.088
-2019,,Q2,2019Q2,Russian Federation,Solar,Asset Finance,12
+2019,,Q2,2019Q2,Russia,Solar,Asset Finance,12
 2018,,Q3,2018Q3,Mainland China,Solar,Asset Finance,4.392
 2016,,Q3,2016Q3,Japan,Solar,Asset Finance,4.816
-2019,,Q2,2019Q2,Russian Federation,Solar,Asset Finance,12
+2019,,Q2,2019Q2,Russia,Solar,Asset Finance,12
 2019,,Q2,2019Q2,Mainland China,Wind,Asset Finance,262.008
 2015,,Q4,2015Q4,Mainland China,Solar,Asset Finance,27.0578
 2012,,Q3,2012Q3,Spain,Wind,Asset Finance,50.4
@@ -52405,7 +52405,7 @@ year,month,quarter,period,geography,sector,Deal Type,value
 2019,,Q2,2019Q2,Finland,Wind,Asset Finance,196.56
 2010,,Q4,2010Q4,Italy,Small hydro,Asset Finance,18.18
 2009,,Q4,2009Q4,Italy,Small hydro,Asset Finance,43.8
-2018,,Q2,2018Q2,Russian Federation,Solar,Asset Finance,23.25
+2018,,Q2,2018Q2,Russia,Solar,Asset Finance,23.25
 2019,,Q3,2019Q3,El Salvador,Wind,Asset Finance,85.5
 2019,,Q2,2019Q2,Mexico,Solar,Asset Finance,98
 2019,,Q1,2019Q1,Mainland China,Solar,Asset Finance,18.96
@@ -52443,7 +52443,7 @@ year,month,quarter,period,geography,sector,Deal Type,value
 2019,,Q2,2019Q2,United States,Wind,Asset Finance,260
 2019,,Q2,2019Q2,United States,Wind,Asset Finance,84.24
 2019,,Q2,2019Q2,United States,Wind,Asset Finance,261.69
-2018,,Q3,2018Q3,Russian Federation,Solar,Asset Finance,27.9
+2018,,Q3,2018Q3,Russia,Solar,Asset Finance,27.9
 2019,,Q3,2019Q3,United States,Wind,Asset Finance,300
 2019,,Q3,2019Q3,United States,Wind,Asset Finance,400
 2019,,Q2,2019Q2,United States,Wind,Asset Finance,258.44
@@ -52465,7 +52465,7 @@ year,month,quarter,period,geography,sector,Deal Type,value
 2018,,Q3,2018Q3,Mainland China,Solar,Asset Finance,7.733684
 2019,,Q1,2019Q1,Japan,Solar,Asset Finance,1.304
 2017,,Q1,2017Q1,Mainland China,Solar,Asset Finance,1.88565
-2019,,Q3,2019Q3,Russian Federation,Solar,Asset Finance,24
+2019,,Q3,2019Q3,Russia,Solar,Asset Finance,24
 2019,,Q1,2019Q1,Japan,Solar,Asset Finance,1.68
 2017,,Q4,2017Q4,Mainland China,Solar,Asset Finance,2.71764
 2018,,Q4,2018Q4,Vietnam,Solar,Asset Finance,53.74775
@@ -52473,7 +52473,7 @@ year,month,quarter,period,geography,sector,Deal Type,value
 2017,,Q4,2017Q4,Mainland China,Solar,Asset Finance,4.5294
 2017,,Q4,2017Q4,Mainland China,Solar,Asset Finance,2.18921
 2018,,Q4,2018Q4,Vietnam,Solar,Asset Finance,52.61006
-2019,,Q3,2019Q3,Russian Federation,Solar,Asset Finance,12
+2019,,Q3,2019Q3,Russia,Solar,Asset Finance,12
 2019,,Q3,2019Q3,Mainland China,Wind,Asset Finance,192.2844231
 2019,,Q1,2019Q1,Mainland China,Solar,Asset Finance,14.898
 2019,,Q1,2019Q1,Mainland China,Solar,Asset Finance,6.896
@@ -52837,7 +52837,7 @@ year,month,quarter,period,geography,sector,Deal Type,value
 2019,,Q1,2019Q1,Sweden,Solar,Asset Finance,4.64
 2017,,Q2,2017Q2,Germany,Wind,Asset Finance,24.8
 2017,,Q3,2017Q3,Germany,Wind,Asset Finance,21.39
-2019,,Q3,2019Q3,Russian Federation,Biomass & waste,Asset Finance,4.4716
+2019,,Q3,2019Q3,Russia,Biomass & waste,Asset Finance,4.4716
 2017,,Q2,2017Q2,Germany,Wind,Asset Finance,7.44
 2017,,Q3,2017Q3,Germany,Wind,Asset Finance,5.115
 2017,,Q3,2017Q3,Germany,Wind,Asset Finance,11.625
@@ -53793,7 +53793,7 @@ year,month,quarter,period,geography,sector,Deal Type,value
 2019,,Q3,2019Q3,United States,Solar,Asset Finance,6.96
 2019,,Q2,2019Q2,Spain,Wind,Asset Finance,37.18
 2018,,Q3,2018Q3,Estonia,Solar,Asset Finance,4.278
-2019,,Q3,2019Q3,Russian Federation,Wind,Asset Finance,358.57
+2019,,Q3,2019Q3,Russia,Wind,Asset Finance,358.57
 2019,,Q1,2019Q1,Spain,Solar,Asset Finance,40
 2019,,Q1,2019Q1,Chile,Solar,Asset Finance,15.3
 2019,,Q2,2019Q2,Chile,Solar,Asset Finance,13
@@ -54893,7 +54893,7 @@ year,month,quarter,period,geography,sector,Deal Type,value
 2017,,Q1,2017Q1,Mainland China,Solar,Asset Finance,12.1450365
 2019,,Q3,2019Q3,United States,Solar,Asset Finance,5.76
 2018,,Q4,2018Q4,Spain,Solar,Asset Finance,199.0625
-2019,,Q2,2019Q2,Russian Federation,Solar,Asset Finance,24
+2019,,Q2,2019Q2,Russia,Solar,Asset Finance,24
 2019,,Q1,2019Q1,Mainland China,Solar,Asset Finance,13.2
 2018,,Q1,2018Q1,Vietnam,Wind,Asset Finance,73.97544
 2018,,Q4,2018Q4,Mainland China,Wind,Asset Finance,85.008
@@ -54993,7 +54993,7 @@ year,month,quarter,period,geography,sector,Deal Type,value
 2019,,Q3,2019Q3,Mainland China,Solar,Asset Finance,32
 2019,,Q3,2019Q3,Mainland China,Solar,Asset Finance,80
 2019,,Q3,2019Q3,Mainland China,Solar,Asset Finance,48
-2019,,Q2,2019Q2,Russian Federation,Solar,Asset Finance,20
+2019,,Q2,2019Q2,Russia,Solar,Asset Finance,20
 2018,,Q4,2018Q4,United States,Solar,Asset Finance,2.418
 2019,,Q3,2019Q3,Mainland China,Solar,Asset Finance,32
 2018,,Q4,2018Q4,United States,Solar,Asset Finance,6.789
@@ -55009,7 +55009,7 @@ year,month,quarter,period,geography,sector,Deal Type,value
 2013,,Q2,2013Q2,Germany,Wind,Asset Finance,11.2
 2017,,Q3,2017Q3,Chile,Small hydro,Asset Finance,6.3
 2019,,Q3,2019Q3,Chile,Solar,Asset Finance,3.44
-2018,,Q4,2018Q4,Russian Federation,Wind,Asset Finance,165.984
+2018,,Q4,2018Q4,Russia,Wind,Asset Finance,165.984
 2019,,Q3,2019Q3,United States,Solar,Asset Finance,60
 2019,,Q3,2019Q3,United States,Solar,Asset Finance,4.64
 2019,,Q4,2019Q4,Mainland China,Wind,Asset Finance,261.69
@@ -55029,7 +55029,7 @@ year,month,quarter,period,geography,sector,Deal Type,value
 2019,,Q3,2019Q3,Mainland China,Solar,Asset Finance,1.09777
 2018,,Q4,2018Q4,Japan,Solar,Asset Finance,2.102
 2019,,Q4,2019Q4,United States,Solar,Asset Finance,5.4
-2019,,Q4,2019Q4,Russian Federation,Wind,Asset Finance,65
+2019,,Q4,2019Q4,Russia,Wind,Asset Finance,65
 2019,,Q2,2019Q2,Japan,Solar,Asset Finance,3.656
 2019,,Q1,2019Q1,Poland,Solar,Asset Finance,8.8
 2008,,Q2,2008Q2,France,Wind,Asset Finance,14.4
@@ -55300,7 +55300,7 @@ year,month,quarter,period,geography,sector,Deal Type,value
 2019,,Q4,2019Q4,United States,Solar,Asset Finance,87.9
 2019,,Q1,2019Q1,Japan,Solar,Asset Finance,1.2
 2019,,Q2,2019Q2,Korea (Republic),Solar,Asset Finance,78.4
-2018,,Q3,2018Q3,Russian Federation,Wind,Asset Finance,183
+2018,,Q3,2018Q3,Russia,Wind,Asset Finance,183
 2019,,Q1,2019Q1,Japan,Solar,Asset Finance,1.2
 2019,,Q2,2019Q2,Mainland China,Wind,Asset Finance,52
 2019,,Q1,2019Q1,Mainland China,Wind,Asset Finance,153.4494
@@ -55674,8 +55674,8 @@ year,month,quarter,period,geography,sector,Deal Type,value
 2019,,Q3,2019Q3,Japan,Solar,Asset Finance,17.944
 2013,,Q3,2013Q3,Japan,Solar,Asset Finance,3.312
 2019,,Q3,2019Q3,Germany,Solar,Asset Finance,8
-2019,,Q4,2019Q4,Russian Federation,Solar,Asset Finance,8
-2019,,Q2,2019Q2,Russian Federation,Solar,Asset Finance,32
+2019,,Q4,2019Q4,Russia,Solar,Asset Finance,8
+2019,,Q2,2019Q2,Russia,Solar,Asset Finance,32
 2018,,Q3,2018Q3,Argentina,Wind,Asset Finance,55.2
 2019,,Q2,2019Q2,India,Wind,Asset Finance,31.059
 2019,,Q1,2019Q1,India,Solar,Asset Finance,60
@@ -55984,7 +55984,7 @@ year,month,quarter,period,geography,sector,Deal Type,value
 2019,,Q4,2019Q4,United States,Solar,Asset Finance,21.44
 2018,,Q2,2018Q2,United States,Solar,Asset Finance,5.394
 2019,,Q4,2019Q4,United States,Solar,Asset Finance,2.4
-2016,,Q3,2016Q3,Russian Federation,Solar,Asset Finance,12.1
+2016,,Q3,2016Q3,Russia,Solar,Asset Finance,12.1
 2018,,Q1,2018Q1,Japan,Solar,Asset Finance,28.374
 2019,,Q4,2019Q4,Mainland China,Solar,Asset Finance,32.729
 2017,,Q4,2017Q4,Japan,Solar,Asset Finance,17.4
@@ -56004,11 +56004,11 @@ year,month,quarter,period,geography,sector,Deal Type,value
 2017,,Q4,2017Q4,United States,Geothermal,Asset Finance,48.375
 2019,,Q4,2019Q4,United States,Solar,Asset Finance,2
 2018,,Q1,2018Q1,Mainland China,Solar,Asset Finance,144.08784
-2017,,Q3,2017Q3,Russian Federation,Solar,Asset Finance,10.89
-2019,,Q3,2019Q3,Russian Federation,Solar,Asset Finance,4
+2017,,Q3,2017Q3,Russia,Solar,Asset Finance,10.89
+2019,,Q3,2019Q3,Russia,Solar,Asset Finance,4
 2019,,Q4,2019Q4,United States,Solar,Asset Finance,5.36
 2015,,Q2,2015Q2,United States,Solar,Asset Finance,5.28
-2019,,Q3,2019Q3,Russian Federation,Solar,Asset Finance,4
+2019,,Q3,2019Q3,Russia,Solar,Asset Finance,4
 2017,,Q4,2017Q4,United States,Solar,Asset Finance,3.993
 2017,,Q3,2017Q3,United States,Solar,Asset Finance,3.509
 2016,,Q3,2016Q3,United States,Solar,Asset Finance,6.292
@@ -56152,7 +56152,7 @@ year,month,quarter,period,geography,sector,Deal Type,value
 2019,,Q3,2019Q3,Vietnam,Solar,Asset Finance,53.747616
 2018,,Q3,2018Q3,Japan,Solar,Asset Finance,12.592
 2019,,Q2,2019Q2,Mainland China,Solar,Asset Finance,8
-2019,,Q1,2019Q1,Russian Federation,Solar,Asset Finance,20
+2019,,Q1,2019Q1,Russia,Solar,Asset Finance,20
 2019,,Q2,2019Q2,Taiwan,Solar,Asset Finance,3.04
 2019,,Q1,2019Q1,Taiwan,Solar,Asset Finance,1.56
 2015,,Q4,2015Q4,Japan,Solar,Asset Finance,3.104
@@ -56206,7 +56206,7 @@ year,month,quarter,period,geography,sector,Deal Type,value
 2019,,Q4,2019Q4,Mainland China,Wind,Asset Finance,159.1398876
 2018,,Q2,2018Q2,Mainland China,Solar,Asset Finance,41.0488
 2019,,Q4,2019Q4,Mainland China,Solar,Asset Finance,78.3365
-2019,,Q4,2019Q4,Russian Federation,Wind,Asset Finance,116.61
+2019,,Q4,2019Q4,Russia,Wind,Asset Finance,116.61
 2004,,Q2,< 2006,Germany,Wind,Asset Finance,9.936
 2019,,Q3,2019Q3,Mainland China,Wind,Asset Finance,39
 2018,,Q1,2018Q1,Japan,Biomass & waste,Asset Finance,129.456
@@ -56324,9 +56324,9 @@ year,month,quarter,period,geography,sector,Deal Type,value
 2017,,Q3,2017Q3,Mainland China,Solar,Asset Finance,2.5672725
 2018,,Q3,2018Q3,Mainland China,Solar,Asset Finance,2.32928
 2019,,Q3,2019Q3,Mainland China,Solar,Asset Finance,6.8797902
-2019,,Q4,2019Q4,Russian Federation,Wind,Asset Finance,64.22
+2019,,Q4,2019Q4,Russia,Wind,Asset Finance,64.22
 2019,,Q4,2019Q4,United Kingdom,Wind,Asset Finance,65
-2019,,Q4,2019Q4,Russian Federation,Wind,Asset Finance,64.22
+2019,,Q4,2019Q4,Russia,Wind,Asset Finance,64.22
 2015,,Q1,2015Q1,Colombia,Small hydro,Asset Finance,41.79
 2015,,Q2,2015Q2,Colombia,Small hydro,Asset Finance,9.072
 2005,,Q3,< 2006,Colombia,Small hydro,Asset Finance,7.53
@@ -57468,7 +57468,7 @@ year,month,quarter,period,geography,sector,Deal Type,value
 2017,,Q1,2017Q1,Mainland China,Solar,Asset Finance,6.70131
 2019,,Q1,2019Q1,Korea (Republic),Solar,Asset Finance,2.4
 2019,,Q2,2019Q2,Korea (Republic),Solar,Asset Finance,2.4
-2006,,Q2,2006Q2,Russian Federation,Biomass & waste,Asset Finance,68.4
+2006,,Q2,2006Q2,Russia,Biomass & waste,Asset Finance,68.4
 2019,,Q1,2019Q1,Australia,Solar,Asset Finance,1.32
 2019,,Q1,2019Q1,Korea (Republic),Solar,Asset Finance,2.4
 2018,,Q3,2018Q3,Australia,Solar,Asset Finance,0.93
